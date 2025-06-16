@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Fixxxer</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* degradê principal do álbum Reload */
+            background: linear-gradient(to bottom, rgba(118, 30, 15, 1), rgba(0, 0, 0, 0.8));
+            color: #fff;
+        }
+
+        .top-section {
+            /* topo levemente mais escuro para contraste */
+            background: linear-gradient(to top, rgba(80, 20, 10, 1), #000000);
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/Metallica_-_Reload_cover.jpg"
+            alt="Capa do Álbum Reload" class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>Fixxxer - Remastered</h1>
+            <p class="meta">Metallica • Reload • 1997 • 8:14</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                Yeah <br>
+                Dolls of voodoo all stuck with pins <br>
+                One for each of us and our sins <br>
+                So you lay us in a line <br>
+                Push your pins, they make us humble <br>
+                Only you can tell in time <br>
+                If we fall or merely stumble <br>
+                <br>
+                But tell me <br>
+                Can you heal what father's done <br>
+                Or fix this hole in a mother's son <br>
+                Can you heal the broken worlds within <br>
+                Can you strip away so we may start again <br>
+                Tell me, can you heal what father's done <br>
+                Or cut this rope and let us run <br>
+                Just when all seems fine and I'm pain free <br>
+                You jab another pin <br>
+                Jab another pin in me <br>
+                <br>
+                Yeah <br>
+                Mirror, mirror upon the wall <br>
+                Break the spell or become the doll <br>
+                See you sharpening the pins <br>
+                So the holes will remind us <br>
+                We're just the toys in the hands of another <br>
+                And in time the needles turn from shine to rust <br>
+                <br>
+                But tell me <br>
+                Can you heal what father's done <br>
+                Or fix this hole in a mother's son <br>
+                Can you heal the broken worlds within <br>
+                Can you strip away so we may start again <br>
+                Tell me, can you heal what father's done <br>
+                Or cut this rope and let us run <br>
+                Just when all seems fine and I'm pain free <br>
+                You jab another pin <br>
+                Jab another pin in me <br>
+                Jab it <br>
+                <br>
+                Blood for face <br>
+                Sweat for dirt <br>
+                Three X's for the stone <br>
+                To break this curse <br>
+                A ritual's due <br>
+                I believe I'm not alone <br>
+                Shell of shotgun <br>
+                Pint of gin <br>
+                Numb us up to shield the pins <br>
+                Renew our faith <br>
+                Which way we can <br>
+                To fall in love with life again <br>
+                To fall in love with life again <br>
+                To fall in love with life again <br>
+                To fall in love <br>
+                To fall in love <br>
+                To fall in love with life again <br>
+                <br>
+                So tell me <br>
+                Can you heal what father's done <br>
+                Or fix this hole in a mother's son <br>
+                Can you heal the broken worlds within <br>
+                Can you strip away so we may start again <br>
+                Yeah, tell me, can you heal what father's done <br>
+                Or cut this rope and let us run <br>
+                Just when all seems fine and I'm pain free <br>
+                You jab another pin <br>
+                Jab another pin in me <br>
+                Oh yeah <br>
+                <br>
+                No more pins in me, yeah <br>
+                No more, no more pins in me <br>
+                No more, no more pins in me <br>
+                No more, no more, no more <br>
+                No, no, no <br> <br>
+            </p>
+        </div>
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                Yeah <br>
+                Bonecos de vodu todos espetados com alfinetes <br>
+                Um para cada um de nós e nossos pecados <br>
+                Então você nos coloca em uma fila <br>
+                Empurra seus alfinetes, eles nos tornam humildes <br>
+                Só você pode dizer, com o tempo <br>
+                Se caímos ou apenas tropeçamos <br>
+                <br>
+                Mas me diga <br>
+                Você pode curar o que o pai fez? <br>
+                Ou consertar esse buraco no filho da mãe? <br>
+                Você pode curar os mundos quebrados por dentro? <br>
+                Pode arrancar tudo para que possamos recomeçar? <br>
+                Diga-me, você pode curar o que o pai fez? <br>
+                Ou cortar essa corda e nos deixar correr? <br>
+                Bem quando tudo parece bem e estou sem dor <br>
+                Você espeta outro alfinete <br>
+                Espeta outro alfinete em mim <br>
+                <br>
+                Yeah <br>
+                Espelho, espelho na parede <br>
+                Quebre o feitiço ou torne-se o boneco <br>
+                Vejo você afiando os alfinetes <br>
+                Para que os furos nos lembrem <br>
+                Somos apenas brinquedos nas mãos de outro <br>
+                E com o tempo, as agulhas passam do brilho à ferrugem <br>
+                <br>
+                Mas me diga <br>
+                Você pode curar o que o pai fez? <br>
+                Ou consertar esse buraco no filho da mãe? <br>
+                Você pode curar os mundos quebrados por dentro? <br>
+                Pode arrancar tudo para que possamos recomeçar? <br>
+                Diga-me, você pode curar o que o pai fez? <br>
+                Ou cortar essa corda e nos deixar correr? <br>
+                Bem quando tudo parece bem e estou sem dor <br>
+                Você espeta outro alfinete <br>
+                Espeta outro alfinete em mim <br>
+                Espete <br>
+                <br>
+                Sangue para o rosto <br>
+                Suor para a terra <br>
+                Três X para a pedra <br>
+                Para quebrar essa maldição <br>
+                Um ritual é devido <br>
+                Acredito que não estou sozinho <br>
+                Cartucho de espingarda <br>
+                Copo de gim <br>
+                Entorpeça-nos para resistir aos alfinetes <br>
+                Renove nossa fé <br>
+                Do jeito que for possível <br>
+                Para nos apaixonarmos pela vida de novo <br>
+                Para nos apaixonarmos pela vida de novo <br>
+                Para nos apaixonarmos pela vida de novo <br>
+                Para nos apaixonarmos <br>
+                Para nos apaixonarmos <br>
+                Para nos apaixonarmos pela vida de novo <br>
+                <br>
+                Então me diga <br>
+                Você pode curar o que o pai fez? <br>
+                Ou consertar esse buraco no filho da mãe? <br>
+                Você pode curar os mundos quebrados por dentro? <br>
+                Pode arrancar tudo para que possamos recomeçar? <br>
+                Yeah, diga-me, você pode curar o que o pai fez? <br>
+                Ou cortar essa corda e nos deixar correr? <br>
+                Bem quando tudo parece bem e estou sem dor <br>
+                Você espeta outro alfinete <br>
+                Espeta outro alfinete em mim <br>
+                Oh yeah <br>
+                <br>
+                Sem mais alfinetes em mim, yeah <br>
+                Sem mais, sem mais alfinetes em mim <br>
+                Sem mais, sem mais alfinetes em mim <br>
+                Sem mais, sem mais, sem mais <br>
+                Não, não, não <br>
+                <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'Fixxxer' da banda Metallica, conhecida por seu estilo heavy metal e letras profundas, mergulha em
+            temas de dor, trauma e a busca por cura e libertação. A letra sugere uma narrativa onde o protagonista é
+            atormentado por feridas emocionais, possivelmente infligidas por figuras parentais, como indicado pelas
+            linhas 'Can you heal what father's done' ou 'fix this hole in a mother's son'. A referência a 'dolls of
+            voodoo all stuck with pins' pode ser interpretada como uma metáfora para o controle e a dor que essas
+            figuras exercem sobre o indivíduo, onde cada alfinete representa um pecado ou uma ferida emocional. <br>
+            <br>
+
+            O refrão questiona se é possível curar as 'broken worlds within', indicando uma luta interna e a necessidade
+            de superar traumas passados. A repetição do pedido de cura e a menção a 'cut this rope and let us run'
+            sugerem um desejo de libertação das amarras do passado. A música também aborda a ideia de que, mesmo quando
+            parece que a paz foi alcançada ('Just when all seems fine and I'm pain free'), novas dores são infligidas
+            ('You jab another pin in me'), o que pode representar ciclos de abuso ou a dificuldade de escapar de padrões
+            destrutivos. <br> <br>
+
+            A parte final da música traz um tom de ritual e renovação ('A ritual's due, I believe I'm not alone'), onde
+            o protagonista busca maneiras de anestesiar a dor ('Numb us up to shield the pins') e renovar a fé para
+            'fall in love with life again'. Isso sugere um processo de cura e a esperança de superar o passado,
+            encontrando alegria e amor pela vida mais uma vez. <br> <br> <br> <br> <br> <br> <br> <br>
+        </p>
+    </div>
+
+    <button onclick="history.back()" class="voltar-btn">⟵ Voltar</button>
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/5jE2hljNVTJZeodUXQu9Ea?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="musica-container"></iframe>
+</body>
+
+</html>

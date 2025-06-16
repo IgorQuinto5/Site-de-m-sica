@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Disposable Heroes</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, rgba(208, 117, 20, 1), rgba(0, 0, 0, 0.8));
+            color: #fff;
+        }
+
+        .top-section {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(180, 100, 15, 1));
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://upload.wikimedia.org/wikipedia/pt/4/4d/Master_of_Puppets.jpg"
+            alt="Capa do Álbum Master of Puppets" class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>Disposable Heroes - Remastered</h1>
+            <p class="meta">Metallica • Master of Puppets • 1986 • 8:16</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                Bodies fill the fields I see, hungry heroes end <br>
+                No one to play soldier now, no one to pretend <br>
+                Running blind through killing fields, bred to kill them all <br>
+                Victim of what said should be <br>
+                A servant 'til I fall <br> <br>
+                Soldier boy, made of clay <br>
+                Now an empty shell <br>
+                Twenty one, only son <br>
+                But he served us well <br>
+                Bred to kill, not to care <br>
+                Do just as we say <br>
+                Finished here, greetings death <br>
+                He's yours to take away <br> <br>
+                Back to the front <br>
+                You will do what I say, when I say <br>
+                Back to the front <br>
+                You will die when I say, you must die <br>
+                Back to the front <br>
+                You coward <br>
+                You servant <br>
+                You blind man <br> <br>
+                Barking of machine gun fire, does nothing to me now <br>
+                Sounding of the clock that ticks, get used to it somehow <br>
+                More a man, more stripes you bare, glory seeker trends <br>
+                Bodies fill the fields I see <br>
+                The slaughter never ends <br> <br>
+                Soldier boy, made of clay <br>
+                Now an empty shell <br>
+                Twenty one, only son <br>
+                But he served us well <br>
+                Bred to kill, not to care <br>
+                Do just as we say <br>
+                Finished here, greetings death <br>
+                He's yours to take away <br> <br>
+                Back to the front <br>
+                You will do what I say, when I say <br>
+                Back to the front <br>
+                You will die when I say, you must die <br>
+                Back to the front <br>
+                You coward <br>
+                You servant <br>
+                You blind man <br> <br>
+                Why, am I dying? <br>
+                Kill, have no fear <br>
+                Lie, live off lying <br>
+                Hell, hell is here <br> <br>
+                Why, am I dying? <br>
+                Kill, have no fear <br>
+                Lie, live off lying <br>
+                Hell, hell is here <br>
+                I was born for dying <br> <br>
+                Life planned out before my birth, nothing could I say <br>
+                Had no chance to see myself, molded day by day <br>
+                Looking back I realize, nothing have I done <br>
+                Left to die with only friend <br>
+                Alone I clench my gun <br> <br>
+                Soldier boy, made of clay <br>
+                Now an empty shell <br>
+                Twenty one, only son <br>
+                But he served us well <br>
+                Bred to kill, not to care <br>
+                Do just as we say <br>
+                Finished here, greetings death <br>
+                He's yours to take away <br> <br>
+                Back to the front <br>
+                You will do what I say, when I say <br>
+                Back to the front <br>
+                You will die when I say, you must die <br>
+                Back to the front <br>
+                You coward <br>
+                You servant <br>
+                You blind man <br> <br>
+                Back to the front <br>
+                Back to the front <br>
+                Back to the front <br>
+                Back to the front <br>
+                Back to the front <br> <br>
+            </p>
+        </div>
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                Corpos preenchem os campos que vejo, heróis famintos caem<br>
+                Ninguém para brincar de soldado agora, ninguém para fingir<br>
+                Correndo às cegas pelos campos de batalha, criados para matar todos<br>
+                Vítima do que disseram que deveria ser<br>
+                Um servo até eu cair<br><br>
+
+                Garoto soldado, feito de barro<br>
+                Agora uma casca vazia<br>
+                Vinte e um, filho único<br>
+                Mas ele nos serviu bem<br>
+                Criado para matar, não para se importar<br>
+                Faça apenas o que mandamos<br>
+                Acabou aqui, saudações à morte<br>
+                Ele é seu para levar<br><br>
+
+                De volta ao front<br>
+                Você fará o que eu disser, quando eu disser<br>
+                De volta ao front<br>
+                Você morrerá quando eu disser, você deve morrer<br>
+                De volta ao front<br>
+                Covarde<br>
+                Servo<br>
+                Homem cego<br><br>
+
+                Rugido de metralhadoras, não me afeta mais<br>
+                Som do relógio que bate, acostume-se de algum modo<br>
+                Quanto mais homem, mais faixas você carrega, segue tendências de glória<br>
+                Corpos preenchem os campos que vejo<br>
+                A chacina nunca acaba<br><br>
+
+                Garoto soldado, feito de barro<br>
+                Agora uma casca vazia<br>
+                Vinte e um, filho único<br>
+                Mas ele nos serviu bem<br>
+                Criado para matar, não para se importar<br>
+                Faça apenas o que mandamos<br>
+                Acabou aqui, saudações à morte<br>
+                Ele é seu para levar<br><br>
+
+                De volta ao front<br>
+                Você fará o que eu disser, quando eu disser<br>
+                De volta ao front<br>
+                Você morrerá quando eu disser, você deve morrer<br>
+                De volta ao front<br>
+                Covarde<br>
+                Servo<br>
+                Homem cego<br><br>
+
+                Por quê, estou morrendo?<br>
+                Mate, não tenha medo<br>
+                Minta, viva da mentira<br>
+                Inferno, o inferno está aqui<br><br>
+
+                Por quê, estou morrendo?<br>
+                Mate, não tenha medo<br>
+                Minta, viva da mentira<br>
+                Inferno, o inferno está aqui<br>
+                Eu nasci para morrer<br><br>
+
+                Vida planejada antes do meu nascimento, nada eu podia dizer<br>
+                Não tive chance de me ver, moldado dia após dia<br>
+                Olhando para trás percebo, nada fiz<br>
+                Deixado para morrer com um único amigo<br>
+                Sozinho, eu aperto minha arma<br><br>
+
+                Garoto soldado, feito de barro<br>
+                Agora uma casca vazia<br>
+                Vinte e um, filho único<br>
+                Mas ele nos serviu bem<br>
+                Criado para matar, não para se importar<br>
+                Faça apenas o que mandamos<br>
+                Acabou aqui, saudações à morte<br>
+                Ele é seu para levar<br><br>
+
+                De volta ao front<br>
+                Você fará o que eu disser, quando eu disser<br>
+                De volta ao front<br>
+                Você morrerá quando eu disser, você deve morrer<br>
+                De volta ao front<br>
+                Covarde<br>
+                Servo<br>
+                Homem cego<br><br>
+
+                De volta ao front<br>
+                De volta ao front<br>
+                De volta ao front<br>
+                De volta ao front<br>
+                De volta ao front<br><br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'Disposable Heroes' do Metallica é um poderoso manifesto contra as guerras e a maneira como os
+            soldados são tratados como meros instrumentos de combate, descartáveis após o uso. Através de uma narrativa
+            crua e direta, a letra descreve a realidade brutal dos campos de batalha e a desumanização dos jovens que
+            são enviados para a guerra.<br> <br>
+
+            O refrão 'Back to the front' é uma ordem imperativa que simboliza a falta de escolha dos soldados, que são
+            forçados a enfrentar o perigo e a morte. A repetição dessa frase ressalta a ideia de que não há escapatória
+            para esses 'heróis', que são tratados como covardes, servos e cegos pelas autoridades que os comandam. A
+            música também aborda a perda de identidade ('Soldier boy, made of clay, now an empty shell') e a aceitação
+            da morte como um destino inevitável ('I was born for dying').<br> <br>
+
+            Através de uma linguagem agressiva e imagens impactantes, o Metallica critica a glorificação da guerra e o
+            ciclo vicioso de violência. A banda, conhecida por suas letras contestadoras e seu estilo thrash metal,
+            utiliza a música como uma forma de protesto e reflexão sobre os horrores da guerra e o preço pago pela
+            juventude enviada ao front. <br> <br><br><br><br> <br><br> <br>
+        </p>
+    </div>
+    <button onclick="history.back()" class="voltar-btn">⟵ Voltar</button>
+
+
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/4tPHBRIPsB55nssjvKDbjj?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="musica-container"></iframe>
+
+</body>
+
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Bad Seed</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* degradê principal do álbum Reload */
+            background: linear-gradient(to bottom, rgba(118, 30, 15, 1), rgba(0, 0, 0, 0.8));
+            color: #fff;
+        }
+
+        .top-section {
+            /* topo levemente mais escuro para contraste */
+            background: linear-gradient(to top, rgba(80, 20, 10, 1), #000000);
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/Metallica_-_Reload_cover.jpg"
+            alt="Capa do Álbum Reload" class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>Bad Seed - Remastered</h1>
+            <p class="meta">Metallica • Reload • 1997 • 4:05</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                Yeah, yeah <br>
+                Yeah, yeah <br>
+                Oh <br>
+                Bad <br>
+                <br>
+                Yeah <br>
+                Yeah, yeah <br>
+                <br>
+                Come clean <br>
+                Fix up <br>
+                Tell all <br>
+                Spill guts <br>
+                <br>
+                Off the veil <br>
+                Stand revealed <br>
+                Show the card <br>
+                Bring it on <br>
+                Break the seal <br>
+                <br>
+                Ladies and gentlemen <br>
+                Step right up and see the man who taught the truth <br>
+                <br>
+                Swing the noose again <br>
+                Pierce the apple skin <br>
+                You bit more than you need <br>
+                Now you're choking on the bad seed <br>
+                On the bad seed <br>
+                Ah, choking <br>
+                <br>
+                Yeah <br>
+                Let it on <br>
+                Load up <br>
+                Confess <br>
+                Care so <br>
+                <br>
+                At the mercy <br>
+                Cat is out <br>
+                Drop through the sky <br>
+                Spit it up <br>
+                Spit it out <br>
+                <br>
+                And now what you've all been waiting for <br>
+                I give you he who suffers the truth <br>
+                <br>
+                Swing the noose again <br>
+                Pierce the apple skin <br>
+                Yeah, you bit more than you need <br>
+                Now you're choking on the bad seed <br>
+                Choking on the bad seed <br>
+                Yeah <br>
+                <br>
+                Off the veil <br>
+                Stand revealed <br>
+                Bring it on <br>
+                Break the seal <br>
+                At the mercy <br>
+                Cat is out <br>
+                Spit it up <br>
+                Spit it out <br>
+                Spit it up <br>
+                Spit it out <br>
+                Spit it out now <br>
+                <br>
+                At the mercy <br>
+                <br>
+                Swing the noose again <br>
+                Pierce the apple skin <br>
+                You bit more than you need <br>
+                Choking on the seed <br>
+                <br>
+                Swing the noose again <br>
+                Pierce the apple skin <br>
+                Yeah, you bit more than you need <br>
+                Now you're choking on the <br>
+                Choking, choking, choking on the bad seed <br>
+                Yeah <br>
+                <br>
+                Off the veil <br>
+                Stand revealed <br>
+                Bring it on <br>
+                Break the seal <br>
+                At the mercy <br>
+                Cat is out <br>
+                Spit it up <br>
+                Spit it out <br>
+                Spit it out <br>
+                Spit it out <br>
+                Spit it out now <br>
+                Yeah <br>
+                <br>
+                Choking on the bad, bad, bad, bad, bad, bad seed <br> <br>
+            </p>
+        </div>
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                Yeah, yeah <br>
+                Yeah, yeah <br>
+                Oh <br>
+                Ruim <br> <br>
+
+                Yeah <br>
+                Yeah, yeah <br> <br>
+
+                Confesse <br>
+                Conserte <br>
+                Conte tudo <br>
+                Derrame as entranhas <br> <br>
+
+                Tire o véu <br>
+                Fique exposto <br>
+                Mostre sua carta <br>
+                Traga tudo <br>
+                Rompa o selo <br> <br>
+
+                Senhoras e senhores <br>
+                Aproximem-se e vejam o homem que falou a verdade <br> <br>
+
+                Balance a forca de novo <br>
+                Perfure a casca da maçã <br>
+                Você mordeu mais do que precisava <br>
+                Agora está engasgado com a semente ruim <br>
+                Com a semente ruim <br>
+                Ah, engasgando <br> <br>
+
+                Yeah <br>
+                Manda ver <br>
+                Carregue tudo <br>
+                Confesse <br>
+                Se importe então <br> <br>
+
+                À mercê <br>
+                O gato saiu do saco <br>
+                Caia do céu <br>
+                Cuspa <br>
+                Cuspa isso <br> <br>
+
+                E agora o que todos estavam esperando <br>
+                Eu lhes apresento aquele que sofre com a verdade <br> <br>
+
+                Balance a forca de novo <br>
+                Perfure a casca da maçã <br>
+                Yeah, você mordeu mais do que precisava <br>
+                Agora está engasgado com a semente ruim <br>
+                Engasgado com a semente ruim <br>
+                Yeah <br> <br>
+
+                Tire o véu <br>
+                Fique exposto <br>
+                Traga tudo <br>
+                Rompa o selo <br>
+                À mercê <br>
+                O gato saiu do saco <br>
+                Cuspa <br>
+                Cuspa isso <br>
+                Cuspa <br>
+                Cuspa isso <br>
+                Cuspa agora <br> <br>
+
+                À mercê <br> <br>
+
+                Balance a forca de novo <br>
+                Perfure a casca da maçã <br>
+                Você mordeu mais do que precisava <br>
+                Engasgando com a semente <br> <br>
+
+                Balance a forca de novo <br>
+                Perfure a casca da maçã <br>
+                Yeah, você mordeu mais do que precisava <br>
+                Agora está engasgado com a <br>
+                Engasgando, engasgando, engasgando com a semente ruim <br>
+                Yeah <br> <br>
+
+                Tire o véu <br>
+                Fique exposto <br>
+                Traga tudo <br>
+                Rompa o selo <br>
+                À mercê <br>
+                O gato saiu do saco <br>
+                Cuspa <br>
+                Cuspa isso <br>
+                Cuspa isso <br>
+                Cuspa isso <br>
+                Cuspa agora <br>
+                Yeah <br> <br>
+                Engasgando com a semente ruim, ruim, ruim, ruim, ruim, ruim <br> <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'Bad Seed' da banda Metallica aborda temas de culpa, revelação e as consequências das ações
+            imprudentes. A letra começa com uma série de comandos como 'Come clean', 'Fix up' e 'Tell all', sugerindo um
+            apelo à honestidade e à confissão. A metáfora da 'semente ruim' é central na música, representando algo que
+            foi plantado e cresceu de maneira negativa, levando a consequências indesejadas. <br> <br>
+
+            A expressão 'Swing the noose again' e 'Pierce the apple skin' evocam imagens de punição e tentação,
+            respectivamente. A maçã, frequentemente associada ao pecado original na tradição cristã, simboliza a
+            tentação e a queda. Ao morder mais do que se pode mastigar, a pessoa acaba 'engasgando na semente ruim', uma
+            metáfora para as consequências de suas ações imprudentes e gananciosas. A repetição de 'choking' enfatiza a
+            sensação de sufocamento e arrependimento. <br> <br>
+
+            A música também faz referência à revelação da verdade com frases como 'Off the veil' e 'Stand revealed'.
+            Isso sugere que, eventualmente, a verdade sempre vem à tona, e aqueles que tentam esconder suas falhas ou
+            erros acabam sendo expostos. A frase 'I give you he who suffers the truth' indica que enfrentar a verdade
+            pode ser doloroso, mas é inevitável. A repetição de 'Spit it up, spit it out' reforça a ideia de que a
+            verdade, por mais amarga que seja, precisa ser dita e enfrentada. <br> <br> <br> <br> <br> <br> <br> <br>
+        </p>
+    </div>
+
+    <button onclick="history.back()" class="voltar-btn">⟵ Voltar</button>
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/0cKWKhciVCYNyxFVnV1Y4R?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="musica-container"></iframe>
+</body>
+
+</html>

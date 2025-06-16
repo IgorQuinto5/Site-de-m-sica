@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Invisible Kid</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* degradê principal do álbum St. Anger */
+            background: linear-gradient(to bottom, rgba(168, 19, 40, 1), rgba(0, 0, 0, 0.8));
+            color: #fff;
+        }
+
+        .top-section {
+            /* topo levemente mais escuro para contraste */
+            background: linear-gradient(to top, rgba(100, 10, 25, 1), #141414);
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://rollingstone.uol.com.br/media/uploads/2024/02/metallica-st-anger-capa-696x696.jpg"
+            alt="Capa do Álbum St. Anger" class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>Invisible Kid - Remastered</h1>
+            <p class="meta">Metallica • St. Anger • 2003 • 8:30</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                Invisible kid <br>
+                Never see what he did <br>
+                Got stuck where he hid <br>
+                Fallen through the grid <br>
+                Invisible kid <br>
+                Got a place of his own <br>
+                Where he'll never be known <br>
+                Inward he's grown <br>
+                Invisible kid <br>
+                Never see what he did <br>
+                Got stuck where he hid <br>
+                Fallen through the grid <br>
+                Invisible kid <br>
+                Got a place of his own <br>
+                Where he'll never be known <br>
+                Inward he's grown <br> <br>
+                Invisible kid <br>
+                Locked away in his brain <br>
+                From the shame and the pain <br>
+                World down the drain <br>
+                Invisible kid <br>
+                Suspicious of your touch <br>
+                Don't want no crutch <br>
+                But it's all too much <br>
+                Invisible kid <br>
+                Locked away in his brain <br>
+                From the shame and the pain <br>
+                World down the drain <br>
+                Invisible kid <br>
+                Suspicious of your touch <br>
+                Don't want no crutch <br>
+                But it's all too much, yeah <br> <br>
+                I hide inside <br>
+                I hurt inside <br>
+                I hide inside, but I'll show you <br> <br>
+                I'm OK, just go away <br>
+                Into distance let me fade <br>
+                I'm OK, just go away <br>
+                I'm OK, but please don't stray too far <br> <br>
+                Open your heart <br>
+                I'm beating right here <br>
+                Open your mind <br>
+                I'm beating right here <br>
+                Right now <br>
+                Open your heart <br>
+                I'm beating right here <br>
+                Open your mind <br>
+                I'm beating right here <br>
+                Right now <br> <br>
+                Invisible kid <br>
+                Never see what he did <br>
+                Got stuck where he hid <br>
+                Fallen through the grid <br>
+                Invisible kid <br>
+                Got a place of his own <br>
+                Where he'll never be known <br>
+                Inward he's grown <br>
+                Invisible kid <br>
+                Never see what he did <br>
+                Got stuck where he hid <br>
+                Fallen through the grid <br>
+                Invisible kid <br>
+                Got a place of his own <br>
+                Where he'll never be known <br>
+                Inward he's grown <br> <br>
+                I hide inside <br>
+                I hurt inside <br>
+                I hide inside, but I'll show you <br> <br>
+                I'm OK, just go away <br>
+                Into distance let me fade <br>
+                I'm OK (I'm OK), just go away <br>
+                I'm OK (I'm OK), but please don't stray too far <br> <br>
+                Open your heart <br>
+                I'm beating right here <br>
+                Open your mind <br>
+                I'm beating right here <br>
+                Right now <br>
+                Open your heart <br>
+                I'm beating right here <br>
+                Open your mind <br>
+                I'm beating right here <br>
+                Right now <br> <br>
+                Ooh, what a good boy you are <br>
+                Out of the way and you're kept to yourself <br>
+                Ooh, can't you see that he's not here <br>
+                He doesn't want the attention you give <br>
+                Ooh, unplugging from it all <br>
+                Invisible kid floats alone in his room <br>
+                Ooh, what a quiet boy you are <br>
+                He looks so calm floating 'round and around in himself <br> <br>
+                Invisible kid <br>
+                Locked away in his brain <br>
+                From the shame and the pain <br>
+                World down the drain <br>
+                Invisible kid <br>
+                Suspicious of your touch <br>
+                He don't want no crutch <br>
+                But it's all too much <br>
+                Invisible kid <br>
+                Locked away in his brain <br>
+                From the shame and the pain <br>
+                World down the drain <br>
+                Invisible kid <br>
+                Suspicious of your touch <br>
+                Don't want no crutch <br>
+                But it's all too much, yeah <br> <br>
+                I hide inside <br>
+                I hurt inside <br>
+                I hide inside, but I'll show you <br> <br>
+                I'm OK, just go away <br>
+                Into distance let me fade <br>
+                I'm OK (I'm OK), just go away <br>
+                I'm OK (I'm OK), but please don't stray too far <br> <br>
+                Open your heart <br>
+                I'm beating right here <br>
+                Open your mind <br>
+                I'm beating right here <br>
+                Right now <br>
+                Open your heart <br>
+                I'm beating right here <br>
+                Open your mind <br>
+                I'm beating right here <br>
+                Right now <br> <br>
+            </p>
+        </div>
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                SGaroto invisível <br>
+                Nunca veem o que ele fez <br>
+                Ficou preso onde se escondeu <br>
+                Caiu pela grade <br>
+                Garoto invisível <br>
+                Tem um lugar só dele <br>
+                Onde nunca será conhecido <br>
+                Cresceu para dentro <br>
+                Garoto invisível <br>
+                Nunca veem o que ele fez <br>
+                Ficou preso onde se escondeu <br>
+                Caiu pela grade <br>
+                Garoto invisível <br>
+                Tem um lugar só dele <br>
+                Onde nunca será conhecido <br>
+                Cresceu para dentro <br>
+                <br>
+                Garoto invisível <br>
+                Trancado dentro da própria mente <br>
+                Pela vergonha e pela dor <br>
+                Mundo pelo ralo <br>
+                Garoto invisível <br>
+                Desconfiado do seu toque <br>
+                Não quer muleta nenhuma <br>
+                Mas é tudo demais <br>
+                Garoto invisível <br>
+                Trancado dentro da própria mente <br>
+                Pela vergonha e pela dor <br>
+                Mundo pelo ralo <br>
+                Garoto invisível <br>
+                Desconfiado do seu toque <br>
+                Não quer muleta nenhuma <br>
+                Mas é tudo demais, é <br>
+                <br>
+                Eu me escondo por dentro <br>
+                Eu me machuco por dentro <br>
+                Eu me escondo por dentro, mas vou te mostrar <br>
+                <br>
+                Eu estou bem, só vá embora <br>
+                Deixe-me sumir à distância <br>
+                Eu estou bem, só vá embora <br>
+                Eu estou bem, mas por favor, não se afaste demais <br>
+                <br>
+                Abra seu coração <br>
+                Estou batendo bem aqui <br>
+                Abra sua mente <br>
+                Estou batendo bem aqui <br>
+                Agora mesmo <br>
+                Abra seu coração <br>
+                Estou batendo bem aqui <br>
+                Abra sua mente <br>
+                Estou batendo bem aqui <br>
+                Agora mesmo <br>
+                <br>
+                Garoto invisível <br>
+                Nunca veem o que ele fez <br>
+                Ficou preso onde se escondeu <br>
+                Caiu pela grade <br>
+                Garoto invisível <br>
+                Tem um lugar só dele <br>
+                Onde nunca será conhecido <br>
+                Cresceu para dentro <br>
+                Garoto invisível <br>
+                Nunca veem o que ele fez <br>
+                Ficou preso onde se escondeu <br>
+                Caiu pela grade <br>
+                Garoto invisível <br>
+                Tem um lugar só dele <br>
+                Onde nunca será conhecido <br>
+                Cresceu para dentro <br>
+                <br>
+                Eu me escondo por dentro <br>
+                Eu me machuco por dentro <br>
+                Eu me escondo por dentro, mas vou te mostrar <br>
+                <br>
+                Eu estou bem, só vá embora <br>
+                Deixe-me sumir à distância <br>
+                Eu estou bem (estou bem), só vá embora <br>
+                Eu estou bem (estou bem), mas por favor, não se afaste demais <br>
+                <br>
+                Abra seu coração <br>
+                Estou batendo bem aqui <br>
+                Abra sua mente <br>
+                Estou batendo bem aqui <br>
+                Agora mesmo <br>
+                Abra seu coração <br>
+                Estou batendo bem aqui <br>
+                Abra sua mente <br>
+                Estou batendo bem aqui <br>
+                Agora mesmo <br>
+                <br>
+                Ooh, que bom menino você é <br>
+                Fora do caminho, mantido para si mesmo <br>
+                Ooh, não vê que ele não está aqui <br>
+                Ele não quer a atenção que você dá <br>
+                Ooh, desconectado de tudo <br>
+                Garoto invisível flutua sozinho no quarto <br>
+                Ooh, que menino quieto você é <br>
+                Parece tão calmo flutuando em círculos dentro de si <br>
+                <br>
+                Garoto invisível <br>
+                Trancado dentro da própria mente <br>
+                Pela vergonha e pela dor <br>
+                Mundo pelo ralo <br>
+                Garoto invisível <br>
+                Desconfiado do seu toque <br>
+                Ele não quer muleta nenhuma <br>
+                Mas é tudo demais <br>
+                Garoto invisível <br>
+                Trancado dentro da própria mente <br>
+                Pela vergonha e pela dor <br>
+                Mundo pelo ralo <br>
+                Garoto invisível <br>
+                Desconfiado do seu toque <br>
+                Não quer muleta nenhuma <br>
+                Mas é tudo demais, é <br>
+                <br>
+                Eu me escondo por dentro <br>
+                Eu me machuco por dentro <br>
+                Eu me escondo por dentro, mas vou te mostrar <br>
+                <br>
+                Eu estou bem, só vá embora <br>
+                Deixe-me sumir à distância <br>
+                Eu estou bem (estou bem), só vá embora <br>
+                Eu estou bem (estou bem), mas por favor, não se afaste demais <br>
+                <br>
+                Abra seu coração <br>
+                Estou batendo bem aqui <br>
+                Abra sua mente <br>
+                Estou batendo bem aqui <br>
+                Agora mesmo <br>
+                Abra seu coração <br>
+                Estou batendo bem aqui <br>
+                Abra sua mente <br>
+                Estou batendo bem aqui <br>
+                Agora mesmo <br>
+                <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'Invisible Kid' da banda Metallica aborda temas profundos de isolamento, dor e invisibilidade
+            social. A letra descreve um jovem que se sente invisível para o mundo ao seu redor, preso em sua própria
+            mente e emoções. Ele se esconde, tanto fisicamente quanto emocionalmente, e sente que nunca será
+            verdadeiramente conhecido ou compreendido. A repetição da frase 'Invisible kid' enfatiza a sensação de ser
+            ignorado e esquecido pela sociedade. <br> <br>
+
+            O 'Invisible Kid' está 'trancado em seu cérebro', lidando com vergonha e dor que o mundo não consegue ver.
+            Ele se afasta das pessoas, desconfiado de qualquer toque ou ajuda, mas ao mesmo tempo, a dor de sua solidão
+            é esmagadora. A letra sugere uma luta interna intensa, onde ele deseja se esconder, mas também anseia por
+            ser visto e compreendido. A dualidade de querer desaparecer e ao mesmo tempo ser notado é um tema central na
+            música. <br> <br>
+
+            A música também toca na ideia de que o 'Invisible Kid' criou um espaço próprio onde ele pode existir sem ser
+            perturbado, mas esse espaço é também uma prisão. Ele flutua sozinho, desconectado do mundo, e mesmo quando
+            tenta se abrir, a dor e a vergonha o puxam de volta para dentro. A repetição de 'I'm ok, just go away'
+            mostra uma tentativa desesperada de manter as pessoas à distância, enquanto 'Open up your heart' revela um
+            desejo profundo de conexão. A música é uma poderosa exploração da solidão e da luta interna, temas que
+            ressoam com muitos ouvintes que já se sentiram invisíveis ou incompreendidos. <br> <br> <br> <br> <br> <br>
+        </p>
+    </div>
+
+    <button onclick="history.back()" class="voltar-btn">⟵ Voltar</button>
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/105mv6XqVQMEUVfPkIeAQh?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="musica-container"></iframe>
+</body>
+
+</html>

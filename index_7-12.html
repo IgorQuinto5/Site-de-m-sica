@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Attitude</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* degradê principal do álbum Reload */
+            background: linear-gradient(to bottom, rgba(118, 30, 15, 1), rgba(0, 0, 0, 0.8));
+            color: #fff;
+        }
+
+        .top-section {
+            /* topo levemente mais escuro para contraste */
+            background: linear-gradient(to top, rgba(80, 20, 10, 1), #000000);
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/Metallica_-_Reload_cover.jpg"
+            alt="Capa do Álbum Reload" class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>Attitude - Remastered</h1>
+            <p class="meta">Metallica • Reload • 1997 • 5:16</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                One, two, three, four <br>
+                Suppose I say <br>
+                I'm never satisfied <br>
+                Suppose I say <br>
+                You cut some root to make the tree survive <br> <br>
+                Just let me kill you for a while <br>
+                Just let me kill you for a smile <br>
+                Just let me kill you once I'm oh so bored to death <br> <br>
+                Oh, I hunger <br>
+                I hunger <br>
+                I eat <br> <br>
+                Born into attitude <br>
+                Asleep at the wheel <br>
+                Throw all your bullets in the fire <br>
+                And run like hell <br>
+                Why cure the fever? <br>
+                What ever happened to sweat? <br> <br>
+                Suppose I say <br>
+                The vultures smile at me <br>
+                Suppose I say <br>
+                I've sent them down and they plan to pick you clean <br> <br>
+                And satisfaction this way comes <br>
+                And satisfaction this way comes <br>
+                And satisfaction's here and gone, gone yeah gone again <br> <br>
+                Oh, I hunger <br>
+                I hunger <br>
+                I eat <br> <br>
+                Born into attitude <br>
+                Asleep at the wheel <br>
+                Throw all your bullets in the fire and stand there <br>
+                Born into attitude <br>
+                Twist mother tongue <br>
+                Throw all your bullets in the fire <br>
+                And run like hell <br>
+                Why cure the fever, what ever happened to sweat? <br> <br>
+                Just let me kill you for a while <br>
+                Just let me kill you for a smile <br>
+                Just let me kill you once for me <br>
+                I'm bored to death <br> <br>
+                And satisfaction this way comes <br>
+                And satisfaction this way comes <br>
+                And satisfactions here and gone, gone, gone again <br> <br>
+                Yeah, I hunger <br>
+                Oh, I hunger <br>
+                I eat <br> <br>
+                Born into attitude <br>
+                Asleep at the wheel <br>
+                Throw all your bullets in the fire <br>
+                And stand there <br> <br>
+                Born into attitude <br>
+                Twist mother tongue <br>
+                Throwing all your bullets in the fire <br>
+                And run like hell <br>
+                Why cure the fever, what ever happened to sweat? <br> <br>
+            </p>
+        </div>
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                Um, dois, três, quatro<br>
+                Suponha que eu diga<br>
+                Que nunca estou satisfeito<br>
+                Suponha que eu diga<br>
+                Você corta algumas raízes pra fazer a árvore sobreviver<br><br>
+
+                Só me deixe te matar por um tempo<br>
+                Só me deixe te matar por um sorriso<br>
+                Só me deixe te matar quando eu estiver tão entediado de morte<br><br>
+
+                Oh, eu tenho fome<br>
+                Eu tenho fome<br>
+                Eu como<br><br>
+
+                Nascido com atitude<br>
+                Dormindo ao volante<br>
+                Jogue todas as suas balas no fogo<br>
+                E corra como o inferno<br>
+                Por que curar a febre?<br>
+                O que aconteceu com o suor?<br><br>
+
+                Suponha que eu diga<br>
+                Os abutres sorriem pra mim<br>
+                Suponha que eu diga<br>
+                Eu os mandei descer e eles planejam te limpar por completo<br><br>
+
+                E a satisfação vem por esse caminho<br>
+                E a satisfação vem por esse caminho<br>
+                E a satisfação chega e vai embora, vai embora, sim, vai embora de novo<br><br>
+
+                Oh, eu tenho fome<br>
+                Eu tenho fome<br>
+                Eu como<br><br>
+
+                Nascido com atitude<br>
+                Dormindo ao volante<br>
+                Jogue todas as suas balas no fogo e fique ali<br>
+                Nascido com atitude<br>
+                Língua materna distorcida<br>
+                Jogue todas as suas balas no fogo<br>
+                E corra como o inferno<br>
+                Por que curar a febre, o que aconteceu com o suor?<br><br>
+
+                Só me deixe te matar por um tempo<br>
+                Só me deixe te matar por um sorriso<br>
+                Só me deixe te matar uma vez por mim<br>
+                Estou entediado de morte<br><br>
+
+                E a satisfação vem por esse caminho<br>
+                E a satisfação vem por esse caminho<br>
+                E a satisfação chega e vai embora, vai embora, vai embora de novo<br><br>
+
+                Yeah, eu tenho fome<br>
+                Oh, eu tenho fome<br>
+                Eu como<br><br>
+
+                Nascido com atitude<br>
+                Dormindo ao volante<br>
+                Jogue todas as suas balas no fogo<br>
+                E fique ali<br><br>
+
+                Nascido com atitude<br>
+                Língua materna distorcida<br>
+                Jogando todas as suas balas no fogo<br>
+                E corra como o inferno<br>
+                Por que curar a febre, o que aconteceu com o suor?<br><br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'Attitude' do Metallica é uma poderosa expressão de insatisfação e desejo insaciável. A letra
+            começa com a declaração de que o eu lírico nunca está satisfeito, sugerindo uma busca constante por algo
+            mais, algo que nunca é plenamente alcançado. A metáfora de cortar as raízes para fazer a árvore sobreviver
+            pode ser interpretada como uma necessidade de sacrificar partes de si mesmo ou de sua vida para continuar
+            avançando, mesmo que isso signifique destruir algo essencial. <br> <br>
+
+            A repetição da frase 'Just let me kill you for a while' pode ser vista como uma metáfora para a necessidade
+            de escapar da monotonia e do tédio da vida cotidiana. O desejo de 'matar' algo, mesmo que temporariamente,
+            para encontrar algum tipo de satisfação ou alívio, reflete uma fome profunda que nunca é completamente
+            saciada. A fome mencionada na música não é apenas física, mas também emocional e existencial, uma busca
+            incessante por algo que dê sentido e emoção à vida. <br> <br>
+
+            A expressão 'Born into attitude' sugere que essa insatisfação e desejo são inerentes à natureza do eu
+            lírico, algo com o qual ele nasceu. A imagem de 'jogar todas as balas no fogo e correr como o inferno'
+            simboliza uma atitude de desafio e rebeldia, uma recusa em se conformar com as expectativas e limitações
+            impostas pela sociedade. A música questiona o que aconteceu com o suor, uma metáfora para o esforço genuíno
+            e a paixão, sugerindo que a sociedade moderna perdeu algo essencial em sua busca por satisfação instantânea
+            e superficial. <br> <br> <br> <br> <br> <br> <br> <br>
+        </p>
+    </div>
+
+    <button onclick="history.back()" class="voltar-btn">⟵ Voltar</button>
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/3VNkUPHPgC34Zk7TnikPtX?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="musica-container"></iframe>
+</body>
+
+</html>

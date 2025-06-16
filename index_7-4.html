@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>The Unforgiven II</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* degradê principal do álbum Reload */
+            background: linear-gradient(to bottom, rgba(118, 30, 15, 1), rgba(0, 0, 0, 0.8));
+            color: #fff;
+        }
+
+        .top-section {
+            /* topo levemente mais escuro para contraste */
+            background: linear-gradient(to top, rgba(80, 20, 10, 1), #000000);
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/Metallica_-_Reload_cover.jpg"
+            alt="Capa do Álbum Reload" class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>The Unforgiven II - Remastered</h1>
+            <p class="meta">Metallica • Reload • 1997 • 6:36</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                Lay beside me <br>
+                Tell me what they've done <br>
+                Speak the words I wanna hear <br>
+                To make my demons run <br> <br>
+                The door is locked now <br>
+                But it's opened if you're true <br>
+                If you can understand the me <br>
+                Then I can understand the you <br> <br>
+                Lay beside me, under wicked sky <br>
+                Through black of day, dark of night <br>
+                We share this, paralysed <br>
+                The door cracks open <br>
+                But there's no sun shining through <br>
+                Black heart scarring darker still <br> <br>
+                But there's no sun shining through <br>
+                No, there's no sun shining through <br>
+                No, there's no sun shining <br> <br>
+                What I've felt, what I've known <br>
+                Turn the pages, turn the stone <br>
+                Behind the door, should I open it for you? <br>
+                Yeah, what I've felt, what I've known <br>
+                Sick and tired, I stand alone <br>
+                Could you be there? <br>
+                'Cause I'm the one who waits for you <br>
+                Or are you unforgiven too? <br> <br>
+                Come lay beside me <br>
+                This won't hurt, I swear <br>
+                She loves me not, she loves me still <br>
+                But she'll never love again <br>
+                She laid beside me but she'll be there when I'm gone <br>
+                Black heart scarring darker still <br> <br>
+                Yes, she'll be there when I'm gone <br>
+                Yes, she'll be there when I'm gone <br>
+                Dead sure she'll be there <br> <br>
+                What I've felt, what I've known <br>
+                Turn the pages, turn the stone <br>
+                Behind the door, should I open it for you? <br>
+                Yeah, what I've felt, what I've known <br>
+                Sick and tired, I stand alone <br>
+                Could you be there? <br>
+                'Cause I'm the one who waits for you <br>
+                Or are you unforgiven too? <br> <br>
+                Lay beside me <br>
+                Tell me what I've done <br>
+                The door is closed, so are your eyes <br>
+                But now I see the sun <br>
+                Now I see the sun <br>
+                Yes, now I see it <br> <br>
+                What I've felt, what I've known <br>
+                Turn the pages, turn the stone <br>
+                Behind the door, should I open it for you? <br>
+                Yeah, what I've felt, what I've known <br>
+                So sick and tired of staying alone <br>
+                Could you be there? <br>
+                'Cause I'm the one who waits <br>
+                The one who waits for you <br> <br>
+                What I've felt, what I've known <br>
+                Turn the pages, turn the stone <br>
+                Behind the door, should I open it for you? <br>
+                (So I dub thee unforgiven) <br> <br>
+                Oh, what I've felt <br>
+                Oh, what I've known <br>
+                I take this key (never free) <br>
+                And I bury it (never me) in you <br>
+                Because you're unforgiven, too <br>
+                (Never free, never me) <br>
+                'Cause you're unforgiven, too <br> <br>
+            </p>
+        </div>
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                Deite-se ao meu lado <br>
+                Diga-me o que fizeram <br>
+                Fale as palavras que quero ouvir <br>
+                Para fazer meus demônios fugirem <br> <br>
+
+                A porta está trancada agora <br>
+                Mas se abrirá se você for sincera <br>
+                Se você puder entender a mim <br>
+                Então eu poderei entender a você <br> <br>
+
+                Deite-se ao meu lado, sob o céu perverso <br>
+                Através da escuridão do dia, da noite sombria <br>
+                Compartilhamos isso, paralisados <br>
+                A porta se entreabre <br>
+                Mas nenhum raio de sol atravessa <br>
+                Coração negro cicatrizando cada vez mais escuro <br> <br>
+
+                Mas nenhum raio de sol atravessa <br>
+                Não, nenhum raio de sol atravessa <br>
+                Não, nenhum raio de sol <br> <br>
+
+                O que eu senti, o que eu conheci <br>
+                Vire as páginas, vire a pedra <br>
+                Atrás da porta, devo abri-la para você? <br>
+                Yeah, o que eu senti, o que eu conheci <br>
+                Doente e cansado, fico sozinho <br>
+                Você estaria lá? <br>
+                Porque sou eu quem espera por você <br>
+                Ou você também é imperdoável? <br> <br>
+
+                Venha, deite-se ao meu lado <br>
+                Isso não vai doer, eu juro <br>
+                Ela não me ama, mas ainda me quer <br>
+                Mas ela nunca mais amará de novo <br>
+                Ela se deitou ao meu lado, mas estará lá quando eu me for <br>
+                Coração negro cicatrizando cada vez mais escuro <br> <br>
+
+                Sim, ela estará lá quando eu me for <br>
+                Sim, ela estará lá quando eu me for <br>
+                Tenho certeza de que ela estará lá <br> <br>
+
+                O que eu senti, o que eu conheci <br>
+                Vire as páginas, vire a pedra <br>
+                Atrás da porta, devo abri-la para você? <br>
+                Yeah, o que eu senti, o que eu conheci <br>
+                Doente e cansado, fico sozinho <br>
+                Você estaria lá? <br>
+                Porque sou eu quem espera por você <br>
+                Ou você também é imperdoável? <br> <br>
+
+                Deite-se ao meu lado <br>
+                Diga-me o que eu fiz <br>
+                A porta está fechada, e também seus olhos <br>
+                Mas agora vejo o sol <br>
+                Agora vejo o sol <br>
+                Sim, agora eu o vejo <br> <br>
+
+                O que eu senti, o que eu conheci <br>
+                Vire as páginas, vire a pedra <br>
+                Atrás da porta, devo abri-la para você? <br>
+                Yeah, o que eu senti, o que eu conheci <br>
+                Tão doente e cansado de ficar sozinho <br>
+                Você estaria lá? <br>
+                Porque sou eu quem espera <br>
+                Aquele que espera por você <br> <br>
+
+                O que eu senti, o que eu conheci <br>
+                Vire as páginas, vire a pedra <br>
+                Atrás da porta, devo abri-la para você? <br>
+                (Então eu te declaro imperdoável) <br> <br>
+
+                Oh, o que eu senti <br>
+                Oh, o que eu conheci <br>
+                Eu pego essa chave (nunca livre) <br>
+                E a enterro (nunca eu) em você <br>
+                Porque você também é imperdoável <br>
+                (Nunca livre, nunca eu) <br>
+                Porque você também é imperdoável <br> <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'The Unforgiven II', da banda Metallica, é uma continuação da narrativa iniciada na canção 'The
+            Unforgiven', presente no álbum 'Metallica' (também conhecido como 'The Black Album'), lançado em 1991.
+            Enquanto a primeira música aborda temas como a pressão da sociedade e a perda da inocência, 'The Unforgiven
+            II' parece mergulhar mais profundamente na busca por compreensão e conexão emocional entre duas pessoas que
+            compartilham sentimentos de isolamento e dor. <br> <br>
+
+            A letra da música sugere um diálogo íntimo entre o eu lírico e uma figura que também parece carregar o peso
+            de erros passados, indicado pelo refrão 'Or are you unforgiven too?'. A repetição das palavras 'What I've
+            felt, What I've known' e a referência a 'Turn the pages, Turn the stone' podem simbolizar a ideia de
+            revisitar o passado e enfrentar as verdades ocultas, talvez como uma forma de cura ou aceitação. A menção à
+            porta que se abre se a outra pessoa for verdadeira sugere a possibilidade de redenção e a esperança de que a
+            honestidade possa levar a um entendimento mútuo. <br> <br>
+
+            Musicalmente, 'The Unforgiven II' mantém o estilo característico do Metallica, com riffs de guitarra pesados
+            e uma melodia que transita entre o sombrio e o melódico, refletindo a tensão emocional da letra. A banda,
+            conhecida por seu papel fundamental no desenvolvimento do heavy metal, utiliza a música como um veículo para
+            explorar temas complexos e pessoais, e 'The Unforgiven II' é um exemplo de como eles conseguem combinar peso
+            musical com profundidade lírica, criando uma experiência cativante e reflexiva para os ouvintes. <br> <br>
+            <br> <br> <br> <br> <br> <br>
+        </p>
+    </div>
+
+    <button onclick="history.back()" class="voltar-btn">⟵ Voltar</button>
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/6nswV1Lz3OZkaiCJfmVUOa?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="musica-container"></iframe>
+</body>
+
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cyanide</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, rgba(79, 79, 79, 1), rgba(0, 0, 0, 0.8));
+            color: #fff;
+        }
+
+        .top-section {
+            background: linear-gradient(to top, rgba(50, 50, 50, 1), #141414);
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://upload.wikimedia.org/wikipedia/pt/9/94/Death_Magnetic.jpg" alt="Capa do Álbum Death Magnetic"
+            class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>Cyanide - Remastered</h1>
+            <p class="meta">Metallica • Death Magnetic • 2008 • 6:39</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                Are we having fun yet? <br>
+                Well, knock that shit off. Just kidding <br>
+                We're gonna take you all to another level <br>
+                Right, Vancouver? <br>
+                Okay. We're playing stuff from every album <br>
+                And right now we're playing something from one of my favorite, "Death Magnetic" <br>
+                Do you like it? Excellent <br>
+                Alright. This one, we need all the Metallica's family help on this one <br>
+                You'll know when <br>
+                It's entitled "Cyanide" <br>
+                Sleep and dream of this <br>
+                Death angel's kiss <br>
+                Brings final bliss <br>
+                Completely <br> <br>
+                Empty, they say <br>
+                Death, won't you let me stay? <br>
+                Empty, they say <br>
+                Death, hear me call your name <br> <br>
+                Yeah, call your name <br>
+                Suicide, I've already died <br>
+                It's just the funeral I've been waiting for <br>
+                Cyanide, living dead inside <br>
+                Break this empty shell forever more <br>
+                Wait, wait patiently <br>
+                Your death black wings <br>
+                Unfolding sleep <br>
+                Spreading over me <br> <br>
+                Empty, they say <br>
+                Death, won't you let me stay? <br>
+                Empty, they say <br>
+                Death, hear me call your name <br> <br>
+                Yeah, call your name <br>
+                Suicide, I've already died <br>
+                It's just the funeral I've been waiting for <br>
+                Cyanide, getting dead inside <br>
+                Break this empty shell forever more <br>
+                Say, is that rain or are they tears? <br>
+                That stained your concrete face for years <br>
+                The crying, weeping, shedding strife <br>
+                Year after year, life after life <br>
+                An air of freshly broken ground <br>
+                A concrete angel lit right down <br>
+                Upon the grave which swallows fast <br>
+                It's peace at last, hey, it's peace at last <br>
+                Empty, they say <br>
+                Death, won't you let me stay? <br>
+                Empty, they say <br>
+                Death, hear me call your name <br> <br>
+                Yeah, call your name <br>
+                Suicide, I've already died <br>
+                It's just the funeral I've been waiting for <br>
+                Cyanide, living dead inside <br>
+                Break this empty shell forever more <br> <br>
+                Forever more, forever more <br>
+                It's just the funeral I've been waiting for <br>
+                Cyanide <br> <br>
+            </p>
+        </div>
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                Já estamos nos divertindo? <br>
+                Bem, corta essa merda. Tô brincando <br>
+                Vamos levar todos vocês para outro nível <br>
+                Certo, Vancouver? <br>
+                Ok. Estamos tocando músicas de todos os álbuns <br>
+                E agora estamos tocando algo de um dos meus favoritos, "Death Magnetic" <br>
+                Vocês gostam? Excelente <br>
+                Beleza. Essa aqui, vamos precisar da ajuda de toda a família Metallica <br>
+                Vocês saberão quando <br>
+                Ela se chama "Cyanide" <br>
+                Durma e sonhe com isso <br>
+                O beijo do anjo da morte <br>
+                Traz o prazer final <br>
+                Completamente <br> <br>
+
+                Vazio, eles dizem <br>
+                Morte, você não vai me deixar ficar? <br>
+                Vazio, eles dizem <br>
+                Morte, ouça-me chamar seu nome <br> <br>
+
+                Sim, chamar seu nome <br>
+                Suicídio, eu já morri <br>
+                Esse é apenas o funeral pelo qual eu estive esperando <br>
+                Cianeto, morto-vivo por dentro <br>
+                Rompa essa carcaça vazia para sempre <br>
+                Espere, espere pacientemente <br>
+                Suas asas negras da morte <br>
+                Desdobrando o sono <br>
+                Se espalhando sobre mim <br> <br>
+
+                Vazio, eles dizem <br>
+                Morte, você não vai me deixar ficar? <br>
+                Vazio, eles dizem <br>
+                Morte, ouça-me chamar seu nome <br> <br>
+
+                Sim, chamar seu nome <br>
+                Suicídio, eu já morri <br>
+                Esse é apenas o funeral pelo qual eu estive esperando <br>
+                Cianeto, morrendo por dentro <br>
+                Rompa essa carcaça vazia para sempre <br>
+                Diga, isso é chuva ou são lágrimas? <br>
+                Que mancharam seu rosto de concreto por anos <br>
+                O choro, lamento, a dor derramada <br>
+                Ano após ano, vida após vida <br>
+                Um ar de solo recém-partido <br>
+                Um anjo de concreto deitado ali <br>
+                Sobre o túmulo que engole rápido <br>
+                É paz, enfim — ei, é paz, enfim <br>
+                Vazio, eles dizem <br>
+                Morte, você não vai me deixar ficar? <br>
+                Vazio, eles dizem <br>
+                Morte, ouça-me chamar seu nome <br> <br>
+
+                Sim, chamar seu nome <br>
+                Suicídio, eu já morri <br>
+                Esse é apenas o funeral pelo qual eu estive esperando <br>
+                Cianeto, morto-vivo por dentro <br>
+                Rompa essa carcaça vazia para sempre <br> <br>
+
+                Para sempre, para sempre <br>
+                Esse é apenas o funeral pelo qual eu estive esperando <br>
+                Cianeto <br> <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'Cyanide' do Metallica, uma banda conhecida por suas letras profundas e complexas, mergulha em
+            temas sombrios de morte e desespero. A letra parece explorar a experiência de alguém que já se sente morto
+            por dentro, usando a metáfora do cianeto, um veneno conhecido, para descrever essa sensação de vazio e
+            desconexão com a vida. <br> <br>
+
+            O refrão 'Suicide / I've already died / You're just the funeral / I've been waiting for' sugere uma
+            resignação ao estado de morte emocional em que o indivíduo se encontra, indicando que o suicídio não é o ato
+            de morrer, mas um ritual simbólico para algo que já ocorreu internamente. A repetição das palavras 'Empty
+            they say' reforça a ideia de um vazio existencial, onde a morte é vista como uma companheira constante,
+            quase como um desejo de escapar de uma realidade insuportável. <br> <br>
+
+            A estrofe que menciona 'An air of freshly broken ground / A concrete angel lit right down' pode ser
+            interpretada como uma referência a um túmulo recém-feito, simbolizando talvez uma libertação final ou um
+            novo começo após o fim do sofrimento. Essa imagem poética destaca a dualidade entre a dor e a paz, entre a
+            luta e a aceitação, temas recorrentes nas músicas de Metallica que exploram a complexidade da condição
+            humana. <br> <br> <br> <br> <br> <br>
+        </p>
+    </div>
+
+    <button onclick="history.back()" class="voltar-btn">⟵ Voltar</button>
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/2PSXyiERCaNmRyFA06UMjq?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="musica-container"></iframe>
+</body>
+
+</html>

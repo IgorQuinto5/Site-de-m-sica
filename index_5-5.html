@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Wherever I May Roam</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #2b2b2b, #0d0d0d 80%, #000000);
+            color: #fff;
+        }
+
+        .top-section {
+            background: linear-gradient(to top, #1e1e1e, #000000);
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://gcdn.emol.cl/los-90/files/2019/04/metallica-black-album-1.jpg" alt="Capa do Álbum Black Album"
+            class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>Wherever I May Roam - Remastered</h1>
+            <p class="meta">Metallica • Metallica (Black Album) • 1991 • 6:44</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                And the road becomes my bride <br>
+                I have stripped of all but pride <br>
+                So in her I do confide <br>
+                And she keeps me satisfied <br>
+                Gives me all I need <br>
+                And with dust in throat I crave <br>
+                Only knowledge will I save <br>
+                To this game you stay a slave <br> <br>
+                Rover, wanderer <br>
+                Nomad, vagabond <br>
+                Call me what you will <br>
+                But I'll take my time anywhere <br>
+                Free to speak my mind anywhere <br>
+                Never find anywhere <br>
+                Anywhere I may roam <br>
+                Where I lay my head is home <br> <br>
+                And the earth becomes my throne <br>
+                I adapt to the unknown <br>
+                Under wandering stars I've grown <br>
+                By myself but not alone <br>
+                I ask no one <br> <br>
+                And my ties are severed clean <br>
+                The less I have the more I gain <br>
+                Off the beaten path I reign <br>
+                Rover wanderer <br>
+                Nomad vagabond <br>
+                Call me what you will <br> <br>
+                But I'll take my time anywhere <br>
+                I'm free to speak my mind anywhere <br>
+                Nevermind anywhere <br>
+                Anywhere I may roam <br>
+                Where I lay my head is home <br> <br>
+                But I'll take my time anywhere <br>
+                Free to speak my mind <br>
+                Nevemind anywhere <br>
+                Anywhere I may roam <br>
+                Where I lay my head is home (fuck yeah) <br> <br>
+                But I'll take my time anywhere <br>
+                Free to speak my mind anywhere <br>
+                Nevemind anywhere <br>
+                Anywhere I may roam <br>
+                Where I lay my head is home <br>
+                Carved upon my stone <br>
+                My body lie, but still I roam yeah yeah <br> <br>
+                Wherever I may roam <br>
+                Wherever I may roam <br>
+                Wherever I may roam <br>
+                Wherever I may wander <br>
+                (Wander, wander) <br>
+                Wherever I may roam (yeah yeah yeah) <br> <br>
+            </p>
+        </div>
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                E a estrada se torna minha noiva <br>
+                Me despido de tudo, menos do orgulho <br>
+                Então é nela que confio <br>
+                E ela me mantém satisfeito <br>
+                Me dá tudo que preciso <br>
+                E com a garganta empoeirada, eu anseio <br>
+                Somente o conhecimento eu salvarei <br>
+                Neste jogo você continua sendo escravo <br> <br>
+
+                Viajante, errante <br>
+                Nômade, vagabundo <br>
+                Me chame do que quiser <br>
+                Mas eu aproveitarei meu tempo em qualquer lugar <br>
+                Livre para dizer o que penso em qualquer lugar <br>
+                Nunca encontrarei em lugar algum <br>
+                Em qualquer lugar por onde eu vague <br>
+                Onde eu deitar minha cabeça é o meu lar <br> <br>
+
+                E a terra se torna meu trono <br>
+                Eu me adapto ao desconhecido <br>
+                Sob estrelas errantes eu cresci <br>
+                Por conta própria, mas não sozinho <br>
+                Não peço nada a ninguém <br> <br>
+
+                E meus laços são cortados limpos <br>
+                Quanto menos tenho, mais eu ganho <br>
+                Fora do caminho comum, eu reino <br>
+                Viajante, errante <br>
+                Nômade, vagabundo <br>
+                Me chame do que quiser <br> <br>
+
+                Mas eu aproveitarei meu tempo em qualquer lugar <br>
+                Sou livre para dizer o que penso em qualquer lugar <br>
+                Tanto faz onde for <br>
+                Em qualquer lugar por onde eu vague <br>
+                Onde eu deitar minha cabeça é o meu lar <br> <br>
+
+                Mas eu aproveitarei meu tempo em qualquer lugar <br>
+                Livre para dizer o que penso <br>
+                Tanto faz onde for <br>
+                Em qualquer lugar por onde eu vague <br>
+                Onde eu deitar minha cabeça é o meu lar (isso aí) <br> <br>
+
+                Mas eu aproveitarei meu tempo em qualquer lugar <br>
+                Livre para dizer o que penso em qualquer lugar <br>
+                Tanto faz onde for <br>
+                Em qualquer lugar por onde eu vague <br>
+                Onde eu deitar minha cabeça é o meu lar <br>
+                Gravado sobre minha lápide <br>
+                Meu corpo jaz, mas ainda vago, yeah yeah <br> <br>
+
+                Onde quer que eu vague <br>
+                Onde quer que eu vague <br>
+                Onde quer que eu vague <br>
+                Onde quer que eu perambule <br>
+                (Perambule, perambule) <br>
+                Onde quer que eu vague (yeah yeah yeah) <br> <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'Wherever I May Roam' do Metallica é uma ode à liberdade e ao espírito nômade, elementos que
+            são frequentemente celebrados no rock e no metal. Lançada no álbum 'Metallica', também conhecido como
+            'The Black Album', em 1991, a canção reflete a filosofia de vida de quem não se prende a um lugar fixo e
+            encontra satisfação na jornada e na constante busca por conhecimento e experiências. A letra fala de uma
+            pessoa que se despojou de tudo, exceto do orgulho, e encontrou na estrada uma parceira fiel, que lhe
+            proporciona tudo o que precisa.<br> <br>
+
+            A estrada e a terra são personificadas na música, tornando-se a 'noiva' e o 'trono' do narrador,
+            respectivamente. Essas metáforas reforçam a ideia de que o mundo é o verdadeiro lar do indivíduo, e não
+            um lugar específico. A letra também destaca a importância da autossuficiência e da independência, pois o
+            protagonista da canção afirma que cresceu sob estrelas errantes, por si mesmo, mas não sozinho. A
+            mensagem é clara: a verdadeira liberdade vem da capacidade de se adaptar ao desconhecido e de se
+            desvencilhar dos laços que restringem.<br> <br>
+
+            O refrão 'Anywhere I roam, where I lay my head is home' é um poderoso lema para aqueles que vivem sem
+            fronteiras fixas. A música celebra a capacidade de falar livremente e de tomar o próprio tempo,
+            independentemente de onde se esteja. 'Wherever I May Roam' não é apenas uma canção sobre viagens
+            físicas, mas também sobre a jornada interior e a busca incessante pelo autoconhecimento e pela
+            autenticidade. O Metallica, com seu estilo marcante de heavy metal, captura perfeitamente o espírito de
+            aventura e a sede de liberdade que muitos de seus fãs valorizam. <br> <br> <br> <br> <br> <br>
+        </p>
+    </div>
+    <button onclick="history.back()" class="voltar-btn">⟵ Voltar</button>
+
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/3quYoE7KgIIaqVXPd7MpX0?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="musica-container"></iframe>
+</body>
+
+</html>

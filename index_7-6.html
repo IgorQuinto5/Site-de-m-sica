@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Slither</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* degradê principal do álbum Reload */
+            background: linear-gradient(to bottom, rgba(118, 30, 15, 1), rgba(0, 0, 0, 0.8));
+            color: #fff;
+        }
+
+        .top-section {
+            /* topo levemente mais escuro para contraste */
+            background: linear-gradient(to top, rgba(80, 20, 10, 1), #000000);
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/Metallica_-_Reload_cover.jpg"
+            alt="Capa do Álbum Reload" class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>Slither - Remastered</h1>
+            <p class="meta">Metallica • Reload • 1997 • 5:13</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                Don't go looking for snakes you might find them <br>
+                Don't send your eyes to the sun you might blind them <br>
+                Haven't I seen you here before? <br> <br>
+                Oh, watch the puppets dancing <br>
+                Yeah, see the clowns fall down <br>
+                Hey, tie your tap shoes tightly <br>
+                Yeah, wear them into town <br> <br>
+                See you crawling <br>
+                See you crawling in <br> <br>
+                Don't go looking for snakes you might find them <br>
+                Don't send your eyes to the sun you might blind them <br>
+                Haven't I seen you here before? <br>
+                There ain't no heroes here, no, no more <br> <br>
+                Hey hey, oh, play the game so nicely <br>
+                Oh, check, it's your move now <br>
+                Yeah, we're standing in this jungle <br>
+                Yeah, with serpents I have found <br> <br>
+                See you crawling <br>
+                See you crawling in <br> <br>
+                Don't go looking for snakes you might find them <br>
+                Don't send your eyes to the sun you might blind them <br>
+                Haven't I seen you here before? <br>
+                Have your heroes disappeared? <br> <br>
+                See you crawling <br>
+                See you crawling in <br> <br>
+                So don't go looking for snakes you might find them <br>
+                Don't send your eyes to the sun you might blind them <br>
+                Haven't I seen you here before? <br>
+                No, there ain't no heroes here, no, no <br> <br>
+                Haven't I seen you here before? <br>
+                No, there ain't no heroes here <br> <br>
+                Don't go looking for snakes you might find them <br>
+                Yeah, haven't I seen you here before? <br>
+                Have your heroes disappeared? <br> <br>
+                Don't send your eyes to the sun you might blind them <br> <br>
+            </p>
+        </div>
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                Não vá procurar por cobras, você pode encontrá-las <br>
+                Não mande seus olhos ao sol, você pode cegá-los <br>
+                Já não te vi por aqui antes? <br> <br>
+
+                Oh, veja os fantoches dançando <br>
+                Yeah, veja os palhaços caírem <br>
+                Hey, amarre bem seus sapatos de sapateado <br>
+                Yeah, use-os pela cidade <br> <br>
+
+                Vejo você rastejando <br>
+                Vejo você rastejando pra dentro <br> <br>
+
+                Não vá procurar por cobras, você pode encontrá-las <br>
+                Não mande seus olhos ao sol, você pode cegá-los <br>
+                Já não te vi por aqui antes? <br>
+                Não há mais heróis aqui, não, não há <br> <br>
+
+                Hey hey, oh, jogue o jogo tão bem <br>
+                Oh, veja, é sua jogada agora <br>
+                Yeah, estamos de pé nessa selva <br>
+                Yeah, com serpentes que encontrei <br> <br>
+
+                Vejo você rastejando <br>
+                Vejo você rastejando pra dentro <br> <br>
+
+                Não vá procurar por cobras, você pode encontrá-las <br>
+                Não mande seus olhos ao sol, você pode cegá-los <br>
+                Já não te vi por aqui antes? <br>
+                Seus heróis desapareceram? <br> <br>
+
+                Vejo você rastejando <br>
+                Vejo você rastejando pra dentro <br> <br>
+
+                Então não vá procurar por cobras, você pode encontrá-las <br>
+                Não mande seus olhos ao sol, você pode cegá-los <br>
+                Já não te vi por aqui antes? <br>
+                Não, não há heróis aqui, não, não <br> <br>
+
+                Já não te vi por aqui antes? <br>
+                Não, não há heróis aqui <br> <br>
+
+                Não vá procurar por cobras, você pode encontrá-las <br>
+                Yeah, já não te vi por aqui antes? <br>
+                Seus heróis desapareceram? <br> <br>
+
+                Não mande seus olhos ao sol, você pode cegá-los <br> <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'Slither' do Metallica aborda temas de desilusão, perigo e a busca por algo que pode ser
+            prejudicial. A letra começa com um aviso claro: 'Don't go looking for snakes, you might find them' (Não vá
+            procurar por cobras, você pode encontrá-las). Essa metáfora sugere que buscar problemas ou situações
+            perigosas pode levar a consequências indesejadas. A referência ao sol, 'Don't send your eyes to the sun, you
+            might blind them' (Não mande seus olhos para o sol, você pode cegá-los), reforça a ideia de que algumas
+            buscas podem ser autodestrutivas. <br> <br>
+
+            A repetição da frase 'Haven't I seen you here before?' (Eu não te vi aqui antes?) sugere um ciclo de
+            comportamentos repetitivos e a sensação de déjà vu, como se o sujeito da música estivesse preso em um padrão
+            de ações que não levam a lugar nenhum. A ausência de heróis, mencionada várias vezes, 'There ain't no heroes
+            here' (Não há heróis aqui), indica uma perda de esperança e a desilusão com figuras que antes poderiam ter
+            sido vistas como salvadoras ou inspiradoras. <br> <br>
+
+            A música também faz referência a um jogo, 'Play the game so nicely' (Jogue o jogo tão bem), o que pode
+            simbolizar a vida como um jogo de xadrez onde cada movimento é crucial. No entanto, a sensação de estar
+            'crawling' (rastejando) sugere uma luta constante e uma sensação de impotência. A letra, com suas metáforas
+            e imagens vívidas, pinta um quadro sombrio de uma busca que leva à desilusão e ao reconhecimento de que os
+            heróis, ou as soluções fáceis, não existem mais. A música é um reflexo da complexidade e das dificuldades da
+            vida, onde as buscas podem ser perigosas e as expectativas frequentemente não são atendidas. <br> <br> <br>
+            <br> <br> <br> <br> <br>
+        </p>
+    </div>
+
+    <button onclick="history.back()" class="voltar-btn">⟵ Voltar</button>
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/1R29PfqelwVMRPhg5fn0lD?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="musica-container"></iframe>
+</body>
+
+</html>

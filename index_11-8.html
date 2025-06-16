@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Chasing Light</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, rgba(146, 145, 0, 1), rgba(0, 0, 0, 0.8));
+            color: #fff;
+        }
+
+        .top-section {
+            background: linear-gradient(to top, rgba(100, 100, 0, 1), #141414);
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://i.redd.it/61eac47i5h3a1.jpg" alt="Capa do Álbum 72 Seasons" class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>Chasing Light</h1>
+            <p class="meta">Metallica • 72 Seasons • 2023 • 6:45</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                There's no light <br> <br>
+                Ooh, down and out as darkness falls <br>
+                So much more than he can take <br>
+                Oh, shakes the cage in deep withdrawals <br>
+                Come on, give the boy a break <br> <br>
+                Oh, he will break <br>
+                Please don't mistake <br> <br>
+                Chase that light, lean on me <br>
+                Face that fight, lean on me <br>
+                Catch your fall, lean on me <br>
+                End it all, lean on me <br> <br>
+                Struggle on 'cause without darkness <br>
+                Without darkness there's no light <br> <br>
+                Oh, lost his way through wicked streets <br>
+                But he is someone's little boy <br>
+                Oh, all the love a young one needs <br>
+                Thoughtless elders have destroyed <br> <br>
+                Is destroyed <br>
+                He's just a boy <br> <br>
+                Chase that light, lean on me <br>
+                Face that fight, lean on me <br>
+                Catch your fall, lean on me <br>
+                End it all, lean on me <br> <br>
+                Struggle on 'cause without darkness <br>
+                Without darkness there's no light <br> <br>
+                One step down, lock it off from you <br>
+                One step down, with apathy, look straight through <br>
+                One step down, turn so you won't see <br>
+                One step down, he's just like you and me <br> <br>
+                Chase that light, lean on me <br>
+                Face that fight, lean on me <br>
+                Catch your fall, lean on me <br>
+                End it all, lean on me <br> <br>
+                Struggle on 'cause without darkness <br>
+                Without darkness there's no light <br>
+                There's no light <br> <br>
+            </p>
+        </div>
+
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                Não há luz <br> <br>
+
+                Ooh, caído e acabado enquanto a escuridão cai <br>
+                Muito mais do que ele pode aguentar <br>
+                Oh, sacode a jaula em abstinência profunda <br>
+                Vamos lá, dê uma chance ao garoto <br> <br>
+
+                Oh, ele vai quebrar <br>
+                Por favor, não se engane <br> <br>
+
+                Persiga essa luz, apoie-se em mim <br>
+                Enfrente essa luta, apoie-se em mim <br>
+                Segure sua queda, apoie-se em mim <br>
+                Acabe com tudo, apoie-se em mim <br> <br>
+
+                Lute porque sem escuridão <br>
+                Sem escuridão não há luz <br> <br>
+
+                Oh, perdeu-se por ruas perversas <br>
+                Mas ele é o filhinho de alguém <br>
+                Oh, todo o amor que um jovem precisa <br>
+                Anciãos descuidados destruíram <br> <br>
+
+                Está destruído <br>
+                Ele é apenas um garoto <br> <br>
+
+                Persiga essa luz, apoie-se em mim <br>
+                Enfrente essa luta, apoie-se em mim <br>
+                Segure sua queda, apoie-se em mim <br>
+                Acabe com tudo, apoie-se em mim <br> <br>
+
+                Lute porque sem escuridão <br>
+                Sem escuridão não há luz <br> <br>
+
+                Um passo para baixo, bloqueie-o de você <br>
+                Um passo para baixo, com apatia, olhe direto através <br>
+                Um passo para baixo, vire para não ver <br>
+                Um passo para baixo, ele é como você e eu <br> <br>
+
+                Persiga essa luz, apoie-se em mim <br>
+                Enfrente essa luta, apoie-se em mim <br>
+                Segure sua queda, apoie-se em mim <br>
+                Acabe com tudo, apoie-se em mim <br> <br>
+
+                Lute porque sem escuridão <br>
+                Sem escuridão não há luz <br>
+                Não há luz <br> <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'Chasing Light' do Metallica aborda temas profundos e emocionais, centrando-se na luta interna de
+            um indivíduo que enfrenta a escuridão e a adversidade. A letra começa descrevendo um estado de desespero e
+            isolamento, onde a escuridão parece dominar. A metáfora da 'escuridão' representa os desafios e as
+            dificuldades que a pessoa enfrenta, enquanto a 'luz' simboliza a esperança e a redenção. A repetição da
+            frase 'lean on me' sugere a importância do apoio e da solidariedade em tempos difíceis, enfatizando que
+            ninguém deve enfrentar suas batalhas sozinho.<br><br>
+
+            A canção também toca em questões de negligência e abandono, especialmente na linha 'he is someone's little
+            boy', que destaca a vulnerabilidade de um jovem que foi deixado à própria sorte. A crítica aos 'thoughtless
+            elders' sugere que a falta de orientação e cuidado por parte dos mais velhos contribuiu para a situação
+            difícil do protagonista. Essa parte da letra traz à tona a importância da responsabilidade e do cuidado
+            intergeracional, mostrando como a falta de apoio pode ter consequências devastadoras.<br><br>
+
+            Por fim, a música reforça a ideia de que a luta contra a escuridão é uma parte inevitável da vida. A frase
+            'without darkness, there's no light' encapsula a dualidade da existência humana, onde os momentos de
+            dificuldade são necessários para que possamos apreciar e alcançar a luz. O Metallica, conhecido por suas
+            letras introspectivas e poderosas, utiliza essa música para transmitir uma mensagem de resiliência e
+            esperança, incentivando os ouvintes a perseverar e buscar a luz, mesmo nos momentos mais sombrios.
+            <br><br><br><br><br><br>
+        </p>
+    </div>
+
+    <button class="voltar-btn" onclick="history.back()">⟵ Voltar</button>
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/0aHwh2rqyJNN0eZ4sGZLEt?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="musica-container"></iframe>
+</body>
+
+</html>

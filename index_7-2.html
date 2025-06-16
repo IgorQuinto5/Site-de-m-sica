@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>The Memory Remain</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* degradê principal do álbum Reload */
+            background: linear-gradient(to bottom, rgba(118, 30, 15, 1), rgba(0, 0, 0, 0.8));
+            color: #fff;
+        }
+
+        .top-section {
+            /* topo levemente mais escuro para contraste */
+            background: linear-gradient(to top, rgba(80, 20, 10, 1), #000000);
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/Metallica_-_Reload_cover.jpg"
+            alt="Capa do Álbum Reload" class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>The Memory Remain - Remastered</h1>
+            <p class="meta">Metallica • Reload • 1997 • 4:39</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                Fortune, fame <br>
+                Mirror, vain <br>
+                Gone insane <br>
+                But the memory remains <br> <br>
+                Heavy rings on fingers wave <br>
+                Another star denies the grave <br>
+                See the nowhere crowd cry the nowhere tears of honor <br>
+                Like twisted vines that grow <br>
+                Hide and swallow mansions whole <br>
+                Dim the light of an already faded prima donna <br> <br>
+                Fortune, fame <br>
+                Mirror, vain <br>
+                Gone insane <br>
+                Fortune, fame <br>
+                Mirror, vain <br>
+                Gone insane <br>
+                But the memory remains <br> <br>
+                Heavy rings hold cigarettes <br>
+                Up to lips that time forgets <br>
+                While the Hollywood sun sets behind your back <br>
+                And can't the band play on? <br>
+                Just listen, they play my song <br>
+                Ash to ash <br>
+                Dust to dust <br>
+                Fade to black <br> <br>
+                Fortune, fame <br>
+                Mirror, vain <br>
+                Gone insane <br>
+                Fortune, fame <br>
+                Mirror, vain <br>
+                Gone insane <br>
+                Dance, little tin goddess <br> <br>
+                La, da, da, da, la, da, da, da, la, da, da, da <br>
+                La, da, da, da, la, da, da, da, la, da, da, da <br>
+                La, da, da, da, la, da, da, da, la, da, da, da <br>
+                La, da, da, da, la, da, da, da, la, da, da, da <br> <br>
+                Drift away <br>
+                Fade away, little tin goddess <br>
+                Ash to ash <br>
+                Dust to dust <br>
+                Fade to black <br> <br>
+                Fortune, fame <br>
+                Mirror, vain <br>
+                Gone insane <br>
+                Fortune, fame <br>
+                Mirror, vain <br>
+                Gone insane <br>
+                But the memory remains <br> <br>
+                Ash to ash <br>
+                Dust to dust <br>
+                Fades to black <br>
+                The memory remains, yeah <br>
+                To this faded prima donna <br>
+                Yeah, yeah, yeah, yeah <br> <br>
+                Dance, little tin goddess, dance <br> <br>
+                La, da, da, da, la, da, da, da, la, da, da, da <br>
+                La, da, da, da, la, da, da, da, la, da, da, da <br>
+                La, da, da, da, la, da, da, da, la, da, da, da <br>
+                La, da, da, da, la, da, da, da, la, da, da, da <br> <br>
+                La, da, da, da, la, da, da, da, la, da, da, da <br>
+                La, da, da, da, la, da, da, da, la, da, da, da <br>
+                La, da, da, da, la, da, da, da, la, da, da, da (say yes) <br>
+                La, da, da, da, la, da, da (at least say hello) <br>
+                La, da, da, da, la (say yes) <br>
+                La, da, da, da, la, da, da (at least say hello) <br>
+                La, da, da, da, da <br>
+                La, da, da, da, da, da <br> <br>
+            </p>
+        </div>
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                Fortuna, fama<br>
+                Espelho, vaidade<br>
+                Enlouqueceu<br>
+                Mas a lembrança permanece<br><br>
+
+                Anéis pesados acenam nos dedos<br>
+                Outra estrela nega o túmulo<br>
+                Veja a multidão do nada chorar as lágrimas do nada por honra<br>
+                Como vinhas retorcidas que crescem<br>
+                Escondem e engolem mansões inteiras<br>
+                Apagam a luz de uma prima donna já desbotada<br><br>
+
+                Fortuna, fama<br>
+                Espelho, vaidade<br>
+                Enlouqueceu<br>
+                Fortuna, fama<br>
+                Espelho, vaidade<br>
+                Enlouqueceu<br>
+                Mas a lembrança permanece<br><br>
+
+                Anéis pesados seguram cigarros<br>
+                Até lábios que o tempo esqueceu<br>
+                Enquanto o sol de Hollywood se põe atrás de você<br>
+                E a banda não pode continuar?<br>
+                Apenas ouça, eles tocam minha música<br>
+                Do pó ao pó<br>
+                Cinzas às cinzas<br>
+                Desvanecer-se para o preto<br><br>
+
+                Fortuna, fama<br>
+                Espelho, vaidade<br>
+                Enlouqueceu<br>
+                Fortuna, fama<br>
+                Espelho, vaidade<br>
+                Enlouqueceu<br>
+                Dance, pequena deusa de lata<br><br>
+
+                La, da, da, da, la, da, da, da, la, da, da, da<br>
+                La, da, da, da, la, da, da, da, la, da, da, da<br>
+                La, da, da, da, la, da, da, da, la, da, da, da<br>
+                La, da, da, da, la, da, da, da, la, da, da, da<br><br>
+
+                Flutue para longe<br>
+                Desvaneça-se, pequena deusa de lata<br>
+                Cinzas às cinzas<br>
+                Do pó ao pó<br>
+                Desvanecer-se para o preto<br><br>
+
+                Fortuna, fama<br>
+                Espelho, vaidade<br>
+                Enlouqueceu<br>
+                Fortuna, fama<br>
+                Espelho, vaidade<br>
+                Enlouqueceu<br>
+                Mas a lembrança permanece<br><br>
+
+                Cinzas às cinzas<br>
+                Do pó ao pó<br>
+                Desvanece-se para o preto<br>
+                A lembrança permanece, yeah<br>
+                Para essa prima donna desbotada<br>
+                Yeah, yeah, yeah, yeah<br><br>
+
+                Dance, pequena deusa de lata, dance<br><br>
+
+                La, da, da, da, la, da, da, da, la, da, da, da<br>
+                La, da, da, da, la, da, da, da, la, da, da, da<br>
+                La, da, da, da, la, da, da, da, la, da, da, da<br>
+                La, da, da, da, la, da, da, da, la, da, da, da<br><br>
+
+                La, da, da, da, la, da, da, da, la, da, da, da<br>
+                La, da, da, da, la, da, da, da, la, da, da, da<br>
+                La, da, da, da, la, da, da, da, la, da, da, da (diga sim)<br>
+                La, da, da, da, la, da, da (ao menos diga olá)<br>
+                La, da, da, da, la (diga sim)<br>
+                La, da, da, da, la, da, da (ao menos diga olá)<br>
+                La, da, da, da, da<br>
+                La, da, da, da, da, da<br><br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'The Memory Remains', da banda Metallica, aborda a efemeridade da fama e como, apesar do
+            esquecimento inevitável, as memórias persistem. A letra faz referência à busca incessante por fortuna e
+            fama, e como isso pode levar à vaidade e à loucura. O refrão 'But the memory remains' (Mas a memória
+            permanece) sugere que, mesmo após o brilho do sucesso ter desaparecido, o impacto deixado ainda ressoa. <br>
+            <br>
+
+            Os versos descrevem imagens de decadência e esquecimento, como anéis pesados em dedos que acenam e estrelas
+            que negam a própria mortalidade. A 'Prima Donna' desbotada é uma metáfora para uma estrela outrora adorada
+            que agora é esquecida, mas cuja presença ainda é sentida. A repetição de 'Ash to ash, dust to dust, fade to
+            black' evoca a ideia de que tudo termina e retorna ao pó, mas a memória do que foi permanece. <br> <br>
+
+            A música também critica a superficialidade de Hollywood e a indústria do entretenimento, onde o tempo é
+            esquecido e o sol se põe sem que ninguém perceba. A 'little tin goddess' (pequena deusa de lata) pode ser
+            interpretada como uma figura que representa a fragilidade e a artificialidade da fama. Metallica, conhecida
+            por suas letras profundas e críticas sociais, utiliza 'The Memory Remains' para refletir sobre a natureza
+            passageira da glória e como, no final, o que resta são as memórias que continuam a ecoar. <br> <br> <br>
+            <br> <br> <br> <br> <br>
+        </p>
+    </div>
+
+    <button onclick="history.back()" class="voltar-btn">⟵ Voltar</button>
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/6RbC38oDCIXD8V2AOU1Tjr?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="la
+        zy" id="musica-container"></iframe>
+</body>
+
+</html>

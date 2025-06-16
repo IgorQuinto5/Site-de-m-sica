@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Prince Charming</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* degradê principal do álbum Reload */
+            background: linear-gradient(to bottom, rgba(118, 30, 15, 1), rgba(0, 0, 0, 0.8));
+            color: #fff;
+        }
+
+        .top-section {
+            /* topo levemente mais escuro para contraste */
+            background: linear-gradient(to top, rgba(80, 20, 10, 1), #000000);
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/Metallica_-_Reload_cover.jpg"
+            alt="Capa do Álbum Reload" class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>Prince Charming - Remastered</h1>
+            <p class="meta">Metallica • Reload • 1997 • 6:05</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                There's a black cloud overhead <br>
+                That's me <br>
+                And the poison ivy chokes the tree <br>
+                Again it's me <br>
+                I'm the filthy one on Bourbon Street <br>
+                You walk on by <br>
+                I'm the little boy that pushes hard <br>
+                And makes it cry <br>
+                <br>
+                There's a dirty needle in your child <br>
+                Haha, stick me <br>
+                Empty bottles still in hand, still dead <br>
+                Still me <br>
+                I'm the suit and tie that breaks the street <br>
+                And still wants more <br>
+                I'm the forty-five that's in your mouth <br>
+                I'm a dirty, dirty whore <br>
+                <br>
+                Yeah <br>
+                Look, it's me <br>
+                The one who can't be free <br>
+                Much too young to focus <br>
+                But too old to see <br>
+                Hey <br>
+                Look, it's me <br>
+                When no one wants to see <br>
+                See what you brought this world <br>
+                Just what you wanna see <br>
+                Hey ma <br>
+                Hey ma, look, it's me <br>
+                <br>
+                Yeah <br>
+                He wants to become father now <br>
+                Me again, me <br>
+                The marks inside your arms spell me <br>
+                Spell only me <br>
+                I'm the nothing face that plants a bomb <br>
+                And strolls away <br>
+                I'm the one who doesn't look quite right <br>
+                As children play <br>
+                <br>
+                Yeah <br>
+                Look, it's me <br>
+                The one who can't be free <br>
+                Much too young to focus <br>
+                But too old to see <br>
+                Hey <br>
+                Look, it's me <br>
+                When no one wants to see <br>
+                See what you brought this world <br>
+                Just what you wanna see <br>
+                Hey ma <br>
+                Hey ma, look, it's me <br>
+                It's me <br>
+                <br>
+                Look up to me <br>
+                What you've been and what you've feared <br>
+                Look up to me <br>
+                Look, it's me, what you hear <br>
+                See right through me <br>
+                See the one who can't be free <br>
+                See right through me <br>
+                Look it's me when no one wants to see <br>
+                <br>
+                Hey, hey, hey <br>
+                <br>
+                Hm, now see the black cloud overhead <br>
+                That's me <br>
+                Hm, and this poison ivy chokes the tree <br>
+                Again it's me <br>
+                And I'm the filthy one on Bourbon Street <br>
+                You walk on by <br>
+                And I'm the little boy that pushes, pushes <br>
+                Makes it cry <br>
+                <br>
+                Yeah <br>
+                Look, it's me <br>
+                The one who can't be free <br>
+                Much too young to focus <br>
+                But too old to see <br>
+                Hey, hey <br>
+                Look, it's me <br>
+                When no one wants to see <br>
+                See what you brought this world <br>
+                Just what you wanna see <br>
+                Hey ma <br>
+                Hey ma, look, it's me <br>
+                Yeah <br>
+                It's me <br>
+                <br>
+                Hey ma <br>
+                Hey ma, look it's me <br>
+                <br>
+                See right though me <br>
+                Look up to me <br>
+                See right though me <br>
+                Look up to me <br> <br>
+            </p>
+        </div>
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                Há uma nuvem negra sobre minha cabeça<br>
+                Sou eu<br>
+                E a hera venenosa sufoca a árvore<br>
+                Sou eu de novo<br>
+                Sou o imundo da Bourbon Street<br>
+                Você passa direto<br>
+                Sou o garotinho que força demais<br>
+                E faz chorar<br><br>
+
+                Há uma seringa suja em seu filho<br>
+                Haha, me espete<br>
+                Garrafas vazias ainda na mão, ainda morto<br>
+                Ainda sou eu<br>
+                Sou o terno e gravata que quebra a calçada<br>
+                E ainda quer mais<br>
+                Sou o quarenta e cinco que está na sua boca<br>
+                Sou uma vadia, uma vadia suja<br><br>
+
+                Yeah<br>
+                Olha, sou eu<br>
+                Aquele que não pode ser livre<br>
+                Jovem demais pra focar<br>
+                Mas velho demais pra ver<br>
+                Hey<br>
+                Olha, sou eu<br>
+                Quando ninguém quer enxergar<br>
+                Veja o que você trouxe pra este mundo<br>
+                Apenas o que você quer ver<br>
+                Ei mãe<br>
+                Ei mãe, olha, sou eu<br><br>
+
+                Yeah<br>
+                Ele quer ser pai agora<br>
+                Eu de novo, eu<br>
+                As marcas em seus braços soletram “eu”<br>
+                Soletram só “eu”<br>
+                Sou a cara vazia que planta a bomba<br>
+                E vai embora tranquilamente<br>
+                Sou aquele que não parece certo<br>
+                Enquanto as crianças brincam<br><br>
+
+                Yeah<br>
+                Olha, sou eu<br>
+                Aquele que não pode ser livre<br>
+                Jovem demais pra focar<br>
+                Mas velho demais pra ver<br>
+                Hey<br>
+                Olha, sou eu<br>
+                Quando ninguém quer enxergar<br>
+                Veja o que você trouxe pra este mundo<br>
+                Apenas o que você quer ver<br>
+                Ei mãe<br>
+                Ei mãe, olha, sou eu<br>
+                Sou eu<br><br>
+
+                Olhe pra mim<br>
+                O que você tem sido e o que tem temido<br>
+                Olhe pra mim<br>
+                Olha, sou eu, o que você ouve<br>
+                Veja através de mim<br>
+                Veja aquele que não pode ser livre<br>
+                Veja através de mim<br>
+                Olha, sou eu, quando ninguém quer enxergar<br><br>
+
+                Hey, hey, hey<br><br>
+
+                Hm, agora veja a nuvem negra sobre a cabeça<br>
+                Sou eu<br>
+                Hm, e esta hera venenosa sufoca a árvore<br>
+                Sou eu de novo<br>
+                E sou o imundo da Bourbon Street<br>
+                Você passa direto<br>
+                E sou o garotinho que empurra, empurra<br>
+                Faz chorar<br><br>
+
+                Yeah<br>
+                Olha, sou eu<br>
+                Aquele que não pode ser livre<br>
+                Jovem demais pra focar<br>
+                Mas velho demais pra ver<br>
+                Hey, hey<br>
+                Olha, sou eu<br>
+                Quando ninguém quer enxergar<br>
+                Veja o que você trouxe pra este mundo<br>
+                Apenas o que você quer ver<br>
+                Ei mãe<br>
+                Ei mãe, olha, sou eu<br>
+                Yeah<br>
+                Sou eu<br><br>
+
+                Ei mãe<br>
+                Ei mãe, olha, sou eu<br><br>
+
+                Veja através de mim<br>
+                Olhe pra mim<br>
+                Veja através de mim<br>
+                Olhe pra mim<br><br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'Prince Charming' do Metallica é uma exploração sombria e introspectiva das facetas mais
+            perturbadoras da psique humana. A letra é repleta de imagens vívidas e perturbadoras que refletem a
+            autopercepção negativa e a luta interna do narrador. A 'nuvem negra' e a 'hera venenosa' são metáforas
+            poderosas que simbolizam a presença constante de negatividade e autodestruição. O narrador se identifica com
+            elementos sujos e degradantes, como a 'agulha suja' e o 'traje e gravata que quebra a rua', sugerindo uma
+            sensação de culpa e vergonha profundas. <br> <br>
+
+            A repetição da frase 'Hey ma, look, it's me' (Ei mãe, olha, sou eu) ao longo da música sugere um desejo
+            desesperado de reconhecimento e aceitação, mesmo que seja por aspectos negativos. O narrador parece estar
+            preso em um ciclo de autossabotagem e busca de atenção, incapaz de se libertar de sua própria escuridão. A
+            referência a 'Bourbon Street', conhecida por sua vida noturna decadente, reforça a imagem de um indivíduo
+            perdido e marginalizado. <br> <br>
+
+            A música também aborda temas de violência e autodestruição, como evidenciado pela menção de uma 'arma na
+            boca' e 'marcas nos braços'. Essas imagens sugerem uma luta interna intensa e uma sensação de desesperança.
+            O narrador se vê como uma figura que a sociedade prefere ignorar, alguém que é 'muito jovem para focar, mas
+            muito velho para ver'. Essa dicotomia entre juventude e envelhecimento pode representar a sensação de estar
+            preso entre a inocência perdida e a sabedoria não alcançada. 'Prince Charming' é uma reflexão crua e honesta
+            sobre a luta interna e a busca por identidade em meio à escuridão pessoal. <br> <br> <br> <br> <br> <br>
+            <br> <br>
+        </p>
+    </div>
+
+    <button onclick="history.back()" class="voltar-btn">⟵ Voltar</button>
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/6ax1qtm74zcC2eS8l0SLGX?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="musica-container"></iframe>
+</body>
+
+</html>

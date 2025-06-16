@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Hero of the Day</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, rgba(137, 49, 33, 255), #111);
+            color: #fff;
+        }
+
+        .top-section {
+            background: linear-gradient(to top, #743226, #111);
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/3/32/Load.jpg/250px-Load.jpg" alt="Capa do Álbum Load"
+            class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>Hero of the Day - Remastered</h1>
+            <p class="meta">Metallica • Load • 1996 • 4:21</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                Mama they try and break me <br>
+                <br>
+                The window burns to light the way back home <br>
+                A light that warms no matter where they go <br>
+                They're off to find the hero of the day <br>
+                But what if they should fall by someone's wicked way <br>
+                <br>
+                Still the window burns <br>
+                Time so slowly turns <br>
+                And someone there is sighing <br>
+                Keepers of the flames <br>
+                Do ya feel your name? <br>
+                Can't you hear your babies crying? <br>
+                <br>
+                Mama they try and break me <br>
+                Still they try and break me <br>
+                <br>
+                Excuse me while I tend to how I feel <br>
+                These things return to me that still seem real <br>
+                Now deservingly this easy chair <br>
+                But the rocking stopped by wheels of despair <br>
+                <br>
+                Don't want your aid <br>
+                But the fist I've made <br>
+                For years <br>
+                Can't hold or feel <br>
+                No I'm not all me <br>
+                So please excuse me while I tend to how I feel <br>
+                <br>
+                But now the dreams <br>
+                And waking screams <br>
+                That everlast the night <br>
+                So build a wall <br>
+                Behind it crawl <br>
+                And hide until it's light <br>
+                So can you hear your babies crying now? <br>
+                <br>
+                Still the window burns <br>
+                Time so slowly turns <br>
+                And someone there is sighing <br>
+                Keepers of the flames <br>
+                Can't you feel your name? <br>
+                Can you hear your babies crying? <br>
+                <br>
+                But now the dreams <br>
+                And waking screams <br>
+                That everlast the night <br>
+                So build a wall <br>
+                Behind it crawl <br>
+                And hide until it's light <br>
+                So can't you hear your babies crying now? <br>
+                <br>
+                Mama they try and break me <br>
+                Mama they try and break me <br>
+                Mama they try and break me <br>
+                Mama they try <br>
+                Mama they try <br>
+                Mama they try and break me <br>
+                Mama they try and break me <br>
+                Mama they try and break me <br>
+                Mama they try <br>
+                Mama they try <br> <br>
+            </p>
+        </div>
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                Mamãe, eles tentam me quebrar <br>
+                <br>
+                A janela queima para iluminar o caminho de volta pra casa <br>
+                Uma luz que aquece, não importa onde vão <br>
+                Eles saem em busca do herói do dia <br>
+                Mas e se eles caírem pelas mãos de alguém perverso? <br>
+                <br>
+                Ainda assim a janela queima <br>
+                O tempo gira tão devagar <br>
+                E alguém lá suspira <br>
+                Guardião das chamas <br>
+                Você sente seu nome? <br>
+                Não consegue ouvir seus bebês chorando? <br>
+                <br>
+                Mamãe, eles tentam me quebrar <br>
+                Ainda assim tentam me quebrar <br>
+                <br>
+                Com licença enquanto lido com o que sinto <br>
+                Essas coisas voltam para mim e ainda parecem reais <br>
+                Agora merecidamente nesta poltrona confortável <br>
+                Mas o balanço parou pelas rodas do desespero <br>
+                <br>
+                Não quero sua ajuda <br>
+                Mas o punho que formei <br>
+                Por anos <br>
+                Não consegue segurar ou sentir <br>
+                Não sou totalmente eu <br>
+                Então, por favor, me desculpe enquanto lido com o que sinto <br>
+                <br>
+                Mas agora os sonhos <br>
+                E os gritos ao acordar <br>
+                Que duram a noite toda <br>
+                Então construa um muro <br>
+                Atrás dele rasteje <br>
+                E se esconda até amanhecer <br>
+                Você consegue ouvir seus bebês chorando agora? <br>
+                <br>
+                Ainda assim a janela queima <br>
+                O tempo gira tão devagar <br>
+                E alguém lá suspira <br>
+                Guardião das chamas <br>
+                Você não sente seu nome? <br>
+                Consegue ouvir seus bebês chorando? <br>
+                <br>
+                Mas agora os sonhos <br>
+                E os gritos ao acordar <br>
+                Que duram a noite toda <br>
+                Então construa um muro <br>
+                Atrás dele rasteje <br>
+                E se esconda até amanhecer <br>
+                Você não consegue ouvir seus bebês chorando agora? <br>
+                <br>
+                Mamãe, eles tentam me quebrar <br>
+                Mamãe, eles tentam me quebrar <br>
+                Mamãe, eles tentam me quebrar <br>
+                Mamãe, eles tentam <br>
+                Mamãe, eles tentam <br>
+                Mamãe, eles tentam me quebrar <br>
+                Mamãe, eles tentam me quebrar <br>
+                Mamãe, eles tentam me quebrar <br>
+                Mamãe, eles tentam <br>
+                Mamãe, eles tentam <br>
+                <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'Hero Of The Day', da banda Metallica, é uma composição que se destaca no repertório do grupo por
+            sua abordagem introspectiva e emocional. Diferente de muitas outras canções da banda, conhecida por seu
+            estilo thrash metal, esta faixa apresenta uma sonoridade mais suave e melódica, refletindo uma fase em que o
+            Metallica explorava novas direções musicais. A letra da música parece abordar temas de luta interna,
+            resiliência e a busca por um herói em meio às adversidades da vida.<br>
+            <br>
+
+            O refrão 'Mama they try and break me' sugere uma narrativa onde o protagonista está enfrentando desafios que
+            tentam destruir seu espírito ou caráter. A repetição dessa linha transmite uma sensação de desespero e
+            resistência. A menção à 'mama' pode ser interpretada como um chamado por conforto ou um retorno à inocência
+            e segurança associadas à figura materna. A música também toca na ideia de que, apesar das dificuldades, há
+            uma luz que guia para casa, uma metáfora para a esperança ou um refúgio seguro.<br>
+            <br>
+
+            As imagens de 'dreams and waking screams' e 'build a wall, behind it crawl, and hide until it's light'
+            ilustram uma luta contra os medos e ansiedades internas. O personagem parece estar tentando se proteger das
+            forças externas que ameaçam sua estabilidade emocional. A repetição da pergunta 'Can't you hear your babies
+            crying?' pode ser uma referência à necessidade de atenção para com as próprias vulnerabilidades ou
+            responsabilidades. Em suma, 'Hero Of The Day' é uma música que fala sobre enfrentar os próprios demônios,
+            reconhecer a própria humanidade e encontrar força para continuar, mesmo quando se está sob pressão. <br>
+            <br> <br> <br>
+            <br> <br>
+        </p>
+    </div>
+
+    <button onclick="history.back()" class="voltar-btn">⟵ Voltar</button>
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/0rDPQzWWmLTv9deHn4ulG7?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="musica-container"></iframe>
+</body>
+
+</html>

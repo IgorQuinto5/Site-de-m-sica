@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Moth Into Flame</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, rgba(180, 32, 6, 1), rgba(0, 0, 0, 0.8));
+            color: #fff;
+        }
+
+        .top-section {
+            background: linear-gradient(to top, rgba(120, 20, 5, 1), #141414);
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://s2.glbimg.com/-Jc53FYibsvWjONqmTkzlLMCMaQ=/620x620/s2.glbimg.com/LphItJCwoGjL0FWtd99USPeMd-k=/s.glbimg.com/jo/g1/f/original/2016/08/18/metallica-album-art-640x640_HjSVGi9.jpeg"
+            alt="Capa do Álbum Hardwired... to Self-Destruct" class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>Moth Into Flame</h1>
+            <p class="meta">Metallica • Hardwired... to Self-Destruct • 2016 • 5:50</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                Blacked out <br>
+                Pop queen, amphetamine <br>
+                The screams crashed into silence <br>
+                <br>
+                Tapped out <br>
+                Doused in the gasoline <br>
+                The high times going timeless <br>
+                <br>
+                Decadence <br>
+                Death of the innocence <br>
+                The pathway starts to spiral <br>
+                <br>
+                Infamy <br>
+                All for publicity <br>
+                Destruction going viral <br>
+                <br>
+                Light it up <br>
+                Ah, light it up <br>
+                Another hit erases all the pain <br>
+                Bulletproof <br>
+                Ah, kill the truth <br>
+                You're falling, but you think you're flying high <br>
+                High again <br>
+                <br>
+                Sold your soul <br>
+                Built a higher wall <br>
+                Yesterday <br>
+                Now you're thrown away <br>
+                Same rise and fall <br>
+                Who cares at all? <br>
+                Seduced by fame <br>
+                A moth into the flame <br>
+                <br>
+                Twisted <br>
+                Backstabbing wicked <br>
+                The delusion absolution <br>
+                <br>
+                Perjurer <br>
+                Fame is the murderer <br>
+                Seduce you into ruin <br>
+                <br>
+                Light it up <br>
+                Ah, light it up <br>
+                Another hit erases all the pain <br>
+                Bulletproof <br>
+                Oh, tell the truth <br>
+                You're falling, but you think you're flying high <br>
+                High again <br>
+                <br>
+                Sold your soul <br>
+                Built the higher wall <br>
+                Yesterday <br>
+                Now you're thrown away <br>
+                Same rise and fall <br>
+                Who cares at all? <br>
+                Seduced by fame <br>
+                A moth into the flame <br>
+                Burn <br>
+                <br>
+                Guarantee your name, you go and kill yourself <br>
+                The vultures feast around you still <br>
+                Overdose on shame and insecurity <br>
+                If one won't do that fistful will <br>
+                <br>
+                Death scene <br>
+                Black hearse the limousine <br>
+                A grave filled with seduction <br>
+                <br>
+                Vaccine <br>
+                Fame does the murdering <br>
+                She builds up for destruction <br>
+                <br>
+                So light it up <br>
+                Ah, light it up <br>
+                Another hit erases all the pain <br>
+                Bulletproof <br>
+                Ah, no excuse <br>
+                You're falling, but you think you're flying high <br>
+                High again <br>
+                <br>
+                Sold your soul <br>
+                Built the higher wall <br>
+                Yesterday <br>
+                Now you're thrown away <br>
+                Same rise and fall <br>
+                Who cares at all? <br>
+                Seduced by fame <br>
+                A moth into the flame <br>
+                <br>
+                Addicted to the fame <br> <br>
+            </p>
+        </div>
+
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                Desmaiada <br>
+                Rainha pop, anfetamina <br>
+                Os gritos colidiram com o silêncio <br> <br>
+
+                Esgotada <br>
+                Encharcada em gasolina <br>
+                Os tempos altos se tornam eternos <br> <br>
+
+                Decadência <br>
+                Morte da inocência <br>
+                O caminho começa a girar em espiral <br> <br>
+
+                Infâmia <br>
+                Tudo por publicidade <br>
+                A destruição vira viral <br> <br>
+
+                Acenda <br>
+                Ah, acenda <br>
+                Mais uma dose apaga toda a dor <br>
+                À prova de balas <br>
+                Ah, mate a verdade <br>
+                Você está caindo, mas acha que está voando alto <br>
+                Alto de novo <br> <br>
+
+                Vendeu sua alma <br>
+                Construiu um muro mais alto <br>
+                Ontem <br>
+                Agora foi descartada <br>
+                Mesma ascensão e queda <br>
+                Quem se importa? <br>
+                Seducida pela fama <br>
+                Uma mariposa rumo à chama <br> <br>
+
+                Perversa <br>
+                Falsa e traiçoeira <br>
+                A ilusão é absolvição <br> <br>
+
+                Perjura <br>
+                A fama é a assassina <br>
+                Ela te seduz até a ruína <br> <br>
+
+                Acenda <br>
+                Ah, acenda <br>
+                Mais uma dose apaga toda a dor <br>
+                À prova de balas <br>
+                Ah, diga a verdade <br>
+                Você está caindo, mas acha que está voando alto <br>
+                Alto de novo <br> <br>
+
+                Vendeu sua alma <br>
+                Construiu um muro mais alto <br>
+                Ontem <br>
+                Agora foi descartada <br>
+                Mesma ascensão e queda <br>
+                Quem se importa? <br>
+                Seducida pela fama <br>
+                Uma mariposa rumo à chama <br>
+                Queime <br> <br>
+
+                Para garantir seu nome, você vai e se mata <br>
+                Os abutres ainda festejam ao seu redor <br>
+                Overdose de vergonha e insegurança <br>
+                Se uma não bastar, um punhado bastará <br> <br>
+
+                Cena de morte <br>
+                Carro fúnebre, a limusine <br>
+                Um túmulo cheio de sedução <br> <br>
+
+                Vacina <br>
+                A fama faz o assassinato <br>
+                Ela constrói para a destruição <br> <br>
+
+                Então acenda <br>
+                Ah, acenda <br>
+                Mais uma dose apaga toda a dor <br>
+                À prova de balas <br>
+                Ah, sem desculpa <br>
+                Você está caindo, mas acha que está voando alto <br>
+                Alto de novo <br> <br>
+
+                Vendeu sua alma <br>
+                Construiu um muro mais alto <br>
+                Ontem <br>
+                Agora foi descartada <br>
+                Mesma ascensão e queda <br>
+                Quem se importa? <br>
+                Seducida pela fama <br>
+                Uma mariposa rumo à chama <br> <br>
+
+                Viciada na fama <br> <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'Moth Into Flame' do Metallica é uma crítica contundente à cultura da fama e como ela pode destruir
+            a vida de uma pessoa. A letra utiliza a metáfora de uma mariposa atraída pela chama para descrever alguém
+            seduzido pelo brilho da fama, sem perceber os perigos que isso acarreta. <br> <br>
+
+            O início da música descreve uma 'rainha do pop' que se perde em meio a gritos que se transformam em
+            silêncio, sugerindo uma perda de identidade e isolamento apesar do sucesso aparente. A referência ao uso de
+            anfetaminas e a decadência da inocência apontam para o abuso de substâncias e a perda de valores morais que
+            muitas vezes acompanham a busca incessante pelo estrelato. A fama é descrita como um caminho espiral que
+            leva à infâmia e à destruição, com a publicidade negativa se espalhando como um vírus. <br> <br>
+
+            A música também aborda a ilusão de invulnerabilidade que a fama pode trazer, com a pessoa se sentindo 'à
+            prova de balas' e incapaz de reconhecer a verdade de sua queda. O refrão reforça a ideia de que, apesar de a
+            pessoa acreditar que está voando alto, na realidade, está caindo. A repetição da frase 'seduzido pela fama'
+            e a comparação com uma mariposa indo em direção à chama ilustram a atração fatal e a inevitável destruição
+            que acompanha a obsessão pela fama. A música termina com uma crítica à adição à fama, sugerindo que ela é
+            tão destrutiva quanto qualquer outra dependência. <br> <br> <br> <br> <br> <br>
+        </p>
+    </div>
+
+    <button class="voltar-btn" onclick="history.back()">⟵ Voltar</button>
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/6F5RvdxWcLOJW7LAGuc24r?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="musica-container"></iframe>
+</body>
+
+</html>

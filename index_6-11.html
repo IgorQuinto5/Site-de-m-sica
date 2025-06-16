@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Mama Said</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, rgba(137, 49, 33, 255), #111);
+            color: #fff;
+        }
+
+        .top-section {
+            background: linear-gradient(to top, #743226, #111);
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/3/32/Load.jpg/250px-Load.jpg" alt="Capa do Álbum Load"
+            class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>Mama Said - Remastered</h1>
+            <p class="meta">Metallica • Load • 1996 • 5:19</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                Mama, she has taught me well <br>
+                Told me when I was young <br>
+                Son, your life's an open book <br>
+                Don't close it 'fore it's done <br>
+                The brightest flame burns quickest <br>
+                That's what I heard her say <br>
+                A son's heart's owned to mother <br>
+                But I must find my way <br>
+                <br>
+                Let my heart go <br>
+                Let your son grow <br>
+                Mama, let my heart go <br>
+                Or let this heart be still (be still) <br>
+                <br>
+                Rebel, my new last name <br>
+                Wild blood in my veins <br>
+                Apron strings around my neck <br>
+                The mark that still remains <br>
+                Left home at an early age <br>
+                Of what I heard was wrong <br>
+                I never asked forgiveness <br>
+                But what I said is done <br>
+                <br>
+                Let my heart go <br>
+                Let your son grow <br>
+                Mama, let my heart go <br>
+                Or let this heart be still <br>
+                <br>
+                Never I ask of you <br>
+                But never I gave <br>
+                But you gave me your emptiness <br>
+                I now take to my grave <br>
+                Never I ask of you <br>
+                But never I gave <br>
+                But you gave me your emptiness <br>
+                I now take to my grave <br>
+                So let this heart be still <br>
+                <br>
+                Mama, now I'm coming home <br>
+                I'm not all you wished of me <br>
+                But a mother's love for her son <br>
+                Unspoken, help me be <br>
+                Yeah, I took your love for granted <br>
+                And all the things you said to me <br>
+                I need your arms to welcome me <br>
+                But a cold stone's all I see <br>
+                <br>
+                Let my heart go <br>
+                Let your son grow <br>
+                Mama, let my heart go <br>
+                Or let this heart be still <br>
+                <br>
+                Let my heart go <br>
+                Mama, let my heart go <br>
+                You never let my heart go <br>
+                So let this heart be still, ooh <br>
+                <br>
+                Never I ask of you <br>
+                But never I gave <br>
+                But you gave me your emptiness <br>
+                I now take to my grave <br>
+                So let this heart be still <br> <br>
+            </p>
+        </div>
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                Mamãe, ela me ensinou bem <br>
+                Disse-me quando eu era jovem <br>
+                Filho, sua vida é um livro aberto <br>
+                Não o feche antes de estar terminado <br>
+                A chama mais brilhante queima mais rápido <br>
+                Foi isso que ouvi ela dizer <br>
+                O coração de um filho pertence à mãe <br>
+                Mas eu preciso encontrar meu caminho <br>
+                <br>
+                Deixe meu coração ir <br>
+                Deixe seu filho crescer <br>
+                Mamãe, deixe meu coração ir <br>
+                Ou deixe este coração ficar quieto (ficar quieto) <br>
+                <br>
+                Rebelde, meu novo sobrenome <br>
+                Sangue selvagem nas minhas veias <br>
+                Cordões de avental ao redor do meu pescoço <br>
+                A marca que ainda permanece <br>
+                Saí de casa cedo <br>
+                Por algo que diziam estar errado <br>
+                Nunca pedi perdão <br>
+                Mas o que eu disse está feito <br>
+                <br>
+                Deixe meu coração ir <br>
+                Deixe seu filho crescer <br>
+                Mamãe, deixe meu coração ir <br>
+                Ou deixe este coração ficar quieto <br>
+                <br>
+                Nunca te pedi nada <br>
+                Mas nunca dei também <br>
+                Mas você me deu seu vazio <br>
+                Que agora levo para o túmulo <br>
+                Nunca te pedi nada <br>
+                Mas nunca dei também <br>
+                Mas você me deu seu vazio <br>
+                Que agora levo para o túmulo <br>
+                Então deixe este coração ficar quieto <br>
+                <br>
+                Mamãe, agora estou voltando para casa <br>
+                Não sou tudo que você desejou de mim <br>
+                Mas o amor de mãe por seu filho <br>
+                Silenciosamente, me ajuda a ser <br>
+                Sim, eu tomei seu amor como garantido <br>
+                E todas as coisas que você me disse <br>
+                Preciso de seus braços para me receber <br>
+                Mas tudo que vejo é uma pedra fria <br>
+                <br>
+                Deixe meu coração ir <br>
+                Deixe seu filho crescer <br>
+                Mamãe, deixe meu coração ir <br>
+                Ou deixe este coração ficar quieto <br>
+                <br>
+                Deixe meu coração ir <br>
+                Mamãe, deixe meu coração ir <br>
+                Você nunca deixou meu coração ir <br>
+                Então deixe este coração ficar quieto, ooh <br>
+                <br>
+                Nunca te pedi nada <br>
+                Mas nunca dei também <br>
+                Mas você me deu seu vazio <br>
+                Que agora levo para o túmulo <br>
+                Então deixe este coração ficar quieto <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'Mama Said', da banda Metallica, é uma balada introspectiva que se destaca no repertório da banda,
+            conhecida por seu estilo thrash metal. A letra da música revela uma conversa íntima entre um filho e sua
+            mãe, abordando temas de crescimento, rebeldia e o desejo de independência, contrastando com a necessidade de
+            amor e aprovação materna. A canção é uma das mais pessoais do vocalista James Hetfield, que frequentemente
+            explora em suas composições conflitos internos e questões familiares. <br> <br>
+
+            O refrão 'Let my heart go / Let your son grow / Mama, let my heart go / Or let this heart be still' expressa
+            o conflito entre o desejo de liberdade do filho e o controle percebido da mãe. A metáfora 'apron strings
+            around my neck' ilustra a sensação de estar preso às expectativas e cuidados maternos, enquanto o filho
+            anseia por trilhar seu próprio caminho. A música também aborda a ideia de que as ações e escolhas do filho
+            podem não estar alinhadas com o que a mãe esperava, mas ainda assim há um pedido implícito por compreensão e
+            aceitação. <br> <br>
+
+            A parte final da música traz uma mudança de tom, onde o filho reconhece que tomou o amor da mãe como
+            garantido e agora sente a falta desse apoio. A imagem 'a cold stone's all I see' pode sugerir um sentimento
+            de arrependimento e a dura realidade de estar sozinho. 'Mama Said' é uma música que ressoa com muitos
+            ouvintes por sua honestidade emocional e pela maneira como captura a complexidade das relações familiares,
+            especialmente entre mães e filhos, em meio ao processo de amadurecimento e busca por identidade própria.
+            <br>
+            <br> <br> <br>
+            <br> <br>
+        </p>
+    </div>
+
+    <button onclick="history.back()" class="voltar-btn">⟵ Voltar</button>
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/3dWNUqrgkQakv9fj5epwPK?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="musica-container"></iframe>
+</body>
+
+</html>

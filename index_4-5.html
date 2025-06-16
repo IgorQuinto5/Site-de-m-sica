@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>The Shortest Straw</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, rgba(117, 125, 125, 1), rgba(0, 0, 0, 0.85));
+            color: #fff;
+        }
+
+        .top-section {
+            background: linear-gradient(to top, rgba(80, 90, 90, 1), #111);
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+        
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://lastfm.freetls.fastly.net/i/u/ar0/db0fbd5c1f3532682c5f3798cd330c92.jpg"
+            alt="Capa do Álbum ...And Justice for All" class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>The Shortest Straw - Remastered</h1>
+            <p class="meta">Metallica • ...And Justice for All • 1988 • 6:35</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                Suspicion is your name <br>
+                Your honesty to blame <br>
+                Put dignity to shame <br>
+                Dishonor <br>
+                Witchhunt modern day <br>
+                Determining decay <br>
+                The blatant disarray <br>
+                Disfigure <br>
+                The public eye's disgrace <br>
+                Defying common place <br>
+                Unending paper chase <br>
+                Unending <br>
+                <br>
+                Deafening <br>
+                Painstaking <br>
+                Reckoning <br>
+                This vertigo it doth bring <br>
+                <br>
+                Shortest straw <br>
+                Challenge liberty <br>
+                Downed by law <br>
+                Live in infamy <br>
+                Rub you raw <br>
+                Witchhunt riding through <br>
+                Shortest straw <br>
+                The shortest straw has been pulled for you <br>
+                <br>
+                Pulled for you <br>
+                Shortest straw <br>
+                Pulled for you <br>
+                Shortest straw <br>
+                Pulled for you <br>
+                Shortest straw <br>
+                The shortest straw has been pulled for you <br>
+                <br>
+                The accusations fly <br>
+                Discrimination, why? <br>
+                Your inner self to die <br>
+                Intruding <br>
+                Doubt sunk itself in you <br>
+                It's teeth and talons through <br>
+                You're living Catch-22 <br>
+                Deluding <br>
+                A mass hysteria <br>
+                A megalomania <br>
+                Reveal dementia <br>
+                Reveal <br>
+                <br>
+                Secretly <br>
+                Silently <br>
+                Certainly <br>
+                In vertigo you will be <br>
+                <br>
+                Shortest straw <br>
+                Challenge liberty <br>
+                Downed by law <br>
+                Live in infamy <br>
+                Rub you raw <br>
+                Witchhunt riding through <br>
+                Shortest straw <br>
+                This shortest straw has been pulled for you <br>
+                <br>
+                Pulled for you <br>
+                Shortest straw <br>
+                Pulled for you <br>
+                Shortest straw <br>
+                Pulled for you <br>
+                Shortest straw <br>
+                Shortest straw has been pulled for you <br>
+                <br>
+                Shortest straw <br>
+                Pulled for you <br>
+                Shortest straw <br>
+                Pulled for you <br>
+                Shortest straw <br>
+                Pulled for you <br>
+                Shortest straw <br>
+                Shortest straw has been pulled for you <br>
+                <br>
+                Behind you, hands are tied <br>
+                You're being ostracized <br>
+                Your hell is multiplied <br>
+                Upending <br>
+                The fallout has begun <br>
+                Oppressive damage done <br>
+                Your many turned to none <br>
+                To nothing <br>
+                You're reaching your nadir <br>
+                Your will has disappeared <br>
+                The lie is crystal clear <br>
+                Defending <br>
+                <br>
+                Channels red <br>
+                One word said <br>
+                Blacklisted <br>
+                With vertigo make you dead <br>
+                <br>
+                Shortest straw <br>
+                Challenge liberty <br>
+                Downed by law <br>
+                Live in infamy <br>
+                Rub you raw <br>
+                Witchhunt riding through <br>
+                Shortest straw <br>
+                The shortest straw has been pulled for you <br>
+                Pulled for you <br> <br>
+            </p>
+        </div>
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                Suspeita é o seu nome <br>
+                Sua honestidade, a culpada <br>
+                A dignidade posta à vergonha <br>
+                Desonra <br>
+                Caça às bruxas moderna <br>
+                Determinando a decadência <br>
+                A desordem escancarada <br>
+                Desfigura <br>
+                A vergonha aos olhos do público <br>
+                Desafiando o lugar-comum <br>
+                Correria burocrática sem fim <br>
+                Sem fim <br><br>
+
+                Ensurdecedor <br>
+                Exaustivo <br>
+                Acerto de contas <br>
+                Essa vertigem que isso traz <br><br>
+
+                O menor palito <br>
+                Desafia a liberdade <br>
+                Derrubado pela lei <br>
+                Vive na infâmia <br>
+                Te esfrega até sangrar <br>
+                Caça às bruxas passando por cima <br>
+                O menor palito <br>
+                O menor palito foi tirado para você <br><br>
+
+                Tirado para você <br>
+                O menor palito <br>
+                Tirado para você <br>
+                O menor palito <br>
+                Tirado para você <br>
+                O menor palito <br>
+                O menor palito foi tirado para você <br><br>
+
+                As acusações voam <br>
+                Discriminação, por quê? <br>
+                Seu eu interior morre <br>
+                Intrusão <br>
+                A dúvida cravou-se em você <br>
+                Com dentes e garras <br>
+                Você vive um beco sem saída <br>
+                Iludido <br>
+                Uma histeria em massa <br>
+                Uma megalomania <br>
+                Revela demência <br>
+                Revela <br><br>
+
+                Secretamente <br>
+                Silenciosamente <br>
+                Com certeza <br>
+                Na vertigem, você cairá <br><br>
+
+                O menor palito <br>
+                Desafia a liberdade <br>
+                Derrubado pela lei <br>
+                Vive na infâmia <br>
+                Te esfrega até sangrar <br>
+                Caça às bruxas passando por cima <br>
+                O menor palito <br>
+                Esse menor palito foi tirado para você <br><br>
+
+                Tirado para você <br>
+                O menor palito <br>
+                Tirado para você <br>
+                O menor palito <br>
+                Tirado para você <br>
+                O menor palito <br>
+                O menor palito foi tirado para você <br><br>
+
+                O menor palito <br>
+                Tirado para você <br>
+                O menor palito <br>
+                Tirado para você <br>
+                O menor palito <br>
+                Tirado para você <br>
+                O menor palito <br>
+                O menor palito foi tirado para você <br><br>
+
+                Atrás de você, mãos estão amarradas <br>
+                Você está sendo ostracizado <br>
+                Seu inferno foi multiplicado <br>
+                Desmoronando <br>
+                As consequências começaram <br>
+                Dano opressor causado <br>
+                Seus muitos viraram nenhum <br>
+                Viraram nada <br>
+                Você chegou ao fundo do poço <br>
+                Sua vontade desapareceu <br>
+                A mentira é cristalina <br>
+                Defendendo <br><br>
+
+                Canais vermelhos <br>
+                Uma palavra dita <br>
+                Na lista negra <br>
+                Com vertigem te fazem morrer <br><br>
+
+                O menor palito <br>
+                Desafia a liberdade <br>
+                Derrubado pela lei <br>
+                Vive na infâmia <br>
+                Te esfrega até sangrar <br>
+                Caça às bruxas passando por cima <br>
+                O menor palito <br>
+                O menor palito foi tirado para você <br>
+                Tirado para você <br><br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'The Shortest Straw' do Metallica, uma banda conhecida por suas letras intensas e críticas sociais,
+            mergulha em temas de injustiça e perseguição. A letra descreve uma situação onde alguém é injustamente
+            acusado e sofre as consequências de uma caça às bruxas moderna, simbolizada pela 'shortest straw' ou 'a
+            menor palha', uma metáfora para ser selecionado para um destino adverso de forma arbitrária.<br><br>
+
+            A canção aborda a perda de liberdade e dignidade através de uma narrativa que envolve discriminação e
+            difamação. Expressões como 'downed by law' e 'live in infamy' refletem o impacto devastador das acusações
+            falsas sobre a vida do indivíduo, destacando uma crítica à corrupção e ao abuso de poder dentro de sistemas
+            legais e sociais. A repetição intensa do refrão 'The shortest straw has been pulled for you' reforça a
+            sensação de desespero e inevitabilidade.<br><br>
+
+            Musicalmente, 'The Shortest Straw' combina ritmos pesados e uma entrega vocal agressiva, características do
+            estilo thrash metal do Metallica, para amplificar a mensagem de angústia e revolta. A música não apenas
+            conta uma história, mas também provoca uma reflexão sobre a ética e a moralidade dentro da sociedade,
+            fazendo um paralelo com situações reais de injustiça que ocorrem ao redor do mundo. <br><br> <br><br>
+            <br><br> <br><br>
+        </p>
+    </div>
+    
+    <button onclick="history.back()" class="voltar-btn">⟵ Voltar</button>
+
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/4hvo7eCLfhs7dFr0mpk3zi?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="musica-container"></iframe>
+
+</body>
+
+</html>

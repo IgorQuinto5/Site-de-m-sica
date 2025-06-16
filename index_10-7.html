@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Confusion</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, rgba(180, 32, 6, 1), rgba(0, 0, 0, 0.8));
+            color: #fff;
+        }
+
+        .top-section {
+            background: linear-gradient(to top, rgba(120, 20, 5, 1), #141414);
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://s2.glbimg.com/-Jc53FYibsvWjONqmTkzlLMCMaQ=/620x620/s2.glbimg.com/LphItJCwoGjL0FWtd99USPeMd-k=/s.glbimg.com/jo/g1/f/original/2016/08/18/metallica-album-art-640x640_HjSVGi9.jpeg"
+            alt="Capa do Álbum Hardwired... to Self-Destruct" class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>Confusion</h1>
+            <p class="meta">Metallica • Hardwired... to Self-Destruct • 2016 • 6:41</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                Wake to face the day <br>
+                Grab this life and walk away <br>
+                War is never done <br>
+                Rub the patch and battle on <br>
+                Make it go away <br>
+                Please, make it go away <br> <br>
+                Confusion <br>
+                All sanity is now beyond me <br>
+                Delusion <br>
+                All sanity is but a memory <br>
+                My life, the war that never ends <br> <br>
+                Leave the battlefield <br>
+                Yet its horrors never heal <br>
+                Coming home from war <br>
+                Pieces don't fit anymore <br>
+                Make it go away <br>
+                Please, make it go away <br> <br>
+                Confusion <br>
+                All sanity is now beyond me <br>
+                Delusion <br>
+                All sanity is but a memory <br>
+                My life, the war that never ends <br> <br>
+                Father, please come home <br>
+                Shell shocked all I've known <br>
+                Father, please come home <br> <br>
+                Label him a deadwood soldier now <br>
+                Cast away and left to roam <br>
+                Rapid is the road to sacrifice <br>
+                Just takes longer to come home <br>
+                Come home <br> <br>
+                Confusion <br>
+                All sanity is now beyond me <br>
+                Delusion <br>
+                Crossfire ricochets inside me <br>
+                Trapped in a memory forever <br>
+                My life, the war that never ends <br> <br>
+            </p>
+        </div>
+
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                Desperte para encarar o dia <br>
+                Pegue esta vida e vá embora <br>
+                A guerra nunca termina <br>
+                Passe o remendo e continue a lutar <br>
+                Faça isso desaparecer <br>
+                Por favor, faça isso desaparecer <br> <br>
+
+                Confusão <br>
+                Toda sanidade agora está além de mim <br>
+                Ilusão <br>
+                Toda sanidade não passa de uma memória <br>
+                Minha vida, a guerra que nunca termina <br> <br>
+
+                Deixe o campo de batalha <br>
+                Mas seus horrores nunca cicatrizam <br>
+                Voltando para casa da guerra <br>
+                As peças não se encaixam mais <br>
+                Faça isso desaparecer <br>
+                Por favor, faça isso desaparecer <br> <br>
+
+                Confusão <br>
+                Toda sanidade agora está além de mim <br>
+                Ilusão <br>
+                Toda sanidade não passa de uma memória <br>
+                Minha vida, a guerra que nunca termina <br> <br>
+
+                Pai, por favor, volte para casa <br>
+                Choque de guerra é tudo o que conheci <br>
+                Pai, por favor, volte para casa <br> <br>
+
+                Rotule-o agora como um soldado inútil <br>
+                Abandonado e deixado para vagar <br>
+                Rápido é o caminho para o sacrifício <br>
+                Só demora mais para voltar para casa <br>
+                Volte para casa <br> <br>
+
+                Confusão <br>
+                Toda sanidade agora está além de mim <br>
+                Ilusão <br>
+                Ricochetes de fogo cruzado dentro de mim <br>
+                Preso em uma memória para sempre <br>
+                Minha vida, a guerra que nunca termina <br> <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'Confusion' do Metallica aborda de maneira intensa e visceral os efeitos psicológicos da guerra
+            sobre os soldados. A letra descreve a luta contínua de um veterano de guerra para lidar com os traumas e
+            horrores que presenciou no campo de batalha. A guerra, para ele, nunca termina, mesmo após deixar o campo de
+            batalha. A repetição do pedido 'Make it go away' ('Faça isso ir embora') reflete o desejo desesperado de
+            escapar das memórias dolorosas e da confusão mental que o assola. <br> <br>
+
+            A confusão e a delusão mencionadas na música simbolizam a perda de sanidade e a dificuldade de distinguir
+            entre a realidade e as memórias traumáticas. A guerra é descrita como uma batalha interminável, não apenas
+            no sentido físico, mas também no psicológico. A letra 'My life, the war that never ends' ('Minha vida, a
+            guerra que nunca termina') encapsula essa ideia de uma luta constante e interminável dentro da mente do
+            veterano. <br> <br>
+
+            Além disso, a música toca em temas de abandono e isolamento. O pedido 'Father, please come home' ('Pai, por
+            favor, volte para casa') pode ser interpretado como um clamor por ajuda e compreensão, não apenas do pai
+            literal, mas também de uma figura de apoio ou de um estado de normalidade que foi perdido. A linha 'Label
+            him a deadwood soldier now' ('Rotule-o como um soldado inútil agora') destaca o estigma e a marginalização
+            que muitos veteranos enfrentam ao retornar à vida civil, sentindo-se deslocados e incompreendidos. <br> <br>
+
+            'Confusion' é uma poderosa reflexão sobre os efeitos duradouros da guerra na psique humana, explorando temas
+            de trauma, isolamento e a luta contínua pela sanidade. <br> <br> <br> <br> <br> <br>
+        </p>
+    </div>
+
+    <button class="voltar-btn" onclick="history.back()">⟵ Voltar</button>
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/5ZsRTVdS4dboapRDourqR3?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="musica-container"></iframe>
+</body>
+
+</html>

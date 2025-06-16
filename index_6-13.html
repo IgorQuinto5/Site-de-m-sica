@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Ronnie</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, rgba(137, 49, 33, 255), #111);
+            color: #fff;
+        }
+
+        .top-section {
+            background: linear-gradient(to top, #743226, #111);
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/3/32/Load.jpg/250px-Load.jpg" alt="Capa do Álbum Load"
+            class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>Ronnie - Remastered</h1>
+            <p class="meta">Metallica • Load • 1996 • 5:17</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                Storie starts <br>
+                Quiet town <br>
+                Small time boy <br>
+                Big time frown <br>
+                <br>
+                Never talks <br>
+                Never plays <br>
+                Different path <br>
+                Lost his way <br>
+                <br>
+                The streets are red <br>
+                Red I'm afraid <br>
+                There's no confetti <br>
+                No parade <br>
+                Nothing happens in this boring place <br>
+                But oh my god how it all dismays <br>
+                And they all pray <br>
+                Blood stain wash away <br>
+                <br>
+                He said <br>
+                Lost my way <br>
+                This bloody day <br>
+                Lost my way <br>
+                <br>
+                I heard him, he said <br>
+                Lost my way <br>
+                This bloody day <br>
+                Lost my way <br>
+                All things wash away <br>
+                But blood stains the sun red today <br>
+                <br>
+                I always said something wrong <br>
+                With little strange Ronnie Long <br>
+                Never laughed, never smiled <br>
+                Talked alone for miles and miles <br>
+                And miles <br>
+                <br>
+                Gallow calls, Son I say <br>
+                Keep your smile and laugh all day <br>
+                Think once again in this boring place <br>
+                For little boys how things do change <br>
+                <br>
+                And they all pray <br>
+                Blood stain wash away <br>
+                <br>
+                He said <br>
+                Lost my way <br>
+                This bloody day <br>
+                Lost my way <br>
+                <br>
+                Yeah, I heard it <br>
+                He said <br>
+                Lost my way <br>
+                This bloody day <br>
+                Lost my way <br>
+                <br>
+                All things wash away <br>
+                But blood stains the sun red today <br>
+                <br>
+                Yeah, well all the green things died <br>
+                When Ronnie moved to this place <br>
+                He said <br>
+                Don't you dare ask <br>
+                Why I'm cursed to wear this face <br>
+                Well, now we all know why the children called him Ronnie Frown <br>
+                When he pulled that gun from his pocket <br>
+                They all fall down down down <br>
+                <br>
+                He said <br>
+                Lost my way <br>
+                This bloody day <br>
+                Lost my way <br>
+                <br>
+                Yeah, yeah, I heard him <br>
+                He screamed <br>
+                Lost my way <br>
+                This bloody day <br>
+                Lost my way <br>
+                All things wash away <br>
+                But blood stains the sun red today <br>
+                <br>
+                That's right <br>
+                <br>
+                All things wash away <br>
+                And they all fall down <br>
+                But blood stains the sun today <br>
+                <br>
+                All things wash away <br>
+                And they all fall down <br>
+                But blood stains the sun today <br> <br>
+            </p>
+        </div>
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                A história começa<br>
+                Cidade tranquila<br>
+                Garoto de cidade pequena<br>
+                Grande carranca<br><br>
+
+                Nunca fala<br>
+                Nunca brinca<br>
+                Caminho diferente<br>
+                Perdeu o rumo<br><br>
+
+                As ruas estão vermelhas<br>
+                Vermelhas, eu temo<br>
+                Não há confetes<br>
+                Nem desfile<br>
+                Nada acontece nesse lugar entediante<br>
+                Mas meu Deus, como tudo isso choca<br>
+                E todos eles rezam<br>
+                Para a mancha de sangue se apagar<br><br>
+
+                Ele disse<br>
+                Perdi meu rumo<br>
+                Neste dia sangrento<br>
+                Perdi meu rumo<br><br>
+
+                Eu o ouvi, ele disse<br>
+                Perdi meu rumo<br>
+                Neste dia sangrento<br>
+                Perdi meu rumo<br>
+                Todas as coisas se apagam<br>
+                Mas o sangue mancha o sol de vermelho hoje<br><br>
+
+                Eu sempre disse que havia algo errado<br>
+                Com o estranho Ronnie Long<br>
+                Nunca ria, nunca sorria<br>
+                Falava sozinho por milhas e milhas<br>
+                E milhas<br><br>
+
+                A forca chama, filho eu digo<br>
+                Mantenha seu sorriso e ria o dia inteiro<br>
+                Pense mais uma vez neste lugar entediante<br>
+                Como as coisas mudam para os garotinhos<br><br>
+
+                E todos eles rezam<br>
+                Para a mancha de sangue se apagar<br><br>
+
+                Ele disse<br>
+                Perdi meu rumo<br>
+                Neste dia sangrento<br>
+                Perdi meu rumo<br><br>
+
+                Sim, eu ouvi<br>
+                Ele disse<br>
+                Perdi meu rumo<br>
+                Neste dia sangrento<br>
+                Perdi meu rumo<br><br>
+
+                Todas as coisas se apagam<br>
+                Mas o sangue mancha o sol de vermelho hoje<br><br>
+
+                É, todas as coisas verdes morreram<br>
+                Quando Ronnie se mudou para este lugar<br>
+                Ele disse<br>
+                Não ouse perguntar<br>
+                Por que estou amaldiçoado a usar este rosto<br>
+                Bem, agora todos sabem por que as crianças o chamavam de Ronnie Carranca<br>
+                Quando ele puxou aquela arma do bolso<br>
+                Todos caíram, caíram, caíram<br><br>
+
+                Ele disse<br>
+                Perdi meu rumo<br>
+                Neste dia sangrento<br>
+                Perdi meu rumo<br><br>
+
+                Sim, sim, eu o ouvi<br>
+                Ele gritou<br>
+                Perdi meu rumo<br>
+                Neste dia sangrento<br>
+                Perdi meu rumo<br>
+                Todas as coisas se apagam<br>
+                Mas o sangue mancha o sol de vermelho hoje<br><br>
+
+                É isso mesmo<br><br>
+
+                Todas as coisas se apagam<br>
+                E todos eles caem<br>
+                Mas o sangue mancha o sol hoje<br><br>
+
+                Todas as coisas se apagam<br>
+                E todos eles caem<br>
+                Mas o sangue mancha o sol hoje<br><br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'Ronnie' do Metallica narra a história de um garoto chamado Ronnie Long, que vive em uma cidade
+            pequena e monótona. Desde o início, a letra descreve Ronnie como um menino diferente, que nunca fala ou
+            brinca, e que parece estar perdido em seu próprio caminho. A cidade é descrita como um lugar onde nada
+            acontece, mas a presença de Ronnie traz uma sensação de inquietação e desespero. A repetição da frase 'Lost
+            my way' (Perdi meu caminho) enfatiza a sensação de desorientação e perda que permeia a vida de Ronnie. <br>
+            <br>
+
+            A letra também aborda a violência e a tragédia que se desenrolam na vida de Ronnie. As ruas se tornam
+            vermelhas de sangue, e não há celebrações ou desfiles para marcar os eventos. A cidade, que antes era
+            entediante, agora é marcada por um evento sangrento que deixa todos em estado de choque. A frase 'Blood
+            stains the sun red today' (O sangue mancha o sol de vermelho hoje) é uma metáfora poderosa que sugere que a
+            violência e a tragédia de Ronnie têm um impacto duradouro e visível. <br> <br>
+
+            A música também explora a alienação e o isolamento de Ronnie. Ele é descrito como alguém que nunca ri ou
+            sorri, e que fala sozinho por longas distâncias. A letra sugere que Ronnie sempre foi visto como estranho
+            pelos outros, e que sua diferença o levou a um caminho sombrio. Quando ele finalmente age de forma violenta,
+            a cidade inteira é afetada, e todos caem 'down down down' (para baixo, para baixo, para baixo). A música
+            termina com a repetição de que 'all things wash away' (todas as coisas se lavam), mas o sangue de Ronnie
+            mancha o sol, indicando que algumas tragédias deixam marcas permanentes.
+            <br>
+            <br> <br> <br>
+            <br> <br>
+        </p>
+    </div>
+
+    <button onclick="history.back()" class="voltar-btn">⟵ Voltar</button>
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/1jSWsQN5YeFnY8nmMsAohO?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="musica-container"></iframe>
+</body>
+
+</html>

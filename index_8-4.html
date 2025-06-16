@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Dirty Window</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* degradê principal do álbum St. Anger */
+            background: linear-gradient(to bottom, rgba(168, 19, 40, 1), rgba(0, 0, 0, 0.8));
+            color: #fff;
+        }
+
+        .top-section {
+            /* topo levemente mais escuro para contraste */
+            background: linear-gradient(to top, rgba(100, 10, 25, 1), #141414);
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://rollingstone.uol.com.br/media/uploads/2024/02/metallica-st-anger-capa-696x696.jpg"
+            alt="Capa do Álbum St. Anger" class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>Dirty Window - Remastered</h1>
+            <p class="meta">Metallica • St. Anger • 2003 • 5:24</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                I see my reflection in the window <br>
+                It looks different, so different than what you see <br>
+                Projecting judgment on the world <br>
+                This house is clean baby <br>
+                This house is clean <br> <br>
+                Am I who I think I am? <br>
+                Am I who I think I am? <br>
+                Am I who I think I am? <br>
+                Look out my window and see it's gone wrong <br>
+                Court is in session and I slam my gavel down <br> <br>
+                I'm judge and I'm jury and I'm executioner too <br>
+                I'm judge and I'm jury and I'm executioner too <br> <br>
+                Projector, Protector, Rejector, Infector, Projector <br>
+                Rejector, Infector, Injector, Defector, Rejector <br> <br>
+                I see my reflection in the window <br>
+                This window clean inside, dirty on the out <br>
+                I'm looking different than me <br>
+                This house is clean baby <br>
+                This house is clean <br> <br>
+                Am I who I think I am? <br>
+                Am I who I think I am? <br>
+                Am I who I think I am? <br>
+                I look out my window and see it's gone wrong <br>
+                The court is in session and I slam my gavel down <br> <br>
+                I'm judge and I'm jury and I'm executioner too <br>
+                I'm judge and I'm jury and I'm executioner too <br> <br>
+                Projector, Protector, Rejector, Infector, Projector <br>
+                Rejector, Infector, Injector, Defector, Rejector, Detector <br> <br>
+                I'm judge and I'm jury and I'm executioner too <br>
+                I'm judge and I'm jury and I'm executioner too <br> <br>
+                Projector, Protector, Rejector, Infector, Projector <br>
+                Rejector, Infector, Injector, Defector, Rejector <br> <br>
+                I drink from the cup of denial <br>
+                I'm Judging the world from my throne <br>
+                I drink from the cup of denial <br>
+                I'm Judging the world from my throne <br> <br>
+            </p>
+        </div>
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                Vejo meu reflexo na janela <br>
+                Parece diferente, tão diferente do que você vê <br>
+                Projetando julgamento sobre o mundo <br>
+                Esta casa está limpa, baby <br>
+                Esta casa está limpa <br>
+                <br>
+                Sou quem eu penso que sou? <br>
+                Sou quem eu penso que sou? <br>
+                Sou quem eu penso que sou? <br>
+                Olho pela janela e vejo que tudo deu errado <br>
+                O tribunal está em sessão e eu bato meu martelo <br>
+                <br>
+                Sou juiz, júri e também carrasco <br>
+                Sou juiz, júri e também carrasco <br>
+                <br>
+                Projetor, Protetor, Rejeitador, Infectador, Projetor <br>
+                Rejeitador, Infectador, Injetor, Desertor, Rejeitador <br>
+                <br>
+                Vejo meu reflexo na janela <br>
+                Essa janela limpa por dentro, suja por fora <br>
+                Estou me vendo diferente de mim mesmo <br>
+                Esta casa está limpa, baby <br>
+                Esta casa está limpa <br>
+                <br>
+                Sou quem eu penso que sou? <br>
+                Sou quem eu penso que sou? <br>
+                Sou quem eu penso que sou? <br>
+                Olho pela janela e vejo que tudo deu errado <br>
+                O tribunal está em sessão e eu bato meu martelo <br>
+                <br>
+                Sou juiz, júri e também carrasco <br>
+                Sou juiz, júri e também carrasco <br>
+                <br>
+                Projetor, Protetor, Rejeitador, Infectador, Projetor <br>
+                Rejeitador, Infectador, Injetor, Desertor, Rejeitador, Detector <br>
+                <br>
+                Sou juiz, júri e também carrasco <br>
+                Sou juiz, júri e também carrasco <br>
+                <br>
+                Projetor, Protetor, Rejeitador, Infectador, Projetor <br>
+                Rejeitador, Infectador, Injetor, Desertor, Rejeitador <br>
+                <br>
+                Eu bebo do cálice da negação <br>
+                Julgo o mundo do meu trono <br>
+                Eu bebo do cálice da negação <br>
+                Julgo o mundo do meu trono <br>
+                <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'Dirty Window' do Metallica explora temas de auto-reflexão, julgamento e negação. A letra começa
+            com o eu-lírico observando seu reflexo em uma janela, notando uma discrepância entre como ele se vê e como
+            os outros o veem. Essa janela suja serve como uma metáfora para a percepção distorcida e os julgamentos que
+            fazemos sobre nós mesmos e sobre o mundo ao nosso redor. A repetição da frase 'This house is clean' sugere
+            uma tentativa de purificação ou de se livrar de impurezas, tanto internas quanto externas. <br> <br>
+
+            O refrão 'Am I who I think I am?' reflete uma crise de identidade, onde o eu-lírico questiona sua verdadeira
+            natureza. A metáfora do tribunal, onde ele se vê como juiz, júri e executor, indica um senso de autocrítica
+            extrema e a tendência de julgar a si mesmo e aos outros de maneira severa. A repetição dessas funções
+            judiciais enfatiza a ideia de que ele está preso em um ciclo de julgamento e condenação, incapaz de escapar
+            de sua própria percepção distorcida. <br> <br>
+
+            A música também aborda o tema da negação, como evidenciado na linha 'I drink from the cup of denial'. Isso
+            sugere que o eu-lírico está ciente de suas falhas e imperfeições, mas escolhe ignorá-las ou justificá-las,
+            mantendo-se em um estado de negação. A imagem de 'julgando o mundo do meu trono' reforça a ideia de
+            superioridade moral e a ilusão de controle, onde ele se coloca acima dos outros, apesar de suas próprias
+            falhas. 'Dirty Window' é uma poderosa reflexão sobre a auto-percepção, julgamento e a luta interna para
+            aceitar a verdade sobre si mesmo e o mundo ao seu redor. <br> <br> <br> <br> <br> <br>
+        </p>
+    </div>
+
+    <button onclick="history.back()" class="voltar-btn">⟵ Voltar</button>
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/6xFoN6e5B9DTw6aV6yT3KF?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="musica-container"></iframe>
+</body>
+
+</html>

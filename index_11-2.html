@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Shadows Follow</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, rgba(146, 145, 0, 1), rgba(0, 0, 0, 0.8));
+            color: #fff;
+        }
+
+        .top-section {
+            background: linear-gradient(to top, rgba(100, 100, 0, 1), #141414);
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://i.redd.it/61eac47i5h3a1.jpg" alt="Capa do Álbum 72 Seasons" class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>Shadows Follow</h1>
+            <p class="meta">Metallica • 72 Seasons • 2023 • 6:11</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                Hanging by a thread as I play dead <br>
+                Hanging by a thread and my mind is code red <br>
+                Cut and run, try to hide <br>
+                Get away, shut my eyes just to hide from the fate <br>
+                Cut and run, try to hide <br>
+                Get away, cover up, get shelter from the hate <br> <br>
+                Demonized, simplified, tranquilized, prophesized <br>
+                Just to hide from life <br>
+                Night and day, led astray, in decay, come what may <br>
+                Not to face that fight <br> <br>
+                Seething, breathing, nightmares grow <br>
+                On I run, still my shadows follow <br> <br>
+                Never can I stop 'cause they hunt me <br>
+                Never can I stop 'cause the beast is hungry <br>
+                Like a wolf on the hunt, stalking prey, closing in <br>
+                No, it won't let me be <br>
+                Like a wolf on the hunt, stalks a prey <br>
+                Any cost, fulfill a destiny <br> <br>
+                Seething, fast breathing, nightmares grow <br>
+                On I run, still my shadows follow <br>
+                On I run but still my shadows follow <br> <br>
+                Cut and run, hide away from fate, cover up <br>
+                Try to hide the hate, like a wolf <br>
+                It will never be closing, wish away, shut my eyes <br>
+                Wish it away <br> <br>
+                Seething, fast breathing, nightmares grow <br>
+                On I run, still my shadows follow <br> <br>
+                Facing my demons, now I know <br>
+                If I run, still my shadows follow <br>
+                I say no, still my shadows follow <br> <br>
+            </p>
+        </div>
+
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                Pendurado por um fio enquanto finjo estar morto <br>
+                Pendurado por um fio e minha mente em alerta vermelho <br>
+                Corto e fujo, tento me esconder <br>
+                Escapar, fecho os olhos só pra fugir do destino <br>
+                Corto e fujo, tento me esconder <br>
+                Escapar, me cobrir, me abrigar do ódio <br> <br>
+
+                Demonizado, simplificado, tranquilizado, profetizado <br>
+                Só pra fugir da vida <br>
+                Noite e dia, desviado, em decadência, venha o que vier <br>
+                Pra não enfrentar essa luta <br> <br>
+
+                Fervendo, respirando, pesadelos crescem <br>
+                Corro sem parar, mas minhas sombras me seguem <br> <br>
+
+                Nunca posso parar porque eles me caçam <br>
+                Nunca posso parar porque a besta está faminta <br>
+                Como um lobo na caça, perseguindo a presa, se aproximando <br>
+                Não, ela não vai me deixar em paz <br>
+                Como um lobo na caça, persegue a presa <br>
+                A qualquer custo, cumpre um destino <br> <br>
+
+                Fervendo, respiração ofegante, pesadelos crescem <br>
+                Corro sem parar, mas minhas sombras me seguem <br>
+                Corro sem parar, mas minhas sombras ainda me seguem <br> <br>
+
+                Corto e fujo, escondo-me do destino, me cubro <br>
+                Tento esconder o ódio, como um lobo <br>
+                Isso nunca vai acabar, desejo que vá embora, fecho meus olhos <br>
+                Desejo que vá embora <br> <br>
+
+                Fervendo, respiração ofegante, pesadelos crescem <br>
+                Corro sem parar, mas minhas sombras me seguem <br> <br>
+
+                Enfrentando meus demônios, agora eu sei <br>
+                Se eu correr, minhas sombras ainda me seguem <br>
+                Eu digo não, mas minhas sombras ainda me seguem <br> <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'Shadows Follow' da banda Metallica explora temas de luta interna, medo e inevitabilidade. Através
+            de uma linguagem intensa e imagética, a letra descreve uma batalha contínua com demônios internos e a
+            sensação de ser perseguido por sombras, que simbolizam problemas ou traumas que continuam a assombrar o
+            indivíduo, independentemente de seus esforços para escapar. <br><br>
+
+            O refrão 'On I run, still my shadows follow' ressalta a ideia de que, não importa quão rápido ou longe se
+            tente fugir, os problemas internos permanecem à espreita, sempre presentes. A repetição das frases 'Cut and
+            run, try to hide, get away' e 'Like a wolf on the hunt stalks a prey' reforça a sensação de urgência e
+            desespero, sugerindo que o narrador se sente caçado por suas próprias inseguranças ou medos, comparáveis a
+            um lobo implacável na caça. <br><br>
+
+            A música também aborda a aceitação e o enfrentamento desses desafios internos. As linhas 'Facing my demons,
+            now I know' e 'If I run, still my shadows follow' indicam uma mudança de perspectiva do narrador, que
+            reconhece que fugir não é a solução. Essa aceitação é crucial para o processo de enfrentamento e eventual
+            superação dos próprios medos. Metallica, conhecida por suas letras profundas e poderosas, utiliza 'Shadows
+            Follow' para transmitir uma mensagem sobre a importância de enfrentar os próprios demônios, em vez de tentar
+            escapar deles. <br><br><br><br><br><br>
+        </p>
+    </div>
+
+    <button class="voltar-btn" onclick="history.back()">⟵ Voltar</button>
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/5iG1GycXpheJ5xMW0gNvKv?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="musica-container"></iframe>
+</body>
+
+</html>

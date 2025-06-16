@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>My World</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* degradê principal do álbum St. Anger */
+            background: linear-gradient(to bottom, rgba(168, 19, 40, 1), rgba(0, 0, 0, 0.8));
+            color: #fff;
+        }
+
+        .top-section {
+            /* topo levemente mais escuro para contraste */
+            background: linear-gradient(to top, rgba(100, 10, 25, 1), #141414);
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://rollingstone.uol.com.br/media/uploads/2024/02/metallica-st-anger-capa-696x696.jpg"
+            alt="Capa do Álbum St. Anger" class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>My World - Remastered</h1>
+            <p class="meta">Metallica • St. Anger • 2003 • 5:45</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                The motherfuckers got in my head <br>
+                Trying to make me someone else instead <br> <br>
+                It's my world now, it's my world now <br>
+                It's my world, it's my world <br> <br>
+                Why's it raining in my room <br>
+                Cheer up boy, clouds will move on soon <br>
+                Heavy fog got me lost inside <br>
+                I'm gonna sit right back and enjoy this ride <br> <br>
+                It's my world, you can't have it <br>
+                It's my world, it's my world <br>
+                It's my world, you can't have it <br>
+                It's my world, it's my world <br> <br>
+                It's my world, you can't have it <br>
+                It's my world, it's my world <br>
+                It's my world, suck it <br> <br>
+                I'm out my head, out my head <br>
+                Get 'em out my head, out my head <br>
+                Get 'em out <br> <br>
+                Who's in charge of my head today <br>
+                Dancing devils in angels way <br> <br>
+                It's my time now, it's my time now <br>
+                It's my time, yeah, it's my time <br> <br>
+                Look out motherfuckers here I come <br>
+                I'm gonna make my head my home <br>
+                The sons of bitches tried to take my head <br>
+                Tried to make me someone else instead <br> <br>
+                Ooh, it's my world, you can't have it <br>
+                It's my world, it's my world <br>
+                It's my world, you can't have it <br>
+                It's my world, it's my world <br> <br>
+                It's my world, you can't have it <br>
+                It's my world, it's my world <br>
+                It's my world, suck it <br> <br>
+                Ooh, yeah, I'm out my head, out my head <br>
+                Get 'em out my head, get 'em out my head <br>
+                Get 'em out <br> <br>
+                Only do I not know the answer <br>
+                I don't even know what the question <br>
+                Only do I not know the answer <br>
+                I don't even know what the question is <br> <br>
+                God it feels like it only rains on me <br>
+                God it feels like it only rains on me <br>
+                (Like it only rains on me) <br> <br>
+                God it feels like it only rains on me <br>
+                (Like it only rains on me) <br>
+                God it feels like it only rains on me <br>
+                (Oh God, oh God, oh God like it only rains on me) <br> <br>
+                Only do I not know the answer <br>
+                I don't even know what the question is <br>
+                Only do I not know the answer <br>
+                I don't even know what the question is <br> <br>
+                Sucker <br> <br>
+                Out my head, out my head <br>
+                Out my head, get 'em out <br>
+                Out my head, get 'em out <br> <br>
+                Enough's enough, enough's enough <br>
+                Enough's enough, enough's enough <br>
+                Enough's enough, enough's enough <br>
+                Enough's enough, enough's enough <br>
+                Suck <br> <br>
+            </p>
+        </div>
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                Aqueles filhos da pta entraram na minha cabeça <br>
+                Tentando me transformar em outra pessoa <br>
+                <br>
+                Agora é o meu mundo, agora é o meu mundo <br>
+                É o meu mundo, é o meu mundo <br>
+                <br>
+                Por que está chovendo no meu quarto? <br>
+                Anima aí, garoto, as nuvens logo vão embora <br>
+                Névoa pesada me deixou perdido por dentro <br>
+                Vou apenas sentar e curtir a viagem <br>
+                <br>
+                É o meu mundo, você não pode tê-lo <br>
+                É o meu mundo, é o meu mundo <br>
+                É o meu mundo, você não pode tê-lo <br>
+                É o meu mundo, é o meu mundo <br>
+                <br>
+                É o meu mundo, você não pode tê-lo <br>
+                É o meu mundo, é o meu mundo <br>
+                É o meu mundo, engole essa <br>
+                <br>
+                Tô fora da minha cabeça, fora da minha cabeça <br>
+                Tirem eles da minha cabeça, da minha cabeça <br>
+                Tirem eles fora <br>
+                <br>
+                Quem está no controle da minha cabeça hoje? <br>
+                Demônios dançando no caminho dos anjos <br>
+                <br>
+                Agora é a minha hora, agora é a minha hora <br>
+                É a minha hora, é a minha hora <br>
+                <br>
+                Saiam da frente, seus filhos da pta, aqui vou eu <br>
+                Vou fazer da minha cabeça o meu lar <br>
+                Aqueles filhos da p*ta tentaram tomar minha cabeça <br>
+                Tentaram me transformar em outra pessoa <br>
+                <br>
+                Ooh, é o meu mundo, você não pode tê-lo <br>
+                É o meu mundo, é o meu mundo <br>
+                É o meu mundo, você não pode tê-lo <br>
+                É o meu mundo, é o meu mundo <br>
+                <br>
+                É o meu mundo, você não pode tê-lo <br>
+                É o meu mundo, é o meu mundo <br>
+                É o meu mundo, engole essa <br>
+                <br>
+                Ooh, é, tô fora da minha cabeça, fora da minha cabeça <br>
+                Tirem eles da minha cabeça, tirem eles da minha cabeça <br>
+                Tirem eles fora <br>
+                <br>
+                Não apenas não sei a resposta <br>
+                Eu nem sequer sei qual é a pergunta <br>
+                Não apenas não sei a resposta <br>
+                Eu nem sequer sei qual é a pergunta <br>
+                <br>
+                Deus, parece que só chove em mim <br>
+                Deus, parece que só chove em mim <br>
+                (Parece que só chove em mim) <br>
+                <br>
+                Deus, parece que só chove em mim <br>
+                (Parece que só chove em mim) <br>
+                Deus, parece que só chove em mim <br>
+                (Oh Deus, oh Deus, oh Deus, parece que só chove em mim) <br>
+                <br>
+                Não apenas não sei a resposta <br>
+                Eu nem sequer sei qual é a pergunta <br>
+                Não apenas não sei a resposta <br>
+                Eu nem sequer sei qual é a pergunta <br>
+                <br>
+                Otário <br>
+                <br>
+                Fora da cabeça, fora da cabeça <br>
+                Fora da cabeça, tirem eles fora <br>
+                Fora da cabeça, tirem eles fora <br>
+                <br>
+                Já deu, já deu <br>
+                Já deu, já deu <br>
+                Já deu, já deu <br>
+                Já deu, já deu <br>
+                Engole <br>
+                <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'My World' do Metallica aborda temas de autonomia, identidade e resistência contra influências
+            externas. A letra expressa uma luta interna contra forças que tentam moldar o indivíduo de acordo com suas
+            próprias expectativas. A frase 'The motherfuckers got in my head, trying to make me someone else instead'
+            reflete essa batalha contra a manipulação e a pressão para se conformar. O uso de linguagem forte e direta
+            enfatiza a intensidade dessa luta pessoal.<br> <br>
+
+            O refrão 'It's my world, you can't have it' é um grito de afirmação e posse sobre a própria vida e mente. A
+            repetição dessa frase reforça a determinação do eu lírico em manter sua individualidade e resistir a
+            qualquer tentativa de controle. A metáfora de 'dancin' devils in angels way' sugere uma confusão mental,
+            onde pensamentos negativos e positivos se misturam, criando um caos interno que precisa ser resolvido.<br>
+            <br>
+
+            A música também toca em temas de desorientação e busca por clareza, como visto na linha 'Not only do I not
+            know the answer, I don't even know what the question is'. Isso indica uma sensação de estar perdido e
+            confuso, sem saber exatamente o que está errado ou como corrigir. No entanto, a resolução vem com a
+            aceitação e a decisão de 'make my head my home', sugerindo que a verdadeira paz e controle vêm de dentro, ao
+            aceitar e dominar seus próprios pensamentos e emoções. <br> <br> <br> <br> <br> <br>
+        </p>
+    </div>
+
+    <button onclick="history.back()" class="voltar-btn">⟵ Voltar</button>
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/3zG3x7RA9DjR7a9JMNWv1N?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="musica-container"></iframe>
+</body>
+
+</html>

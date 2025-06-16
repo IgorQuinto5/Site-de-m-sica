@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>The Call of Ktulu</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #3f6fae, #111);
+            color: #fff;
+        }
+
+        .top-section {
+            background: linear-gradient(to top, #2a4f8a, #111);
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://universalmusic.vtexassets.com/arquivos/ids/185314/cd%20metallica-ride-the-lightning-importado-cd%20metallica-ride-the-lightning-impo-00042283814028-00004228381402.jpg?v=638482831030130000"
+            alt="Capa do Álbum Ride the Lightning" class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>The Call of Ktulu - Remastered</h1>
+            <p class="meta">Metallica • Ride the Lightning • 1984 • 8:53</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                Instrumental <br><br>
+            </p>
+        </div>
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                Instrumental <br><br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'The Call Of Ktulu' do Metallica é uma peça instrumental poderosa que encerra o álbum 'Ride the
+            Lightning', lançado em 1984. Sem letras, a música se apoia inteiramente em sua composição musical para
+            transmitir emoções e narrativas. O título da faixa é uma referência direta ao conto de H.P. Lovecraft, 'The
+            Call of Cthulhu', que fala sobre uma criatura monstruosa e poderosa que reside no fundo do oceano,
+            representando o desconhecido e o terror cósmico. <br><br>
+
+            A escolha de Metallica de criar uma faixa instrumental para evocar a atmosfera de um conto de Lovecraft é
+            notável. Utilizando uma mistura de riffs pesados, mudanças de tempo e uma progressão sombria, a banda
+            consegue pintar um cenário sonoro que reflete a imensidão e o mistério associados a Cthulhu. A música pode
+            ser vista como uma jornada através do desconhecido, onde cada acorde e cada pausa contribuem para construir
+            uma sensação de suspense e iminência. <br><br>
+
+            Além disso, 'The Call Of Ktulu' é um exemplo da habilidade do Metallica em explorar diferentes formas de
+            expressão musical. A faixa não apenas complementa o tema do álbum 'Ride the Lightning', que frequentemente
+            toca em temas de medo, destino e questionamentos existenciais, mas também estabelece um padrão para futuras
+            explorações instrumentais da banda, mostrando sua versatilidade e profundidade criativa. <br><br><br><br><br> <br><br> <br>
+        </p>
+    </div>
+    <button onclick="history.back()" class="voltar-btn">⟵ Voltar</button>
+
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/4qPgSwPUGigsmx6gUV2dnU?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="musica-container"></iframe>
+
+</body>
+
+</html>

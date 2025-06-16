@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Sweet Amber</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* degradê principal do álbum St. Anger */
+            background: linear-gradient(to bottom, rgba(168, 19, 40, 1), rgba(0, 0, 0, 0.8));
+            color: #fff;
+        }
+
+        .top-section {
+            /* topo levemente mais escuro para contraste */
+            background: linear-gradient(to top, rgba(100, 10, 25, 1), #141414);
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://rollingstone.uol.com.br/media/uploads/2024/02/metallica-st-anger-capa-696x696.jpg"
+            alt="Capa do Álbum St. Anger" class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>Sweet Amber - Remastered</h1>
+            <p class="meta">Metallica • St. Anger • 2003 • 5:27</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                Wash your back so you won't stab mine <br>
+                Get in bed with your own kind <br>
+                Live your life so you don't see mine <br>
+                Drape your back so you won't shine <br> <br>
+                Ooh, then she hold my hand <br>
+                And I lie to get a smile <br>
+                Ooh, then she hold my hand <br>
+                And I lie to get a smile <br> <br>
+                Using what I want <br>
+                To get what you want <br>
+                Using what I want <br>
+                To get what you want <br>
+                Using what I want <br>
+                To get what you want <br>
+                Using what I want <br>
+                To get what you want <br> <br>
+                Ooh, sweet amber <br> <br>
+                How sweet are you? <br>
+                How sweet does it get? <br>
+                How sweet are you? <br>
+                How sweet does it get? <br> <br>
+                Chase the rabbit, fetch the stick <br>
+                She rolls me over 'til I'm sick <br>
+                She deals in habits, deals in pain <br>
+                I run away, but I'm back again <br>
+                Chase the rabbit, fetch the stick <br>
+                She rolls me over 'til I'm sick <br>
+                She deals in habits, deals in pain <br>
+                I run away, but I'm back again <br> <br>
+                Ooh, then she holds my hand <br>
+                And I lie to get a smile <br> <br>
+                Ooh, yeah <br>
+                And she squeezes tighter <br>
+                I still lie to get a smile <br>
+                Using what I want <br>
+                To get what you want <br>
+                Using what I want <br>
+                To get what you want <br>
+                Using what I want <br>
+                To get what you want <br>
+                Using what I want <br>
+                To get what you want <br> <br>
+                Ooh, sweet amber <br> <br>
+                How sweet are you? <br>
+                How sweet does it get? <br>
+                How sweet are you? <br>
+                How sweet does it get? <br> <br>
+                She holds the pen that spells the end <br>
+                She traces me and draws me in <br> <br>
+                She holds the pen that spells the end <br>
+                She traces me and draws me in <br>
+                Ooh, sweet amber (ooh, sweet amber) <br> <br>
+                Ooh, sweet amber <br> <br>
+                How sweet are you? <br>
+                Ooh, how sweet does it get? <br>
+                How sweet are you? <br>
+                How sweet does it get? <br> <br>
+                It's never as sweet as it seems <br> <br>
+            </p>
+        </div>
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                Lave suas costas pra não apunhalar as minhas <br>
+                Fique na cama com os seus iguais <br>
+                Viva sua vida pra não ver a minha <br>
+                Cubra suas costas pra não brilhar <br>
+                <br>
+                Ooh, então ela segura minha mão <br>
+                E eu minto pra arrancar um sorriso <br>
+                Ooh, então ela segura minha mão <br>
+                E eu minto pra arrancar um sorriso <br>
+                <br>
+                Usando o que eu quero <br>
+                Pra conseguir o que você quer <br>
+                Usando o que eu quero <br>
+                Pra conseguir o que você quer <br>
+                Usando o que eu quero <br>
+                Pra conseguir o que você quer <br>
+                Usando o que eu quero <br>
+                Pra conseguir o que você quer <br>
+                <br>
+                Ooh, doce Amber <br>
+                <br>
+                Quão doce você é? <br>
+                Quão doce pode ser? <br>
+                Quão doce você é? <br>
+                Quão doce pode ser? <br>
+                <br>
+                Corra atrás do coelho, busque o graveto <br>
+                Ela me vira até eu ficar doente <br>
+                Ela lida com vícios, lida com dor <br>
+                Eu fujo, mas volto de novo <br>
+                Corra atrás do coelho, busque o graveto <br>
+                Ela me vira até eu ficar doente <br>
+                Ela lida com vícios, lida com dor <br>
+                Eu fujo, mas volto de novo <br>
+                <br>
+                Ooh, então ela segura minha mão <br>
+                E eu minto pra arrancar um sorriso <br>
+                <br>
+                Ooh, yeah <br>
+                E ela aperta mais forte <br>
+                Eu ainda minto pra arrancar um sorriso <br>
+                Usando o que eu quero <br>
+                Pra conseguir o que você quer <br>
+                Usando o que eu quero <br>
+                Pra conseguir o que você quer <br>
+                Usando o que eu quero <br>
+                Pra conseguir o que você quer <br>
+                Usando o que eu quero <br>
+                Pra conseguir o que você quer <br>
+                <br>
+                Ooh, doce Amber <br>
+                <br>
+                Quão doce você é? <br>
+                Quão doce pode ser? <br>
+                Quão doce você é? <br>
+                Quão doce pode ser? <br>
+                <br>
+                Ela segura a caneta que escreve o fim <br>
+                Ela me contorna e me atrai <br>
+                <br>
+                Ela segura a caneta que escreve o fim <br>
+                Ela me contorna e me atrai <br>
+                Ooh, doce Amber (ooh, doce Amber) <br>
+                <br>
+                Ooh, doce Amber <br>
+                <br>
+                Quão doce você é? <br>
+                Ooh, quão doce pode ser? <br>
+                Quão doce você é? <br>
+                Quão doce pode ser? <br>
+                <br>
+                Nunca é tão doce quanto parece <br>
+                <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'Sweet Amber' do Metallica aborda temas de manipulação, vícios e a busca incessante por algo que
+            nunca é tão doce quanto parece. A letra começa com uma advertência sobre a traição e a necessidade de se
+            proteger, sugerindo que as pessoas devem cuidar de si mesmas para evitar serem prejudicadas pelos outros. A
+            metáfora de 'lavar as costas' para não ser apunhalado é uma imagem poderosa que ilustra a desconfiança e a
+            autopreservação. <br> <br>
+
+            O refrão, que repete a pergunta 'How sweet are you? How sweet does it get?', sugere uma reflexão sobre a
+            verdadeira natureza de algo que parece atraente na superfície, mas que pode ser enganoso. A figura de 'Sweet
+            Amber' pode ser interpretada como uma personificação de um vício ou uma tentação que, apesar de parecer doce
+            e atraente, traz dor e arrependimento. A letra menciona 'chase the rabbit, fetch the stick', o que pode ser
+            visto como uma metáfora para a busca incessante e fútil por algo que nunca é alcançado. <br> <br>
+
+            A música também explora a ideia de manipulação emocional, onde o eu-lírico mente para obter um sorriso,
+            mesmo sabendo que está sendo controlado. A frase 'She holds the pen that spells the end' sugere que 'Sweet
+            Amber' tem o poder de determinar o destino do eu-lírico, reforçando a ideia de que ele está preso em um
+            ciclo de dependência e manipulação. No final, a conclusão de que 'It's never as sweet as it seems' resume a
+            desilusão e a amarga realidade de que as coisas que parecem atraentes muitas vezes não são o que parecem
+            ser. <br> <br> <br> <br> <br> <br>
+        </p>
+    </div>
+
+    <button onclick="history.back()" class="voltar-btn">⟵ Voltar</button>
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/0nP2Se8dSKsdOkg6XEee60?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="musica-container"></iframe>
+</body>
+
+</html>

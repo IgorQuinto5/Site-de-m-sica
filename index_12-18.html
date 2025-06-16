@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Blitzkrieg</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, rgba(119, 143, 173, 1), rgba(0, 0, 0, 0.8));
+            color: #fff;
+        }
+
+        .top-section {
+            background: linear-gradient(to bottom, rgba(30, 40, 60, 1), rgba(0, 0, 0, 0.3));
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://universalmusic.vtexassets.com/arquivos/ids/185276/cd%20metallica-garage-inc-2cd%20-importado-cd%20metallica-garage-inc-2cd%20-impor-00731453835122-00073145383512.jpg?v=638479403540600000"
+            alt="Capa do Álbum" class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>Blitzkrieg</h1>
+            <p class="meta">Metallica • Garage Inc. • 1998 • 3:36</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                Let us have peace, let us have life <br>
+                Let us escape the cruel night <br>
+                Let us have time, let the sun shine <br>
+                Let us beware the deadly sign <br> <br>
+                The day is coming <br>
+                Armageddon's near <br>
+                Inferno's coming <br>
+                Can we survive the blitzkrieg? <br>
+                The blitzkrieg <br>
+                The blitzkrieg <br> <br>
+                Save us from fate, save us from hate <br>
+                Save ourselves before it's too late <br>
+                Come to our need, hear our plea <br>
+                Save ourselves before the earth bleeds <br> <br>
+                The day is dawning <br>
+                The time is near <br>
+                Aliens calling <br>
+                Can we survive the blitzkrieg? <br> <br>
+            </p>
+        </div>
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                Que haja paz, que haja vida <br>
+                Que escapemos da noite cruel <br>
+                Que tenhamos tempo, que o sol brilhe <br>
+                Que estejamos atentos ao sinal mortal <br>
+                <br>
+                O dia está chegando <br>
+                O Armagedom está próximo <br>
+                O inferno se aproxima <br>
+                Será que sobreviveremos ao blitzkrieg? <br>
+                O blitzkrieg <br>
+                O blitzkrieg <br>
+                <br>
+                Salve-nos do destino, salve-nos do ódio <br>
+                Salve a nós mesmos antes que seja tarde <br>
+                Atenda ao nosso clamor, ouça nosso apelo <br>
+                Salve a nós mesmos antes que a Terra sangre <br>
+                <br>
+                O dia está raiando <br>
+                A hora está próxima <br>
+                Alienígenas chamando <br>
+                Será que sobreviveremos ao blitzkrieg? <br>
+                <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'Blitzkrieg' da banda Metallica aborda temas de guerra, destruição e a busca desesperada por paz e
+            salvação. O termo 'blitzkrieg' é uma palavra alemã que significa 'guerra-relâmpago', uma tática militar
+            usada pela Alemanha nazista durante a Segunda Guerra Mundial. A letra da música utiliza essa metáfora para
+            descrever uma situação de caos iminente e a necessidade urgente de evitar a catástrofe. <br><br>
+
+            No primeiro verso, a banda clama por paz, vida e tempo, pedindo para escapar da 'noite cruel' e para que o
+            sol brilhe novamente. Isso pode ser interpretado como um desejo de retornar a tempos mais pacíficos e evitar
+            os horrores da guerra. A menção ao 'sinal mortal' sugere que há sinais claros de perigo e destruição
+            iminente, reforçando a urgência da mensagem. <br><br>
+
+            O refrão da música, com a repetição da pergunta 'Podemos sobreviver ao blitzkrieg?', enfatiza a incerteza e
+            o medo diante de uma ameaça avassaladora. A letra também faz referência ao Armagedom e ao inferno,
+            simbolizando o fim dos tempos e a destruição total. A segunda estrofe continua o apelo desesperado por
+            salvação, pedindo para serem salvos do destino e do ódio, e para que a Terra não sangre. A menção a
+            'alienígenas chamando' pode ser vista como uma metáfora para forças desconhecidas e incontroláveis que
+            ameaçam a humanidade. <br><br>
+
+            A música 'Blitzkrieg' é um poderoso comentário sobre a fragilidade da paz e a constante ameaça de destruição
+            que paira sobre o mundo. Através de metáforas e imagens vívidas, Metallica nos lembra da importância de
+            lutar pela paz e de estar vigilantes contra as forças que buscam nos destruir. <br><br><br><br><br><br>
+        </p>
+    </div>
+    <button onclick="history.back()" class="voltar-btn">⟵ Voltar</button>
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/0zZPCkSMAECtxBQHWJ0enW?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="musica-container"></iframe>
+
+</body>
+
+</html>

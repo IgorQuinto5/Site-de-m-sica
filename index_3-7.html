@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Orion</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, rgba(208, 117, 20, 1), rgba(0, 0, 0, 0.8));
+            color: #fff;
+        }
+
+        .top-section {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(180, 100, 15, 1));
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://upload.wikimedia.org/wikipedia/pt/4/4d/Master_of_Puppets.jpg"
+            alt="Capa do Álbum Master of Puppets" class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>Orion - Remastered</h1>
+            <p class="meta">Metallica • Master of Puppets • 1986 • 8:27</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                Instrumental<br><br>
+            </p>
+        </div>
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                Instrumental<br><br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'Orion', da banda Metallica, é uma peça instrumental que se destaca no álbum 'Master of Puppets',
+            lançado em 1986. Sem letras, a música fala através de seus riffs poderosos, solos de guitarra e uma seção de
+            baixo marcante, criando uma atmosfera que transcende a necessidade de palavras. A faixa é uma homenagem ao
+            antigo baixista da banda, Cliff Burton, que teve um papel fundamental na composição da música e é lembrado
+            por sua habilidade excepcional no baixo.<br> <br>
+
+            A escolha do nome 'Orion' remete à constelação, sugerindo uma viagem cósmica ou uma exploração do
+            desconhecido. A música pode ser interpretada como uma jornada épica, com altos e baixos emocionais,
+            refletindo a grandiosidade e a imensidão do universo. A progressão da música e as mudanças de ritmo
+            contribuem para a sensação de uma narrativa sem palavras, onde cada instrumento conta uma parte da história.<br> <br>
+
+            O estilo musical de 'Orion' é um exemplo do thrash metal progressivo, mostrando a habilidade do Metallica em
+            criar composições complexas e emocionantes. A música é um testemunho do talento e da criatividade da banda,
+            e permanece como uma das peças instrumentais mais admiradas no gênero do metal. A ausência de letras permite
+            que cada ouvinte tenha uma interpretação pessoal, tornando 'Orion' uma experiência única e introspectiva.
+            <br> <br><br><br><br> <br><br> <br>
+        </p>
+    </div>
+    
+    <button onclick="history.back()" class="voltar-btn">⟵ Voltar</button>
+
+
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/2HD5BWFthrNf2uFyEhi53d?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="musica-container"></iframe>
+
+</body>
+
+</html>

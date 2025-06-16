@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Shoot Me Again</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* degradê principal do álbum St. Anger */
+            background: linear-gradient(to bottom, rgba(168, 19, 40, 1), rgba(0, 0, 0, 0.8));
+            color: #fff;
+        }
+
+        .top-section {
+            /* topo levemente mais escuro para contraste */
+            background: linear-gradient(to top, rgba(100, 10, 25, 1), #141414);
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://rollingstone.uol.com.br/media/uploads/2024/02/metallica-st-anger-capa-696x696.jpg"
+            alt="Capa do Álbum St. Anger" class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>Shoot Me Again - Remastered</h1>
+            <p class="meta">Metallica • St. Anger • 2003 • 7:10</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                I won't go away <br>
+                Right, right here I stay <br>
+                Stand silent in flames <br>
+                Stand tall till it fades <br> <br>
+                Shoot me again, I ain't dead yet <br>
+                Come on, shoot me again, I ain't dead yet <br>
+                I said shoot me again, I ain't dead yet <br>
+                Come on, shoot me again, I ain't dead yet <br> <br>
+                Come on, shoot me again, shoot me again, shoot me <br>
+                Shoot me again, shoot me again, come on <br>
+                Shoot me again, shoot me again, shoot me <br>
+                Shoot me again, shoot me again, come on <br> <br>
+                All the shots I take <br>
+                I spit back at you <br>
+                All the shit you fake <br>
+                Comes back to haunt you <br> <br>
+                All the shots <br>
+                All the shots <br> <br>
+                All the shots I take <br>
+                What difference did I make? <br>
+                All the shots I take <br>
+                I spit back at you <br> <br>
+                I won't go away, with a bullet in my back <br>
+                Right here I stay, with a bullet in my back <br> <br>
+                Shoot me (take a shot) <br>
+                Shoot me (take a shot) <br>
+                Shoot me (take a shot) <br>
+                Shoot me (take a shot) <br> <br>
+                I stand on my own, with a bullet in my back <br>
+                I'm stranded and sold, with a bullet in my back <br> <br>
+                Shoot me again, I ain't dead yet <br>
+                Come on, shoot me again, I ain't dead yet <br>
+                Yeah, shoot me again, I ain't dead yet <br>
+                Come on, shoot me again, I ain't dead yet <br> <br>
+                I said, shoot me again, shoot me again, come on <br>
+                Shoot me again, shoot me again, come on <br>
+                Shoot me again, shoot me again, shoot me <br>
+                Shoot me again, shoot me again, yeah <br> <br>
+                All the shots I take <br>
+                I spit back at you <br>
+                All the shit you fake <br>
+                Comes back to haunt you <br> <br>
+                All the shots <br>
+                All the shots <br> <br>
+                All the shots I take <br>
+                Hey, what difference did I make? (What difference did I make?) <br>
+                All the shots I take <br>
+                I spit back at you <br> <br>
+                I bite my tongue, tryin' not to shoot back <br>
+                No compromise, my heart won't pump the other way <br> <br>
+                Wake the sleeping giant, wake the beast <br>
+                Wake the sleeping dog, no, let him sleep <br>
+                Wake the sleeping giant, wake the beast <br>
+                Wake the sleeping dog, no, let him sleep <br> <br>
+                I bite my tongue, tryin' not to shoot back <br> <br>
+                All the shots I take <br>
+                I spit back at you, yeah <br>
+                All the shit you fake <br>
+                Comes back to haunt you <br> <br>
+                All the shots <br>
+                All the shots <br> <br>
+                All the shots I take <br>
+                Hey, what difference did I make? (What difference did I make?) <br>
+                All the shots I take <br>
+                I spit back at you <br> <br>
+            </p>
+        </div>
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                Eu não vou embora <br>
+                Certo, eu fico bem aqui <br>
+                Permaneço em silêncio nas chamas <br>
+                Fico firme até que se apague <br>
+                <br>
+                Atire em mim de novo, ainda não estou morto <br>
+                Vamos, atire em mim de novo, ainda não estou morto <br>
+                Eu disse, atire em mim de novo, ainda não estou morto <br>
+                Vamos, atire em mim de novo, ainda não estou morto <br>
+                <br>
+                Vamos, atire em mim de novo, atire em mim de novo, atire em mim <br>
+                Atire em mim de novo, atire em mim de novo, vamos <br>
+                Atire em mim de novo, atire em mim de novo, atire em mim <br>
+                Atire em mim de novo, atire em mim de novo, vamos <br>
+                <br>
+                Todos os tiros que eu levo <br>
+                Cuspo de volta em você <br>
+                Toda a merda que você finge <br>
+                Volta pra te assombrar <br>
+                <br>
+                Todos os tiros <br>
+                Todos os tiros <br>
+                <br>
+                Todos os tiros que eu levo <br>
+                Que diferença eu fiz? <br>
+                Todos os tiros que eu levo <br>
+                Cuspo de volta em você <br>
+                <br>
+                Eu não vou embora, com uma bala nas costas <br>
+                Fico bem aqui, com uma bala nas costas <br>
+                <br>
+                Atire em mim (atira logo) <br>
+                Atire em mim (atira logo) <br>
+                Atire em mim (atira logo) <br>
+                Atire em mim (atira logo) <br>
+                <br>
+                Eu fico por conta própria, com uma bala nas costas <br>
+                Estou à deriva e fui vendido, com uma bala nas costas <br>
+                <br>
+                Atire em mim de novo, ainda não estou morto <br>
+                Vamos, atire em mim de novo, ainda não estou morto <br>
+                Sim, atire em mim de novo, ainda não estou morto <br>
+                Vamos, atire em mim de novo, ainda não estou morto <br>
+                <br>
+                Eu disse, atire em mim de novo, atire em mim de novo, vamos <br>
+                Atire em mim de novo, atire em mim de novo, vamos <br>
+                Atire em mim de novo, atire em mim de novo, atire em mim <br>
+                Atire em mim de novo, atire em mim de novo, yeah <br>
+                <br>
+                Todos os tiros que eu levo <br>
+                Cuspo de volta em você <br>
+                Toda a merda que você finge <br>
+                Volta pra te assombrar <br>
+                <br>
+                Todos os tiros <br>
+                Todos os tiros <br>
+                <br>
+                Todos os tiros que eu levo <br>
+                Ei, que diferença eu fiz? (Que diferença eu fiz?) <br>
+                Todos os tiros que eu levo <br>
+                Cuspo de volta em você <br>
+                <br>
+                Eu mordo a língua, tentando não revidar <br>
+                Sem compromisso, meu coração não vai bombear pro outro lado <br>
+                <br>
+                Acorde o gigante adormecido, acorde a besta <br>
+                Acorde o cão adormecido, não, deixe-o dormir <br>
+                Acorde o gigante adormecido, acorde a besta <br>
+                Acorde o cão adormecido, não, deixe-o dormir <br>
+                <br>
+                Eu mordo a língua, tentando não revidar <br>
+                <br>
+                Todos os tiros que eu levo <br>
+                Cuspo de volta em você, yeah <br>
+                Toda a merda que você finge <br>
+                Volta pra te assombrar <br>
+                <br>
+                Todos os tiros <br>
+                Todos os tiros <br>
+                <br>
+                Todos os tiros que eu levo <br>
+                Ei, que diferença eu fiz? (Que diferença eu fiz?) <br>
+                Todos os tiros que eu levo <br>
+                Cuspo de volta em você <br>
+                <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'Shoot Me Again' do Metallica é uma poderosa expressão de resiliência e retaliação diante das
+            adversidades. A letra transmite uma mensagem de resistência inabalável, onde o eu lírico se recusa a ser
+            derrotado, mesmo quando enfrenta ataques constantes. A repetição da frase 'Shoot me again, I ain’t dead yet'
+            reforça a ideia de que, apesar das tentativas de derrubá-lo, ele permanece firme e determinado a não se
+            render.<br> <br>
+
+            A metáfora do 'bullet in my back' (bala nas costas) é central na música, simbolizando as traições e os
+            golpes sofridos. No entanto, em vez de sucumbir, o eu lírico escolhe permanecer de pé, enfrentando os
+            desafios de frente. A letra também aborda a ideia de retaliação, com versos como 'All the shots I take, I
+            spit back at you' e 'All the shit you fake, comes back to haunt you', sugerindo que as ações negativas dos
+            outros eventualmente terão consequências.<br> <br>
+
+            Além disso, a música explora a luta interna do eu lírico para não revidar de imediato, como evidenciado em
+            'I bite my tongue, trying not to shoot back'. Essa linha revela a tensão entre a vontade de retaliar e a
+            decisão de manter a calma, destacando a complexidade emocional envolvida na resistência. A referência ao
+            'wake the sleeping giant' e 'wake the beast' sugere que, embora o eu lírico esteja tentando manter a paz, há
+            um limite para sua paciência, e despertar sua ira pode ter consequências devastadoras.<br> <br>
+
+            'Shoot Me Again' é uma canção que encapsula a essência da luta contra a adversidade, a resiliência diante
+            das dificuldades e a inevitabilidade das consequências das ações negativas. Através de suas letras intensas
+            e metáforas poderosas, o Metallica oferece uma reflexão profunda sobre a força interior e a retaliação. <br>
+            <br> <br> <br> <br> <br>
+        </p>
+    </div>
+
+    <button onclick="history.back()" class="voltar-btn">⟵ Voltar</button>
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/6ATqmUzk4xbq3XpVsZMPW5?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="musica-container"></iframe>
+</body>
+
+</html>

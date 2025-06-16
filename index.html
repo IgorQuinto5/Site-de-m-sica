@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metallica</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #121212;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.5;
+        }
+
+        .album-section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+
+        .album-kill-em-all {
+            background: linear-gradient(to bottom, rgba(213, 20, 27, 255), rgba(0, 0, 0, 0.8));
+        }
+
+        .album-ride-the-lightning {
+            background: linear-gradient(to bottom, rgba(63, 111, 174, 255), rgba(0, 0, 0, 0.8));
+        }
+
+        .album-master-of-puppets {
+            background: linear-gradient(to bottom, rgba(208, 117, 20, 255), rgba(0, 0, 0, 0.8));
+        }
+
+        .album-and-justice {
+            background: linear-gradient(to bottom, rgba(117, 125, 125, 255), rgba(0, 0, 0, 0.8));
+        }
+
+        .album-black-album {
+            background: #000;
+        }
+
+        .album-load {
+            background: linear-gradient(to bottom, rgba(137, 49, 33, 255), rgba(0, 0, 0, 0.8));
+        }
+
+        .album-reload {
+            background: linear-gradient(to bottom, rgba(118, 30, 15, 255), rgba(0, 0, 0, 0.8));
+        }
+
+        .album-st-anger {
+            background: linear-gradient(to bottom, rgba(168, 19, 40, 255), rgba(0, 0, 0, 0.8));
+        }
+
+        .album-death-magnetic {
+            background: linear-gradient(to bottom, rgba(79, 79, 79, 255), rgba(0, 0, 0, 0.8));
+        }
+
+        .album-hardwired {
+            background: linear-gradient(to bottom, rgba(180, 32, 6, 255), rgba(0, 0, 0, 0.8));
+        }
+
+        .album-72-seasons {
+            background: linear-gradient(to bottom, rgba(146, 145, 0, 255), rgba(0, 0, 0, 0.8));
+        }
+
+        .album-garage-inc {
+            background: linear-gradient(to bottom, rgba(119, 143, 173, 255), rgba(0, 0, 0, 0.8));
+        }
+
+        .album-header {
+            display: flex;
+            align-items: center;
+        }
+
+        .album-cover {
+            width: 200px;
+            height: 200px;
+            border-radius: 4px;
+            margin-right: 24px;
+            object-fit: cover;
+        }
+
+        .album-meta {
+            flex: 1;
+        }
+
+        .album-meta h1 {
+            font-size: 2.2em;
+            margin-bottom: 8px;
+        }
+
+        .album-meta .info {
+            font-size: 0.9em;
+            color: #b3b3b3;
+            margin-bottom: 16px;
+        }
+
+        .track-table {
+            width: 100%;
+            margin-top: 24px;
+            border-collapse: collapse;
+        }
+
+        .track-table thead th {
+            text-align: left;
+            font-size: 0.85em;
+            color: #b3b3b3;
+            padding-bottom: 8px;
+        }
+
+        .track-table tbody tr:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .track-table td {
+            padding: 12px 8px;
+            font-size: 0.95em;
+        }
+
+        .track-number {
+            width: 40px;
+            color: #b3b3b3;
+        }
+
+        .track-duration {
+            text-align: right;
+            width: 60px;
+            color: #b3b3b3;
+        }
+
+        .clickable-row {
+            cursor: pointer;
+        }
+
+        #emCima {
+            width: 100%;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+
+    <div id="emCima" style="position: relative; max-width: 600px; margin: auto;">
+        <label for="search-input" style="
+        display: block;
+        font-size: 1.2em;
+        color: #f0f0f0;
+        margin-bottom: 12px;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 1px;
+    ">
+            Pesquise uma música ou álbum:
+        </label>
+
+        <div style="position: relative;">
+            <input id="search-input" type="text" autocomplete="off" placeholder="Digite aqui…" style="
+            width: 100%;
+            padding: 12px 36px 12px 18px; /* espaço extra à direita para o X */
+            font-size: 1em;
+            border-radius: 8px;
+            border: 1px solid #444;
+            background: #1d1c1c;
+            color: #eee;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
+            transition: all 0.2s ease-in-out;
+        " />
+
+            <span id="clear-btn" style="
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2em;
+            color: #fff;
+            cursor: pointer;
+            display: none;
+            user-select: none;
+        ">×</span>
+        </div>
+        <div id="suggestions" style="
+    position: absolute;
+    background: #222;
+    border: 1px solid #444;
+    border-radius: 20px;
+    width: 100%;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none;
+    border-radius: 0 0 8px 8px;
+    top: 100%;
+    left: 0;
+    font-size: 15px;
+"></div>
+    </div>
+
+    <!-- Kill 'Em All (1983) -->
+    <section class="album-section album-kill-em-all">
+        <div class="album-header">
+            <img src="https://lastfm.freetls.fastly.net/i/u/ar0/9849e2dc2f048cc92a87e29a3a3298db.jpg"
+                alt="Kill 'Em All Cover" class="album-cover">
+            <div class="album-meta">
+                <h1>Kill 'Em All (1983)</h1>
+                <div class="info">Metallica • 1983 • 10 faixas</div>
+            </div>
+        </div>
+        <table class="track-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Título</th>
+                    <th class="track-duration">Duração</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="clickable-row" onclick="window.location='index_1-1.html';">
+                    <td class="track-number">1</td>
+                    <td class="track-title">Hit the Lights</td>
+                    <td class="track-duration">4:15</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_1-2.html';">
+                    <td class="track-number">2</td>
+                    <td class="track-title">The Four Horsemen</td>
+                    <td class="track-duration">7:12</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_1-3.html';">
+                    <td class="track-number">3</td>
+                    <td class="track-title">Motorbreath</td>
+                    <td class="track-duration">3:07</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_1-4.html';">
+                    <td class="track-number">4</td>
+                    <td class="track-title">Jump in the Fire</td>
+                    <td class="track-duration">4:41</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_1-5.html';">
+                    <td class="track-number">5</td>
+                    <td class="track-title">(Anesthesia) – Pulling Teeth</td>
+                    <td class="track-duration">4:14</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_1-6.html';">
+                    <td class="track-number">6</td>
+                    <td class="track-title">Whiplash</td>
+                    <td class="track-duration">4:08</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_1-7.html';">
+                    <td class="track-number">7</td>
+                    <td class="track-title">Phantom Lord</td>
+                    <td class="track-duration">5:01</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_1-8.html';">
+                    <td class="track-number">8</td>
+                    <td class="track-title">No Remorse</td>
+                    <td class="track-duration">6:26</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_1-9.html';">
+                    <td class="track-number">9</td>
+                    <td class="track-title">Seek & Destroy</td>
+                    <td class="track-duration">6:54</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_1-10.html';">
+                    <td class="track-number">10</td>
+                    <td class="track-title">Metal Militia</td>
+                    <td class="track-duration">5:11</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Ride the Lightning (1984) -->
+    <section class="album-section album-ride-the-lightning">
+        <div class="album-header">
+            <img src="https://universalmusic.vtexassets.com/arquivos/ids/185314/cd%20metallica-ride-the-lightning-importado-cd%20metallica-ride-the-lightning-impo-00042283814028-00004228381402.jpg?v=638482831030130000"
+                alt="Ride the Lightning Cover" class="album-cover">
+            <div class="album-meta">
+                <h1>Ride the Lightning (1984)</h1>
+                <div class="info">Metallica • 1984 • 8 faixas</div>
+            </div>
+        </div>
+        <table class="track-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Título</th>
+                    <th class="track-duration">Duração</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="clickable-row" onclick="window.location='index_2-1.html';">
+                    <td class="track-number">1</td>
+                    <td class="track-title">Fight Fire with Fire</td>
+                    <td class="track-duration">4:44</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_2-2.html';">
+                    <td class="track-number">2</td>
+                    <td class="track-title">Ride the Lightning</td>
+                    <td class="track-duration">6:36</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_2-3.html';">
+                    <td class="track-number">3</td>
+                    <td class="track-title">For Whom the Bell Tolls</td>
+                    <td class="track-duration">5:09</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_2-4.html';">
+                    <td class="track-number">4</td>
+                    <td class="track-title">Fade to Black</td>
+                    <td class="track-duration">6:57</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_2-5.html';">
+                    <td class="track-number">5</td>
+                    <td class="track-title">Trapped Under Ice</td>
+                    <td class="track-duration">4:04</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_2-6.html';">
+                    <td class="track-number">6</td>
+                    <td class="track-title">Escape</td>
+                    <td class="track-duration">4:23</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_2-7.html';">
+                    <td class="track-number">7</td>
+                    <td class="track-title">Creeping Death</td>
+                    <td class="track-duration">6:35</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_2-8.html';">
+                    <td class="track-number">8</td>
+                    <td class="track-title">The Call of Ktulu</td>
+                    <td class="track-duration">8:53</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Master of Puppets (1986) -->
+    <section class="album-section album-master-of-puppets">
+        <div class="album-header">
+            <img src="https://upload.wikimedia.org/wikipedia/pt/4/4d/Master_of_Puppets.jpg"
+                alt="Master of Puppets Cover" class="album-cover">
+            <div class="album-meta">
+                <h1>Master of Puppets (1986)</h1>
+                <div class="info">Metallica • 1986 • 8 faixas</div>
+            </div>
+        </div>
+        <table class="track-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Título</th>
+                    <th class="track-duration">Duração</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="clickable-row" onclick="window.location='index_3-1.html';">
+                    <td class="track-number">1</td>
+                    <td class="track-title">Battery</td>
+                    <td class="track-duration">5:12</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_3-2.html';">
+                    <td class="track-number">2</td>
+                    <td class="track-title">Master of Puppets</td>
+                    <td class="track-duration">8:35</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_3-3.html';">
+                    <td class="track-number">3</td>
+                    <td class="track-title">The Thing That Should Not Be</td>
+                    <td class="track-duration">6:36</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_3-4.html';">
+                    <td class="track-number">4</td>
+                    <td class="track-title">Welcome Home (Sanitarium)</td>
+                    <td class="track-duration">6:27</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_3-5.html';">
+                    <td class="track-number">5</td>
+                    <td class="track-title">Disposable Heroes</td>
+                    <td class="track-duration">8:16</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_3-6.html';">
+                    <td class="track-number">6</td>
+                    <td class="track-title">Leper Messiah</td>
+                    <td class="track-duration">5:39</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_3-7.html';">
+                    <td class="track-number">7</td>
+                    <td class="track-title">Orion</td>
+                    <td class="track-duration">8:27</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_3-8.html';">
+                    <td class="track-number">8</td>
+                    <td class="track-title">Damage, Inc.</td>
+                    <td class="track-duration">5:32</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- ...And Justice for All (1988) -->
+    <section class="album-section album-and-justice">
+        <div class="album-header">
+            <img src="https://i.ytimg.com/vi/3aHwIzzHujc/maxresdefault.jpg" alt="...And Justice for All Cover"
+                class="album-cover">
+            <div class="album-meta">
+                <h1>...And Justice for All (1988)</h1>
+                <div class="info">Metallica • 1988 • 9 faixas</div>
+            </div>
+        </div>
+        <table class="track-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Título</th>
+                    <th class="track-duration">Duração</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="clickable-row" onclick="window.location='index_4-1.html';">
+                    <td class="track-number">1</td>
+                    <td class="track-title">Blackened</td>
+                    <td class="track-duration">6:42</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_4-2.html';">
+                    <td class="track-number">2</td>
+                    <td class="track-title">...And Justice for All</td>
+                    <td class="track-duration">9:45</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_4-3.html';">
+                    <td class="track-number">3</td>
+                    <td class="track-title">Eye of the Beholder</td>
+                    <td class="track-duration">6:25</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_4-4.html';">
+                    <td class="track-number">4</td>
+                    <td class="track-title">One</td>
+                    <td class="track-duration">7:26</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_4-5.html';">
+                    <td class="track-number">5</td>
+                    <td class="track-title">The Shortest Straw</td>
+                    <td class="track-duration">6:35</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_4-6.html';">
+                    <td class="track-number">6</td>
+                    <td class="track-title">Harvester of Sorrow</td>
+                    <td class="track-duration">5:45</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_4-7.html';">
+                    <td class="track-number">7</td>
+                    <td class="track-title">The Frayed Ends of Sanity</td>
+                    <td class="track-duration">7:43</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_4-8.html';">
+                    <td class="track-number">8</td>
+                    <td class="track-title">To Live Is to Die</td>
+                    <td class="track-duration">9:48</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_4-9.html';">
+                    <td class="track-number">9</td>
+                    <td class="track-title">Dyers Eve</td>
+                    <td class="track-duration">5:13</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Metallica (The Black Album) (1991) -->
+    <section class="album-section album-black-album">
+        <div class="album-header">
+            <img src="https://gcdn.emol.cl/los-90/files/2019/04/metallica-black-album-1.jpg" alt="The Black Album Cover"
+                class="album-cover">
+            <div class="album-meta">
+                <h1>Metallica (The Black Album) (1991)</h1>
+                <div class="info">Metallica • 1991 • 12 faixas</div>
+            </div>
+        </div>
+        <table class="track-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Título</th>
+                    <th class="track-duration">Duração</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="clickable-row" onclick="window.location='index_5-1.html';">
+                    <td class="track-number">1</td>
+                    <td class="track-title">Enter Sandman</td>
+                    <td class="track-duration">5:31</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_5-2.html';">
+                    <td class="track-number">2</td>
+                    <td class="track-title">Sad But True</td>
+                    <td class="track-duration">5:23</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_5-3.html';">
+                    <td class="track-number">3</td>
+                    <td class="track-title">Holier Than Thou</td>
+                    <td class="track-duration">3:47</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_5-4.html';">
+                    <td class="track-number">4</td>
+                    <td class="track-title">The Unforgiven</td>
+                    <td class="track-duration">6:26</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_5-5.html';">
+                    <td class="track-number">5</td>
+                    <td class="track-title">Wherever I May Roam</td>
+                    <td class="track-duration">6:44</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_5-6.html';">
+                    <td class="track-number">6</td>
+                    <td class="track-title">Don't Tread on Me</td>
+                    <td class="track-duration">4:00</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_5-7.html';">
+                    <td class="track-number">7</td>
+                    <td class="track-title">Through the Never</td>
+                    <td class="track-duration">4:04</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_5-8.html';">
+                    <td class="track-number">8</td>
+                    <td class="track-title">Nothing Else Matters</td>
+                    <td class="track-duration">6:28</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_5-9.html';">
+                    <td class="track-number">9</td>
+                    <td class="track-title">Of Wolf and Man</td>
+                    <td class="track-duration">4:16</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_5-10.html';">
+                    <td class="track-number">10</td>
+                    <td class="track-title">The God That Failed</td>
+                    <td class="track-duration">5:08</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_5-11.html';">
+                    <td class="track-number">11</td>
+                    <td class="track-title">My Friend of Misery</td>
+                    <td class="track-duration">6:49</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_5-12.html';">
+                    <td class="track-number">12</td>
+                    <td class="track-title">The Struggle Within</td>
+                    <td class="track-duration">3:52</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Load (1996) -->
+    <section class="album-section album-load">
+        <div class="album-header">
+            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/3/32/Load.jpg/250px-Load.jpg" alt="Load Cover"
+                class="album-cover">
+            <div class="album-meta">
+                <h1>Load (1996)</h1>
+                <div class="info">Metallica • 1996 • 14 faixas</div>
+            </div>
+        </div>
+        <table class="track-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Título</th>
+                    <th class="track-duration">Duração</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="clickable-row" onclick="window.location='index_6-1.html';">
+                    <td class="track-number">1</td>
+                    <td class="track-title">Ain't My Bitch</td>
+                    <td class="track-duration">5:04</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_6-2.html';">
+                    <td class="track-number">2</td>
+                    <td class="track-title">2 X 4</td>
+                    <td class="track-duration">5:28</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_6-3.html';">
+                    <td class="track-number">3</td>
+                    <td class="track-title">The House Jack Built</td>
+                    <td class="track-duration">6:38</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_6-4.html';">
+                    <td class="track-number">4</td>
+                    <td class="track-title">Until It Sleeps</td>
+                    <td class="track-duration">4:27</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_6-5.html';">
+                    <td class="track-number">5</td>
+                    <td class="track-title">King Nothing</td>
+                    <td class="track-duration">5:29</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_6-6.html';">
+                    <td class="track-number">6</td>
+                    <td class="track-title">Hero of the Day</td>
+                    <td class="track-duration">4:21</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_6-7.html';">
+                    <td class="track-number">7</td>
+                    <td class="track-title">Bleeding Me</td>
+                    <td class="track-duration">8:17</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_6-8.html';">
+                    <td class="track-number">8</td>
+                    <td class="track-title">Cure</td>
+                    <td class="track-duration">4:54</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_6-9.html';">
+                    <td class="track-number">9</td>
+                    <td class="track-title">Poor Twisted Me</td>
+                    <td class="track-duration">4:00</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_6-10.html';">
+                    <td class="track-number">10</td>
+                    <td class="track-title">Wasting My Hate</td>
+                    <td class="track-duration">3:57</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_6-11.html';">
+                    <td class="track-number">11</td>
+                    <td class="track-title">Mama Said</td>
+                    <td class="track-duration">5:19</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_6-12.html';">
+                    <td class="track-number">12</td>
+                    <td class="track-title">Thorn Within</td>
+                    <td class="track-duration">5:51</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_6-13.html';">
+                    <td class="track-number">13</td>
+                    <td class="track-title">Ronnie</td>
+                    <td class="track-duration">5:17</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_6-14.html';">
+                    <td class="track-number">14</td>
+                    <td class="track-title">The Outlaw Torn</td>
+                    <td class="track-duration">9:48</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Reload (1997) -->
+    <section class="album-section album-reload">
+        <div class="album-header">
+            <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/Metallica_-_Reload_cover.jpg" alt="Reload Cover"
+                class="album-cover">
+            <div class="album-meta">
+                <h1>ReLoad (1997)</h1>
+                <div class="info">Metallica • 1997 • 13 faixas</div>
+            </div>
+        </div>
+        <table class="track-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Título</th>
+                    <th class="track-duration">Duração</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="clickable-row" onclick="window.location='index_7-1.html';">
+                    <td class="track-number">1</td>
+                    <td class="track-title">Fuel</td>
+                    <td class="track-duration">4:29</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_7-2.html';">
+                    <td class="track-number">2</td>
+                    <td class="track-title">The Memory Remains</td>
+                    <td class="track-duration">4:39</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_7-3.html';">
+                    <td class="track-number">3</td>
+                    <td class="track-title">Devil's Dance</td>
+                    <td class="track-duration">5:18</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_7-4.html';">
+                    <td class="track-number">4</td>
+                    <td class="track-title">The Unforgiven II</td>
+                    <td class="track-duration">6:36</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_7-5.html';">
+                    <td class="track-number">5</td>
+                    <td class="track-title">Better than You</td>
+                    <td class="track-duration">5:21</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_7-6.html';">
+                    <td class="track-number">6</td>
+                    <td class="track-title">Slither</td>
+                    <td class="track-duration">5:13</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_7-7.html';">
+                    <td class="track-number">7</td>
+                    <td class="track-title">Carpe Diem Baby</td>
+                    <td class="track-duration">6:12</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_7-8.html';">
+                    <td class="track-number">8</td>
+                    <td class="track-title">Bad Seed</td>
+                    <td class="track-duration">4:05</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_7-9.html';">
+                    <td class="track-number">9</td>
+                    <td class="track-title">Where the Wild Things Are</td>
+                    <td class="track-duration">6:52</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_7-10.html';">
+                    <td class="track-number">10</td>
+                    <td class="track-title">Prince Charming</td>
+                    <td class="track-duration">6:05</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_7-11.html';">
+                    <td class="track-number">11</td>
+                    <td class="track-title">Low Man's Lyric</td>
+                    <td class="track-duration">7:36</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_7-12.html';">
+                    <td class="track-number">12</td>
+                    <td class="track-title">Attitude</td>
+                    <td class="track-duration">5:16</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_7-13.html';">
+                    <td class="track-number">13</td>
+                    <td class="track-title">Fixxxer</td>
+                    <td class="track-duration">8:14</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- St. Anger (2003) -->
+    <section class="album-section album-st-anger">
+        <div class="album-header">
+            <img src="https://rollingstone.uol.com.br/media/uploads/2024/02/metallica-st-anger-capa-696x696.jpg"
+                alt="St. Anger Cover" class="album-cover">
+            <div class="album-meta">
+                <h1>St. Anger (2003)</h1>
+                <div class="info">Metallica • 2003 • 11 faixas</div>
+            </div>
+        </div>
+        <table class="track-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Título</th>
+                    <th class="track-duration">Duração</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="clickable-row" onclick="window.location='index_8-1.html';">
+                    <td class="track-number">1</td>
+                    <td class="track-title">Frantic</td>
+                    <td class="track-duration">5:50</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_8-2.html';">
+                    <td class="track-number">2</td>
+                    <td class="track-title">St. Anger</td>
+                    <td class="track-duration">7:21</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_8-3.html';">
+                    <td class="track-number">3</td>
+                    <td class="track-title">Some Kind of Monster</td>
+                    <td class="track-duration">8:25</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_8-4.html';">
+                    <td class="track-number">4</td>
+                    <td class="track-title">Dirty Window</td>
+                    <td class="track-duration">5:24</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_8-5.html';">
+                    <td class="track-number">5</td>
+                    <td class="track-title">Invisible Kid</td>
+                    <td class="track-duration">8:30</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_8-6.html';">
+                    <td class="track-number">6</td>
+                    <td class="track-title">My World</td>
+                    <td class="track-duration">5:45</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_8-7.html';">
+                    <td class="track-number">7</td>
+                    <td class="track-title">Shoot Me Again</td>
+                    <td class="track-duration">7:10</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_8-8.html';">
+                    <td class="track-number">8</td>
+                    <td class="track-title">Sweet Amber</td>
+                    <td class="track-duration">5:27</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_8-9.html';">
+                    <td class="track-number">9</td>
+                    <td class="track-title">The Unnamed Feeling</td>
+                    <td class="track-duration">7:07</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_8-10.html';">
+                    <td class="track-number">10</td>
+                    <td class="track-title">Purify</td>
+                    <td class="track-duration">5:13</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_8-11.html';">
+                    <td class="track-number">11</td>
+                    <td class="track-title">All Within My Hands</td>
+                    <td class="track-duration">8:47</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Death Magnetic (2008) -->
+    <section class="album-section album-death-magnetic">
+        <div class="album-header">
+            <img src="https://upload.wikimedia.org/wikipedia/pt/9/94/Death_Magnetic.jpg" alt="Death Magnetic Cover"
+                class="album-cover">
+            <div class="album-meta">
+                <h1>Death Magnetic (2008)</h1>
+                <div class="info">Metallica • 2008 • 10 faixas</div>
+            </div>
+        </div>
+        <table class="track-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Título</th>
+                    <th class="track-duration">Duração</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="clickable-row" onclick="window.location='index_9-1.html';">
+                    <td class="track-number">1</td>
+                    <td class="track-title">That Was Just Your Life</td>
+                    <td class="track-duration">7:08</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_9-2.html';">
+                    <td class="track-number">2</td>
+                    <td class="track-title">The End of the Line</td>
+                    <td class="track-duration">7:52</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_9-3.html';">
+                    <td class="track-number">3</td>
+                    <td class="track-title">Broken, Beat & Scarred</td>
+                    <td class="track-duration">6:25</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_9-4.html';">
+                    <td class="track-number">4</td>
+                    <td class="track-title">The Day That Never Comes</td>
+                    <td class="track-duration">7:56</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_9-5.html';">
+                    <td class="track-number">5</td>
+                    <td class="track-title">All Nightmare Long</td>
+                    <td class="track-duration">7:57</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_9-6.html';">
+                    <td class="track-number">6</td>
+                    <td class="track-title">Cyanide</td>
+                    <td class="track-duration">6:39</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_9-7.html';">
+                    <td class="track-number">7</td>
+                    <td class="track-title">The Unforgiven III</td>
+                    <td class="track-duration">7:46</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_9-8.html';">
+                    <td class="track-number">8</td>
+                    <td class="track-title">The Judas Kiss</td>
+                    <td class="track-duration">8:00</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_9-9.html';">
+                    <td class="track-number">9</td>
+                    <td class="track-title">Suicide & Redemption</td>
+                    <td class="track-duration">9:57</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_9-10.html';">
+                    <td class="track-number">10</td>
+                    <td class="track-title">My Apocalypse</td>
+                    <td class="track-duration">5:01</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Hardwired... to Self-Destruct (2016) -->
+    <section class="album-section album-hardwired">
+        <div class="album-header">
+            <img src="https://s2.glbimg.com/-Jc53FYibsvWjONqmTkzlLMCMaQ=/620x620/s2.glbimg.com/LphItJCwoGjL0FWtd99USPeMd-k=/s.glbimg.com/jo/g1/f/original/2016/08/18/metallica-album-art-640x640_HjSVGi9.jpeg"
+                alt="Hardwired Cover" class="album-cover">
+            <div class="album-meta">
+                <h1>Hardwired... to Self-Destruct (2016)</h1>
+                <div class="info">Metallica • 2016 • 12 faixas</div>
+            </div>
+        </div>
+        <table class="track-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Título</th>
+                    <th class="track-duration">Duração</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="clickable-row" onclick="window.location='index_10-1.html';">
+                    <td class="track-number">1</td>
+                    <td class="track-title">Hardwired</td>
+                    <td class="track-duration">3:09</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_10-2.html';">
+                    <td class="track-number">2</td>
+                    <td class="track-title">Atlas, Rise!</td>
+                    <td class="track-duration">6:28</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_10-3.html';">
+                    <td class="track-number">3</td>
+                    <td class="track-title">Now That We're Dead</td>
+                    <td class="track-duration">6:59</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_10-4.html';">
+                    <td class="track-number">4</td>
+                    <td class="track-title">Moth Into Flame</td>
+                    <td class="track-duration">5:50</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_10-5.html';">
+                    <td class="track-number">5</td>
+                    <td class="track-title">Dream No More</td>
+                    <td class="track-duration">6:29</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_10-6.html';">
+                    <td class="track-number">6</td>
+                    <td class="track-title">Halo on Fire</td>
+                    <td class="track-duration">8:15</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_10-7.html';">
+                    <td class="track-number">7</td>
+                    <td class="track-title">Confusion</td>
+                    <td class="track-duration">6:41</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_10-8.html';">
+                    <td class="track-number">8</td>
+                    <td class="track-title">ManUNkind</td>
+                    <td class="track-duration">6:55</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_10-9.html';">
+                    <td class="track-number">9</td>
+                    <td class="track-title">Here Comes Revenge</td>
+                    <td class="track-duration">7:17</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_10-10.html';">
+                    <td class="track-number">10</td>
+                    <td class="track-title">Am I Savage?</td>
+                    <td class="track-duration">6:29</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_10-11.html';">
+                    <td class="track-number">11</td>
+                    <td class="track-title">Murder One</td>
+                    <td class="track-duration">5:45</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_10-12.html';">
+                    <td class="track-number">12</td>
+                    <td class="track-title">Spit Out the Bone</td>
+                    <td class="track-duration">7:09</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- 72 Seasons (2023) -->
+    <section class="album-section album-72-seasons">
+        <div class="album-header">
+            <img src="https://i.redd.it/61eac47i5h3a1.jpg" alt="72 Seasons Cover" class="album-cover">
+            <div class="album-meta">
+                <h1>72 Seasons (2023)</h1>
+                <div class="info">Metallica • 2023 • 12 faixas</div>
+            </div>
+        </div>
+        <table class="track-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Título</th>
+                    <th class="track-duration">Duração</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="clickable-row" onclick="window.location='index_11-1.html';">
+                    <td class="track-number">1</td>
+                    <td class="track-title">72 Seasons</td>
+                    <td class="track-duration">7:39</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_11-2.html';">
+                    <td class="track-number">2</td>
+                    <td class="track-title">Shadows Follow</td>
+                    <td class="track-duration">6:11</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_11-3.html';">
+                    <td class="track-number">3</td>
+                    <td class="track-title">Screaming Suicide</td>
+                    <td class="track-duration">5:30</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_11-4.html';">
+                    <td class="track-number">4</td>
+                    <td class="track-title">Sleepwalk My Life Away</td>
+                    <td class="track-duration">6:56</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_11-5.html';">
+                    <td class="track-number">5</td>
+                    <td class="track-title">You Must Burn!</td>
+                    <td class="track-duration">7:03</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_11-6.html';">
+                    <td class="track-number">6</td>
+                    <td class="track-title">Lux Æterna</td>
+                    <td class="track-duration">3:21</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_11-7.html';">
+                    <td class="track-number">7</td>
+                    <td class="track-title">Crown of Barbed Wire</td>
+                    <td class="track-duration">5:49</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_11-8.html';">
+                    <td class="track-number">8</td>
+                    <td class="track-title">Chasing Light</td>
+                    <td class="track-duration">6:45</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_11-9.html';">
+                    <td class="track-number">9</td>
+                    <td class="track-title">If Darkness Had a Son</td>
+                    <td class="track-duration">6:36</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_11-10.html';">
+                    <td class="track-number">10</td>
+                    <td class="track-title">Too Far Gone?</td>
+                    <td class="track-duration">4:33</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_11-11.html';">
+                    <td class="track-number">11</td>
+                    <td class="track-title">Room of Mirrors</td>
+                    <td class="track-duration">5:33</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_11-12.html';">
+                    <td class="track-number">12</td>
+                    <td class="track-title">Inamorata</td>
+                    <td class="track-duration">11:10</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Garage Inc. (1998) -->
+    <section class="album-section album-garage-inc">
+        <div class="album-header">
+            <img src="https://universalmusic.vtexassets.com/arquivos/ids/185276/cd%20metallica-garage-inc-2cd%20-importado-cd%20metallica-garage-inc-2cd%20-impor-00731453835122-00073145383512.jpg?v=638479403540600000"
+                alt="Garage Inc. Cover" class="album-cover">
+            <div class="album-meta">
+                <h1>Garage Inc. (1998)</h1>
+                <div class="info">Metallica • 1998 • 27 faixas</div>
+            </div>
+        </div>
+        <table class="track-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Título</th>
+                    <th class="track-duration">Duração</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Disco 1 (11 faixas) -->
+                <tr class="clickable-row" onclick="window.location='index_12-1.html';">
+                    <td class="track-number">1</td>
+                    <td class="track-title">Free Speech for the Dumb</td>
+                    <td class="track-duration">2:35</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_12-2.html';">
+                    <td class="track-number">2</td>
+                    <td class="track-title">It's Electric</td>
+                    <td class="track-duration">3:33</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_12-3.html';">
+                    <td class="track-number">3</td>
+                    <td class="track-title">Sabbra Cadabra</td>
+                    <td class="track-duration">6:20</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_12-4.html';">
+                    <td class="track-number">4</td>
+                    <td class="track-title">Turn the Page</td>
+                    <td class="track-duration">6:06</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_12-5.html';">
+                    <td class="track-number">5</td>
+                    <td class="track-title">Die, Die My Darling</td>
+                    <td class="track-duration">2:26</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_12-6.html';">
+                    <td class="track-number">6</td>
+                    <td class="track-title">Loverman</td>
+                    <td class="track-duration">7:52</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_12-7.html';">
+                    <td class="track-number">7</td>
+                    <td class="track-title">Mercyful Fate Medley</td>
+                    <td class="track-duration">11:10</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_12-8.html';">
+                    <td class="track-number">8</td>
+                    <td class="track-title">Astronomy</td>
+                    <td class="track-duration">6:37</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_12-9.html';">
+                    <td class="track-number">9</td>
+                    <td class="track-title">Whiskey in the Jar</td>
+                    <td class="track-duration">5:04</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_12-10.html';">
+                    <td class="track-number">10</td>
+                    <td class="track-title">Tuesday's Gone</td>
+                    <td class="track-duration">9:03</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_12-11.html';">
+                    <td class="track-number">11</td>
+                    <td class="track-title">The More I See</td>
+                    <td class="track-duration">4:48</td>
+                </tr>
+                <!-- Disco 2 (16 faixas) -->
+                <tr class="clickable-row" onclick="window.location='index_12-12.html';">
+                    <td class="track-number">12</td>
+                    <td class="track-title">Helpless</td>
+                    <td class="track-duration">6:36</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_12-13.html';">
+                    <td class="track-number">13</td>
+                    <td class="track-title">The Small Hours</td>
+                    <td class="track-duration">6:40</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_12-14.html';">
+                    <td class="track-number">14</td>
+                    <td class="track-title">The Wait</td>
+                    <td class="track-duration">4:52</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_12-15.html';">
+                    <td class="track-number">15</td>
+                    <td class="track-title">Crash Course in Brain Surgery</td>
+                    <td class="track-duration">3:08</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_12-16.html';">
+                    <td class="track-number">16</td>
+                    <td class="track-title">Last Caress / Green Hell</td>
+                    <td class="track-duration">3:30</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_12-17.html';">
+                    <td class="track-number">17</td>
+                    <td class="track-title">Am I Evil?</td>
+                    <td class="track-duration">7:50</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_12-18.html';">
+                    <td class="track-number">18</td>
+                    <td class="track-title">Blitzkrieg</td>
+                    <td class="track-duration">3:36</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_12-19.html';">
+                    <td class="track-number">19</td>
+                    <td class="track-title">Breadfan</td>
+                    <td class="track-duration">5:41</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_12-20.html';">
+                    <td class="track-number">20</td>
+                    <td class="track-title">The Prince</td>
+                    <td class="track-duration">4:24</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_12-21.html';">
+                    <td class="track-number">21</td>
+                    <td class="track-title">Stone Cold Crazy</td>
+                    <td class="track-duration">2:17</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_12-22.html';">
+                    <td class="track-number">22</td>
+                    <td class="track-title">So What</td>
+                    <td class="track-duration">3:08</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_12-23.html';">
+                    <td class="track-number">23</td>
+                    <td class="track-title">Killing Time</td>
+                    <td class="track-duration">3:03</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_12-24.html';">
+                    <td class="track-number">24</td>
+                    <td class="track-title">Overkill</td>
+                    <td class="track-duration">4:05</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_12-25.html';">
+                    <td class="track-number">25</td>
+                    <td class="track-title">Damage Case</td>
+                    <td class="track-duration">3:40</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_12-26.html';">
+                    <td class="track-number">26</td>
+                    <td class="track-title">Stone Dead Forever</td>
+                    <td class="track-duration">4:51</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='index_12-27.html';">
+                    <td class="track-number">27</td>
+                    <td class="track-title">Too Late Too Late</td>
+                    <td class="track-duration">3:12</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+
+<script>
+    const input = document.getElementById('search-input');
+
+    input.addEventListener('input', function () {
+        const termo = this.value.toLowerCase();
+        const albums = document.querySelectorAll('.album-section');
+
+        albums.forEach(album => {
+            const albumTitulo = album.querySelector('.album-meta h1').textContent.toLowerCase();
+            const faixas = [...album.querySelectorAll('.track-title')].map(td => td.textContent.toLowerCase());
+            const matchAlbum = albumTitulo.includes(termo);
+            const matchFaixa = faixas.some(t => t.includes(termo));
+
+            if (termo === '' || matchAlbum || matchFaixa) {
+                album.style.display = '';
+                album.querySelectorAll('.track-title').forEach(td => {
+                    td.parentElement.style.display = '';
+                });
+            } else {
+                album.style.display = 'none';
+            }
+        });
+    });
+
+    const clearBtn = document.getElementById('clear-btn');
+
+    input.addEventListener('input', () => {
+        clearBtn.style.display = input.value ? 'block' : 'none';
+    });
+
+    clearBtn.addEventListener('click', () => {
+        input.value = '';
+        clearBtn.style.display = 'none';
+        input.focus();
+        input.dispatchEvent(new Event('input'));
+    });
+
+    const suggestionsDiv = document.getElementById('suggestions');
+
+    const allTerms = [
+        // Kill 'Em All (1983)
+        "Kill 'Em All",
+        "Hit the Lights",
+        "The Four Horsemen",
+        "Motorbreath",
+        "Jump in the Fire",
+        "(Anesthesia) – Pulling Teeth",
+        "Whiplash",
+        "Phantom Lord",
+        "No Remorse",
+        "Seek & Destroy",
+        "Metal Militia",
+
+        // Ride the Lightning (1984)
+        "Fight Fire with Fire",
+        "Ride the Lightning",
+        "For Whom the Bell Tolls",
+        "Fade to Black",
+        "Trapped Under Ice",
+        "Escape",
+        "Creeping Death",
+        "The Call of Ktulu",
+
+        // Master of Puppets (1986)
+        "Battery",
+        "Master of Puppets",
+        "The Thing That Should Not Be",
+        "Welcome Home (Sanitarium)",
+        "Disposable Heroes",
+        "Leper Messiah",
+        "Orion",
+        "Damage, Inc.",
+
+        // …And Justice for All (1988)
+        "Blackened",
+        "...And Justice for All",
+        "Eye of the Beholder",
+        "One",
+        "The Shortest Straw",
+        "Harvester of Sorrow",
+        "The Frayed Ends of Sanity",
+        "To Live Is to Die",
+        "Dyers Eve",
+
+        // Metallica (The Black Album) (1991)
+        "Metallica (The Black Album)",
+        "Enter Sandman",
+        "Sad but True",
+        "Holier Than Thou",
+        "The Unforgiven",
+        "Wherever I May Roam",
+        "Don't Tread on Me",
+        "Through the Never",
+        "Nothing Else Matters",
+        "Of Wolf and Man",
+        "The God That Failed",
+        "My Friend of Misery",
+        "The Struggle Within",
+
+        // Load (1996)
+        "Load",
+        "Ain't My Bitch",
+        "2 X 4",
+        "The House Jack Built",
+        "Until It Sleeps",
+        "King Nothing",
+        "Hero of the Day",
+        "Bleeding Me",
+        "Cure",
+        "Poor Twisted Me",
+        "Wasting My Hate",
+        "Mama Said",
+        "Thorn Within",
+        "Ronnie",
+        "The Outlaw Torn",
+
+        // Reload (1997)
+        "Reload",
+        "Fuel",
+        "The Memory Remains",
+        "Devil's Dance",
+        "The Unforgiven II",
+        "Better than You",
+        "Slither",
+        "Carpe Diem Baby",
+        "Bad Seed",
+        "Where the Wild Things Are",
+        "Prince Charming",
+        "Low Man's Lyric",
+        "Attitude",
+        "Fixxxer",
+
+        // St. Anger (2003)
+        "St. Anger",
+        "Frantic",
+        "St. Anger",
+        "Some Kind of Monster",
+        "Dirty Window",
+        "Invisible Kid",
+        "My World",
+        "Shoot Me Again",
+        "Sweet Amber",
+        "The Unnamed Feeling",
+        "Purify",
+        "All Within My Hands",
+
+        // Death Magnetic (2008)
+        "Death Magnetic",
+        "That Was Just Your Life",
+        "The End of the Line",
+        "Broken, Beat & Scarred",
+        "The Day That Never Comes",
+        "All Nightmare Long",
+        "Cyanide",
+        "The Unforgiven III",
+        "The Judas Kiss",
+        "Suicide & Redemption",
+        "My Apocalypse",
+
+        // Hardwired... to Self-Destruct (2016)
+        "Hardwired... to Self-Destruct",
+        "Hardwired",
+        "Atlas, Rise!",
+        "Now That We're Dead",
+        "Moth Into Flame",
+        "Dream No More",
+        "Halo on Fire",
+        "Confusion",
+        "ManUNkind",
+        "Here Comes Revenge",
+        "Am I Savage?",
+        "Murder One",
+        "Spit Out the Bone",
+
+        // 72 Seasons (2023)
+        "72 Seasons",
+        "Shadows Follow",
+        "Screaming Suicide",
+        "Sleepwalk My Life Away",
+        "You Must Burn!",
+        "Lux Æterna",
+        "Crown of Barbed Wire",
+        "Chasing Light",
+        "If Darkness Had a Son",
+        "Too Far Gone?",
+        "Room of Mirrors",
+        "Inamorata",
+
+        // Garage Inc.
+        "Garage Inc.",
+        "Free Speech for the Dumb",
+        "It's Electric",
+        "Sabbra Cadabra",
+        "Turn the Page",
+        "Die, Die My Darling",
+        "Loverman",
+        "Mercyful Fate",
+        "Astronomy",
+        "Whiskey in the Jar",
+        "Tuesday's Gone",
+        "The More I See",
+        "Helpless",
+        "The Small Hours",
+        "The Wait",
+        "Crash Course in Brain Surgery",
+        "Last Caress / Green Hell",
+        "Am I Evil?",
+        "Blitzkrieg",
+        "Breadfan",
+        "The Prince",
+        "Stone Cold Crazy",
+        "So What",
+        "Killing Time",
+        "Overkill",
+        "Damage Case",
+        "Stone Dead Forever",
+        "Too Late Too Late"
+    ];
+
+    input.addEventListener('input', () => {
+        const value = input.value.toLowerCase();
+        suggestionsDiv.innerHTML = '';
+        if (!value) {
+            suggestionsDiv.style.display = 'none';
+            return;
+        }
+
+        const filtered = allTerms.filter(term => term.toLowerCase().includes(value)).slice(0, 4);
+
+        if (filtered.length === 0) {
+            suggestionsDiv.style.display = 'none';
+            return;
+        }
+
+        filtered.forEach(term => {
+            const div = document.createElement('div');
+            div.textContent = term;
+            div.style.padding = '8px 12px';
+            div.style.color = '#eee';
+            div.style.cursor = 'pointer';
+            div.addEventListener('mouseover', () => div.style.backgroundColor = '#444');
+            div.addEventListener('mouseout', () => div.style.backgroundColor = 'transparent');
+            div.addEventListener('click', () => {
+                input.value = term;
+                suggestionsDiv.style.display = 'none';
+                input.dispatchEvent(new Event('input'));
+                input.focus();
+            });
+            suggestionsDiv.appendChild(div);
+        });
+
+        suggestionsDiv.style.display = 'block';
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!document.getElementById('emCima').contains(e.target)) {
+            suggestionsDiv.style.display = 'none';
+        }
+    });
+</script>
+
+</html>

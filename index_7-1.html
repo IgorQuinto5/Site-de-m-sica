@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Fuel</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/15/Metallica-Logo-PNG-Picture.png"
+        type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* degradê principal do álbum Reload */
+            background: linear-gradient(to bottom, rgba(118, 30, 15, 1), rgba(0, 0, 0, 0.8));
+            color: #fff;
+        }
+
+        .top-section {
+            /* topo levemente mais escuro para contraste */
+            background: linear-gradient(to top, rgba(80, 20, 10, 1), #000000);
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-cover {
+            width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .track-info {
+            flex-grow: 1;
+        }
+
+        .track-info p {
+            margin: 4px 0;
+        }
+
+        .track-info h1 {
+            font-size: 28px;
+            margin: 8px 0;
+        }
+
+        .track-info .meta {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .lyrics,
+        .translation {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .meaning {
+            max-width: 1300px;
+            margin: 20px auto 60px;
+            padding: 0 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        #musica-container {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 320px;
+            height: 80px;
+            border-radius: 12px;
+            z-index: 99;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        }
+
+        .voltar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        .voltar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/Metallica_-_Reload_cover.jpg"
+            alt="Capa do Álbum Reload" class="album-cover" />
+        <div class="track-info">
+            <p><strong>Música</strong></p>
+            <h1>Fuel - Remastered</h1>
+            <p class="meta">Metallica • Reload • 1997 • 4:29</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="lyrics">
+            <h2>Letra Original</h2>
+            <p>
+                Gimme fuel, gimme fire <br>
+                Gimme that which I desire <br>
+                Ooh <br>
+                <br>
+                Yeah <br>
+                Turn on, I see red <br>
+                Adrenaline crash and crack my head <br>
+                Nitro junkie, paint me dead <br>
+                And I see red! <br>
+                <br>
+                A hundred plus through black and white <br>
+                War horse, war head <br>
+                Fuck 'em, man <br>
+                White knuckle tight <br>
+                Through black and white <br>
+                <br>
+                Ooh <br>
+                On I burn <br>
+                Fuel is pumping engines <br>
+                Burning hard, loose and clean <br>
+                <br>
+                Ooh <br>
+                And then I burn <br>
+                Churning my direction <br>
+                Quench my thirst with gasoline <br>
+                <br>
+                So gimme fuel, gimme fire <br>
+                Gimme that which I desire <br>
+                Yeah <br>
+                <br>
+                Turn on beyond the bone <br>
+                Swallow future, spit out hope <br>
+                Burn your face upon the chrome <br>
+                Yeah, oh, yeah! <br>
+                <br>
+                Take the corner, going to crash <br>
+                Headlights, headlines <br>
+                Another junkie, lives too fast <br>
+                <br>
+                Yeah, lives way too fast, fast, fast, ooh <br>
+                <br>
+                Ooh <br>
+                On I burn <br>
+                Fuel is pumping engines <br>
+                Burning hard, loose and clean <br>
+                <br>
+                Ooh <br>
+                And on I burn <br>
+                Churning my direction <br>
+                Quench my thirst with gasoline <br>
+                <br>
+                So gimme fuel, gimme fire <br>
+                Gimme that which I desire <br>
+                Oh, yeah <br>
+                <br>
+                White knuckle tight <br>
+                <br>
+                Ooh <br>
+                Gimme fuel, gimme fire <br>
+                My desire <br>
+                <br>
+                Ooh <br>
+                On I burn <br>
+                Fuel is pumping engines <br>
+                Burning hard, loose and clean <br>
+                <br>
+                Ooh <br>
+                And on and on <br>
+                Churning my direction <br>
+                Quench my thirst with gasoline <br>
+                <br>
+                Gimme fuel, gimme fire <br>
+                Gimme that which I desire <br>
+                Ooh <br>
+                <br>
+                On I burn <br> <br>
+            </p>
+        </div>
+        <div class="translation">
+            <h2>Tradução</h2>
+            <p>
+                Me dê combustível, me dê fogo<br>
+                Me dê aquilo que eu desejo<br>
+                Ooh<br><br>
+
+                Yeah<br>
+                Ligue, eu vejo vermelho<br>
+                Adrenalina explode e estoura minha cabeça<br>
+                Viciado em nitro, me pinte como morto<br>
+                E eu vejo vermelho!<br><br>
+
+                Cem por hora, preto e branco<br>
+                Cavalo de guerra, cabeça de guerra<br>
+                Que se fodam, cara<br>
+                Mãos firmes no volante<br>
+                Pela estrada preta e branca<br><br>
+
+                Ooh<br>
+                Eu queimo<br>
+                Combustível bombeando os motores<br>
+                Queimando forte, solto e limpo<br><br>
+
+                Ooh<br>
+                E então eu queimo<br>
+                Girando na minha direção<br>
+                Saciando minha sede com gasolina<br><br>
+
+                Então me dê combustível, me dê fogo<br>
+                Me dê aquilo que eu desejo<br>
+                Yeah<br><br>
+
+                Ligue além do osso<br>
+                Engula o futuro, cuspa a esperança<br>
+                Queime seu rosto no cromo<br>
+                Yeah, oh, yeah!<br><br>
+
+                Faça a curva, vai bater<br>
+                Faróis, manchetes<br>
+                Outro viciado, vive rápido demais<br><br>
+
+                Yeah, vive rápido demais, rápido, rápido, ooh<br><br>
+
+                Ooh<br>
+                Eu queimo<br>
+                Combustível bombeando os motores<br>
+                Queimando forte, solto e limpo<br><br>
+
+                Ooh<br>
+                E eu queimo<br>
+                Girando na minha direção<br>
+                Saciando minha sede com gasolina<br><br>
+
+                Então me dê combustível, me dê fogo<br>
+                Me dê aquilo que eu desejo<br>
+                Oh, yeah<br><br>
+
+                Mãos firmes no volante<br><br>
+
+                Ooh<br>
+                Me dê combustível, me dê fogo<br>
+                Meu desejo<br><br>
+
+                Ooh<br>
+                Eu queimo<br>
+                Combustível bombeando os motores<br>
+                Queimando forte, solto e limpo<br><br>
+
+                Ooh<br>
+                E mais e mais<br>
+                Girando na minha direção<br>
+                Saciando minha sede com gasolina<br><br>
+
+                Me dê combustível, me dê fogo<br>
+                Me dê aquilo que eu desejo<br>
+                Ooh<br><br>
+
+                Eu queimo<br><br>
+            </p>
+        </div>
+    </div>
+
+    <div class="meaning">
+        <h2>Significado</h2>
+        <p>
+            A música 'Fuel', da banda Metallica, é uma explosão de energia e intensidade que reflete a paixão pelo
+            extremo e pela velocidade. Lançada no álbum 'Reload' em 1997, a canção é conhecida por seu ritmo acelerado e
+            letras que evocam imagens de poder e movimento incessante. O refrão 'Gimme fuel, gimme fire, gimme that
+            which I desire' funciona como um grito de guerra, pedindo por mais daquilo que alimenta a chama interna do
+            eu lírico, seja isso uma metáfora para a paixão, a adrenalina ou literalmente o combustível para a
+            velocidade. <br> <br>
+
+            As referências a 'adrenaline crash', 'nitro junkie' e 'burning hard, loose and clean' sugerem uma conexão
+            com corridas de carros e a cultura que as envolve, onde o nitro é frequentemente usado para aumentar a
+            velocidade dos veículos. A música pode ser interpretada como uma ode à sensação de liberdade e poder que vem
+            com a alta velocidade e o risco. A agressividade da música, comum no estilo thrash metal do Metallica,
+            complementa a temática de viver no limite e a busca incessante por emoções fortes. <br> <br>
+
+            Além disso, 'Fuel' pode ser vista como uma metáfora para a dependência e o desejo insaciável por algo que
+            nos impulsiona, seja uma substância, um sentimento ou uma experiência. A repetição do pedido por 'fuel' e
+            'fire' sugere uma necessidade quase viciante de manter a chama acesa, de continuar em movimento e de buscar
+            sempre mais. A música se torna um hino para aqueles que vivem em busca de intensidade e não se contentam com
+            a monotonia, refletindo o espírito rebelde e inquieto que muitas vezes é associado ao rock n' roll e, em
+            particular, ao Metallica. <br> <br> <br> <br> <br> <br> <br> <br>
+        </p>
+    </div>
+
+    <button onclick="history.back()" class="voltar-btn">⟵ Voltar</button>
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/6FUwPb4mGlUDbx42uspXaZ?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="musica-container"></iframe>
+</body>
+
+</html>
