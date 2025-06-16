@@ -150,6 +150,28 @@
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
         }
+
+        .suggestion-item {
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background 0.2s;
+            border-bottom: 1px solid #333;
+        }
+
+        .suggestion-item:hover {
+            background-color: #333;
+        }
+
+        .album-tag {
+            background: #d0a85c;
+            color: #222;
+            font-size: 0.8rem;
+            padding: 2px 6px;
+            border-radius: 10px;
+            margin-left: 8px;
+            font-weight: bold;
+            display: inline-block;
+        }
     </style>
 </head>
 
@@ -1220,265 +1242,202 @@
 
 <script>
     const input = document.getElementById('search-input');
-
-    input.addEventListener('input', function () {
-        const termo = this.value.toLowerCase();
-        const albums = document.querySelectorAll('.album-section');
-
-        albums.forEach(album => {
-            const albumTitulo = album.querySelector('.album-meta h1').textContent.toLowerCase();
-            const faixas = [...album.querySelectorAll('.track-title')].map(td => td.textContent.toLowerCase());
-            const matchAlbum = albumTitulo.includes(termo);
-            const matchFaixa = faixas.some(t => t.includes(termo));
-
-            if (termo === '' || matchAlbum || matchFaixa) {
-                album.style.display = '';
-                album.querySelectorAll('.track-title').forEach(td => {
-                    td.parentElement.style.display = '';
-                });
-            } else {
-                album.style.display = 'none';
-            }
-        });
-    });
-
     const clearBtn = document.getElementById('clear-btn');
-
-    input.addEventListener('input', () => {
-        clearBtn.style.display = input.value ? 'block' : 'none';
-    });
-
-    clearBtn.addEventListener('click', () => {
-        input.value = '';
-        clearBtn.style.display = 'none';
-        input.focus();
-        input.dispatchEvent(new Event('input'));
-    });
-
     const suggestionsDiv = document.getElementById('suggestions');
 
+    // Lista completa de termos para sugestões
     const allTerms = [
         // Kill 'Em All (1983)
-        "Kill 'Em All",
-        "Hit the Lights",
-        "The Four Horsemen",
-        "Motorbreath",
-        "Jump in the Fire",
-        "(Anesthesia) – Pulling Teeth",
-        "Whiplash",
-        "Phantom Lord",
-        "No Remorse",
-        "Seek & Destroy",
-        "Metal Militia",
+        "Hit the Lights", "The Four Horsemen", "Motorbreath", "Jump in the Fire", 
+        "(Anesthesia) – Pulling Teeth", "Whiplash", "Phantom Lord", "No Remorse", 
+        "Seek & Destroy", "Metal Militia",
 
         // Ride the Lightning (1984)
-        "Fight Fire with Fire",
-        "Ride the Lightning",
-        "For Whom the Bell Tolls",
-        "Fade to Black",
-        "Trapped Under Ice",
-        "Escape",
-        "Creeping Death",
+        "Fight Fire with Fire", "Ride the Lightning", "For Whom the Bell Tolls", 
+        "Fade to Black", "Trapped Under Ice", "Escape", "Creeping Death", 
         "The Call of Ktulu",
 
         // Master of Puppets (1986)
-        "Battery",
-        "Master of Puppets",
-        "The Thing That Should Not Be",
-        "Welcome Home (Sanitarium)",
-        "Disposable Heroes",
-        "Leper Messiah",
-        "Orion",
-        "Damage, Inc.",
+        "Battery", "Master of Puppets", "The Thing That Should Not Be", 
+        "Welcome Home (Sanitarium)", "Disposable Heroes", "Leper Messiah", 
+        "Orion", "Damage, Inc.",
 
         // …And Justice for All (1988)
-        "Blackened",
-        "...And Justice for All",
-        "Eye of the Beholder",
-        "One",
-        "The Shortest Straw",
-        "Harvester of Sorrow",
-        "The Frayed Ends of Sanity",
-        "To Live Is to Die",
-        "Dyers Eve",
+        "Blackened", "...And Justice for All", "Eye of the Beholder", "One", 
+        "The Shortest Straw", "Harvester of Sorrow", "The Frayed Ends of Sanity", 
+        "To Live Is to Die", "Dyers Eve",
 
         // Metallica (The Black Album) (1991)
-        "Metallica (The Black Album)",
-        "Enter Sandman",
-        "Sad but True",
-        "Holier Than Thou",
-        "The Unforgiven",
-        "Wherever I May Roam",
-        "Don't Tread on Me",
-        "Through the Never",
-        "Nothing Else Matters",
-        "Of Wolf and Man",
-        "The God That Failed",
-        "My Friend of Misery",
-        "The Struggle Within",
+        "Enter Sandman", "Sad but True", "Holier Than Thou", "The Unforgiven", 
+        "Wherever I May Roam", "Don't Tread on Me", "Through the Never", 
+        "Nothing Else Matters", "Of Wolf and Man", "The God That Failed", 
+        "My Friend of Misery", "The Struggle Within",
 
         // Load (1996)
-        "Load",
-        "Ain't My Bitch",
-        "2 X 4",
-        "The House Jack Built",
-        "Until It Sleeps",
-        "King Nothing",
-        "Hero of the Day",
-        "Bleeding Me",
-        "Cure",
-        "Poor Twisted Me",
-        "Wasting My Hate",
-        "Mama Said",
-        "Thorn Within",
-        "Ronnie",
-        "The Outlaw Torn",
+        "Ain't My Bitch", "2 X 4", "The House Jack Built", "Until It Sleeps", 
+        "King Nothing", "Hero of the Day", "Bleeding Me", "Cure", 
+        "Poor Twisted Me", "Wasting My Hate", "Mama Said", "Thorn Within", 
+        "Ronnie", "The Outlaw Torn",
 
         // Reload (1997)
-        "Reload",
-        "Fuel",
-        "The Memory Remains",
-        "Devil's Dance",
-        "The Unforgiven II",
-        "Better than You",
-        "Slither",
-        "Carpe Diem Baby",
-        "Bad Seed",
-        "Where the Wild Things Are",
-        "Prince Charming",
-        "Low Man's Lyric",
-        "Attitude",
-        "Fixxxer",
+        "Fuel", "The Memory Remains", "Devil's Dance", "The Unforgiven II", 
+        "Better than You", "Slither", "Carpe Diem Baby", "Bad Seed", 
+        "Where the Wild Things Are", "Prince Charming", "Low Man's Lyric", 
+        "Attitude", "Fixxxer",
 
         // St. Anger (2003)
-        "St. Anger",
-        "Frantic",
-        "St. Anger",
-        "Some Kind of Monster",
-        "Dirty Window",
-        "Invisible Kid",
-        "My World",
-        "Shoot Me Again",
-        "Sweet Amber",
-        "The Unnamed Feeling",
-        "Purify",
-        "All Within My Hands",
+        "Frantic", "St. Anger", "Some Kind of Monster", "Dirty Window", 
+        "Invisible Kid", "My World", "Shoot Me Again", "Sweet Amber", 
+        "The Unnamed Feeling", "Purify", "All Within My Hands",
 
         // Death Magnetic (2008)
-        "Death Magnetic",
-        "That Was Just Your Life",
-        "The End of the Line",
-        "Broken, Beat & Scarred",
-        "The Day That Never Comes",
-        "All Nightmare Long",
-        "Cyanide",
-        "The Unforgiven III",
-        "The Judas Kiss",
-        "Suicide & Redemption",
+        "That Was Just Your Life", "The End of the Line", "Broken, Beat & Scarred", 
+        "The Day That Never Comes", "All Nightmare Long", "Cyanide", 
+        "The Unforgiven III", "The Judas Kiss", "Suicide & Redemption", 
         "My Apocalypse",
 
         // Hardwired... to Self-Destruct (2016)
-        "Hardwired... to Self-Destruct",
-        "Hardwired",
-        "Atlas, Rise!",
-        "Now That We're Dead",
-        "Moth Into Flame",
-        "Dream No More",
-        "Halo on Fire",
-        "Confusion",
-        "ManUNkind",
-        "Here Comes Revenge",
-        "Am I Savage?",
-        "Murder One",
-        "Spit Out the Bone",
+        "Hardwired", "Atlas, Rise!", "Now That We're Dead", "Moth Into Flame", 
+        "Dream No More", "Halo on Fire", "Confusion", "ManUNkind", 
+        "Here Comes Revenge", "Am I Savage?", "Murder One", "Spit Out the Bone",
 
         // 72 Seasons (2023)
-        "72 Seasons",
-        "Shadows Follow",
-        "Screaming Suicide",
-        "Sleepwalk My Life Away",
-        "You Must Burn!",
-        "Lux Æterna",
-        "Crown of Barbed Wire",
-        "Chasing Light",
-        "If Darkness Had a Son",
-        "Too Far Gone?",
-        "Room of Mirrors",
-        "Inamorata",
+        "72 Seasons", "Shadows Follow", "Screaming Suicide", 
+        "Sleepwalk My Life Away", "You Must Burn!", "Lux Æterna", 
+        "Crown of Barbed Wire", "Chasing Light", "If Darkness Had a Son", 
+        "Too Far Gone?", "Room of Mirrors", "Inamorata",
 
         // Garage Inc.
-        "Garage Inc.",
-        "Free Speech for the Dumb",
-        "It's Electric",
-        "Sabbra Cadabra",
-        "Turn the Page",
-        "Die, Die My Darling",
-        "Loverman",
-        "Mercyful Fate",
-        "Astronomy",
-        "Whiskey in the Jar",
-        "Tuesday's Gone",
-        "The More I See",
-        "Helpless",
-        "The Small Hours",
-        "The Wait",
-        "Crash Course in Brain Surgery",
-        "Last Caress / Green Hell",
-        "Am I Evil?",
-        "Blitzkrieg",
-        "Breadfan",
-        "The Prince",
-        "Stone Cold Crazy",
-        "So What",
-        "Killing Time",
-        "Overkill",
-        "Damage Case",
-        "Stone Dead Forever",
-        "Too Late Too Late"
+        "Free Speech for the Dumb", "It's Electric", "Sabbra Cadabra", 
+        "Turn the Page", "Die, Die My Darling", "Loverman", "Mercyful Fate", 
+        "Astronomy", "Whiskey in the Jar", "Tuesday's Gone", "The More I See", 
+        "Helpless", "The Small Hours", "The Wait", "Crash Course in Brain Surgery", 
+        "Last Caress / Green Hell", "Am I Evil?", "Blitzkrieg", "Breadfan", 
+        "The Prince", "Stone Cold Crazy", "So What", "Killing Time", "Overkill", 
+        "Damage Case", "Stone Dead Forever", "Too Late Too Late",
+
+        // Sugestões de álbuns
+        "Kill 'Em All (album)", "Ride the Lightning (album)", 
+        "Master of Puppets (album)", "...And Justice for All (album)", 
+        "Metallica (The Black Album) (album)", "Load (album)", 
+        "Reload (album)", "St. Anger (album)", "Death Magnetic (album)", 
+        "Hardwired... to Self-Destruct (album)", "72 Seasons (album)", 
+        "Garage Inc. (album)"
     ];
 
-    input.addEventListener('input', function () {
-        const termo = this.value.toLowerCase().trim();
+    // Função principal de pesquisa
+    function performSearch(searchTerm) {
+        const term = searchTerm.toLowerCase().trim();
         const albums = document.querySelectorAll('.album-section');
+        const isAlbumSearch = term.endsWith('(album)') || term.endsWith('álbum');
+        const cleanTerm = term.replace(/\(album\)|álbum/g, '').trim();
 
+        // Resetar todas as exibições
         albums.forEach(album => {
-            const albumTitulo = album.querySelector('.album-meta h1').textContent.toLowerCase();
-            const faixas = album.querySelectorAll('.clickable-row');
-            let albumVisivel = false;
+            album.style.display = 'none';
+            album.querySelectorAll('.clickable-row').forEach(row => {
+                row.style.display = 'none';
+            });
+        });
 
-            // Verifica se o termo está no título do álbum
-            const matchAlbum = albumTitulo.includes(termo);
-
-            // Mostra todas as faixas se o álbum for encontrado
-            if (matchAlbum) {
-                album.style.display = '';
-                faixas.forEach(faixa => {
-                    faixa.style.display = '';
-                });
-                albumVisivel = true;
-            }
-            // Caso contrário, procura por músicas específicas
-            else {
-                let encontrouMusica = false;
-
-                faixas.forEach(faixa => {
-                    const tituloMusica = faixa.querySelector('.track-title').textContent.toLowerCase();
-                    const matchMusica = tituloMusica.includes(termo);
-
-                    if (matchMusica) {
-                        faixa.style.display = '';
-                        encontrouMusica = true;
-                        albumVisivel = true;
-                    } else {
-                        faixa.style.display = 'none';
+        // Pesquisa de álbum
+        if (isAlbumSearch) {
+            albums.forEach(album => {
+                const albumTitle = album.querySelector('.album-meta h1').textContent.toLowerCase();
+                if (albumTitle.includes(cleanTerm)) {
+                    album.style.display = '';
+                    album.querySelectorAll('.clickable-row').forEach(row => {
+                        row.style.display = '';
+                    });
+                }
+            });
+        } 
+        // Pesquisa de música
+        else {
+            albums.forEach(album => {
+                let albumShown = false;
+                const tracks = album.querySelectorAll('.clickable-row');
+                
+                tracks.forEach(track => {
+                    const trackTitle = track.querySelector('.track-title').textContent.toLowerCase();
+                    
+                    if (trackTitle.includes(term)) {
+                        if (!albumShown) {
+                            album.style.display = '';
+                            albumShown = true;
+                        }
+                        track.style.display = '';
                     }
                 });
+            });
+        }
+    }
 
-                // Mostra/oculta o álbum baseado se encontrou músicas
-                album.style.display = encontrouMusica ? '' : 'none';
+    // Atualizar sugestões de pesquisa
+    function updateSuggestions(value) {
+        const searchValue = value.toLowerCase();
+        suggestionsDiv.innerHTML = '';
+
+        if (!searchValue) {
+            suggestionsDiv.style.display = 'none';
+            return;
+        }
+
+        const filtered = allTerms.filter(term => 
+            term.toLowerCase().includes(searchValue)
+        ).slice(0, 5);
+
+        if (filtered.length === 0) {
+            suggestionsDiv.style.display = 'none';
+            return;
+        }
+
+        filtered.forEach(term => {
+            const div = document.createElement('div');
+            div.className = 'suggestion-item';
+
+            // Formatar álbuns com tag especial
+            if (term.includes('(album)')) {
+                div.innerHTML = `${term.replace(' (album)', '')} <span class="album-tag">Álbum</span>`;
+            } else {
+                div.textContent = term;
             }
-        });
-    });
-</script>
 
-</html>
+            div.addEventListener('click', () => {
+                input.value = term;
+                suggestionsDiv.style.display = 'none';
+                performSearch(term);
+            });
+
+            suggestionsDiv.appendChild(div);
+        });
+
+        suggestionsDiv.style.display = 'block';
+    }
+
+    // Evento de input (digitação)
+    input.addEventListener('input', function() {
+        const term = this.value;
+        clearBtn.style.display = term ? 'block' : 'none';
+        performSearch(term);
+        updateSuggestions(term);
+    });
+
+    // Botão de limpar
+    clearBtn.addEventListener('click', () => {
+        input.value = '';
+        clearBtn.style.display = 'none';
+        suggestionsDiv.style.display = 'none';
+        performSearch('');
+    });
+
+    // Fechar sugestões ao clicar fora
+    document.addEventListener('click', (e) => {
+        if (!input.parentElement.contains(e.target)) {
+            suggestionsDiv.style.display = 'none';
+        }
+    });
+
+    // Pesquisa inicial vazia para exibir tudo
+    performSearch('');
+</script>
