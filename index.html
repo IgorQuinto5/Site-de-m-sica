@@ -1437,45 +1437,47 @@
         "Too Late Too Late"
     ];
 
-    input.addEventListener('input', () => {
-        const value = input.value.toLowerCase();
-        suggestionsDiv.innerHTML = '';
-        if (!value) {
-            suggestionsDiv.style.display = 'none';
-            return;
-        }
+    input.addEventListener('input', function () {
+        const termo = this.value.toLowerCase().trim();
+        const albums = document.querySelectorAll('.album-section');
 
-        const filtered = allTerms.filter(term => term.toLowerCase().includes(value)).slice(0, 4);
+        albums.forEach(album => {
+            const albumTitulo = album.querySelector('.album-meta h1').textContent.toLowerCase();
+            const faixas = album.querySelectorAll('.clickable-row');
+            let albumVisivel = false;
 
-        if (filtered.length === 0) {
-            suggestionsDiv.style.display = 'none';
-            return;
-        }
+            // Verifica se o termo está no título do álbum
+            const matchAlbum = albumTitulo.includes(termo);
 
-        filtered.forEach(term => {
-            const div = document.createElement('div');
-            div.textContent = term;
-            div.style.padding = '8px 12px';
-            div.style.color = '#eee';
-            div.style.cursor = 'pointer';
-            div.addEventListener('mouseover', () => div.style.backgroundColor = '#444');
-            div.addEventListener('mouseout', () => div.style.backgroundColor = 'transparent');
-            div.addEventListener('click', () => {
-                input.value = term;
-                suggestionsDiv.style.display = 'none';
-                input.dispatchEvent(new Event('input'));
-                input.focus();
-            });
-            suggestionsDiv.appendChild(div);
+            // Mostra todas as faixas se o álbum for encontrado
+            if (matchAlbum) {
+                album.style.display = '';
+                faixas.forEach(faixa => {
+                    faixa.style.display = '';
+                });
+                albumVisivel = true;
+            }
+            // Caso contrário, procura por músicas específicas
+            else {
+                let encontrouMusica = false;
+
+                faixas.forEach(faixa => {
+                    const tituloMusica = faixa.querySelector('.track-title').textContent.toLowerCase();
+                    const matchMusica = tituloMusica.includes(termo);
+
+                    if (matchMusica) {
+                        faixa.style.display = '';
+                        encontrouMusica = true;
+                        albumVisivel = true;
+                    } else {
+                        faixa.style.display = 'none';
+                    }
+                });
+
+                // Mostra/oculta o álbum baseado se encontrou músicas
+                album.style.display = encontrouMusica ? '' : 'none';
+            }
         });
-
-        suggestionsDiv.style.display = 'block';
-    });
-
-    document.addEventListener('click', (e) => {
-        if (!document.getElementById('emCima').contains(e.target)) {
-            suggestionsDiv.style.display = 'none';
-        }
     });
 </script>
 
